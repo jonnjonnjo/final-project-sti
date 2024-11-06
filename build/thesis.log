@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.8)  6 NOV 2024 12:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.8)  6 NOV 2024 12:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -104,20 +104,14 @@ Package: babel 2024/01/07 v24.1 The Babel package
 \bbl@readstream=\read2
 \bbl@dirlevel=\count266
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
-Package babel Info: Hyphen rules for 'canadian' set to \l@english
-(babel)             (\language0). Reported on input line 102.
-Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language76). Reported on input line 105.
-Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language76). Reported on input line 108.
+(/usr/share/texlive/texmf-dist/tex/generic/babel-indonesian/indonesian.ldf
+Language: indonesian 2017/02/15 v1.0m Bahasa Indonesia support from the babel s
+ystem
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
-Package babel Info: Importing font and identification data for english
-(babel)             from babel-en.ini. Reported on input line 11.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+(/usr/share/texlive/texmf-dist/tex/generic/babel/locale/id/babel-indonesian.tex
+Package babel Info: Importing font and identification data for indonesian
+(babel)             from babel-id.ini. Reported on input line 11.
+) (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -609,10 +603,14 @@ Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
-Package csquotes Info: Redefining alias 'default' -> 'english'.
+
+
+Package csquotes Warning: No style for language 'indonesian'.
+(csquotes)                Using fallback style on input line 23.
+
+Package csquotes Info: Redefining alias 'default' -> 'fallback'.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 23
 .
-
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -672,11 +670,12 @@ LaTeX Font Info:    ... okay on input line 23.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package biblatex Info: Trying to load language 'english'...
-Package biblatex Info: ... file 'english.lbx' found.
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
-)
+Package biblatex Info: Trying to load language 'indonesian'...
+Package biblatex Info: ... file 'indonesian.lbx' not found.
+
+Package biblatex Warning: Language 'indonesian' not supported.
+(biblatex)                Using dummy definitions on input line 23.
+
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -687,7 +686,6 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
-
 (/home/jon/Coding/final-project-sti/build/thesis.bbl)
 Package biblatex Info: Reference section=0 on input line 23.
 Package biblatex Info: Reference segment=0 on input line 23.
@@ -773,15 +771,24 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (./chapters/abstract-id.tex [2
 
 
-] [3
+]
+
+Package blindtext Warning: indonesian not defined, using English instead.
+(blindtext)                 on input line 7.
+
+[3
 
 
-]) (./chapters/abstract-en.tex [4
+]) (./chapters/abstract-en.tex
+
+Package blindtext Warning: indonesian not defined, using English instead.
+(blindtext)                 on input line 7.
+
+[4
 
 
 
-])
-(./chapters/forewords.tex) [5
+]) (./chapters/forewords.tex) [5
 
 
 ]
@@ -812,20 +819,27 @@ BAB I.
 ]) (./chapters/chapter-2.tex [2]
 BAB II.
 
-Overfull \hbox (6.32097pt too wide) in paragraph at lines 3--4
-\T1/lmr/m/n/12 Bab Studi Lit-er-atur di-gu-nakan un-tuk mendeskrip-sikan ka-jia
-n lit-er-atur yang terkait
- []
+Package blindtext Warning: indonesian not defined, using English instead.
+(blindtext)                 on input line 12.
 
 
-Overfull \hbox (0.51295pt too wide) in paragraph at lines 7--8
-\T1/lmr/m/n/12 atau peker-jaan terkait yang terkait lang-sung den-gan penye-le-
-sa-ian per-soalan,
- []
+Package blindtext Warning: indonesian not defined, using English instead.
+(blindtext)                 on input line 14.
 
 [3
 
 ]
+
+Package biblatex Warning: Using fallback definition for \mkbibdateshort.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdateshort.
+
+
+Package blindtext Warning: indonesian not defined, using English instead.
+(blindtext)                 on input line 21.
+
 <resources/chapter-2-infrastructure-diagram.png, id=225, 702.625pt x 406.51875p
 t>
 File: resources/chapter-2-infrastructure-diagram.png Graphic file (type png)
@@ -833,30 +847,90 @@ File: resources/chapter-2-infrastructure-diagram.png Graphic file (type png)
 Package pdftex.def Info: resources/chapter-2-infrastructure-diagram.png  used o
 n input line 24.
 (pdftex.def)             Requested size: 330.05322pt x 190.96458pt.
- [4 <./resources/chapter-2-infrastructure-diagram.png>])
-(./chapters/chapter-3.tex [5]
-BAB III.
-) (./chapters/chapter-4.tex [6
 
-] [7]
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package blindtext Warning: indonesian not defined, using English instead.
+(blindtext)                 on input line 31.
+
+[4])
+
+Package blindtext Warning: indonesian not defined, using English instead.
+(blindtext)                 on input line 72.
+
+(./chapters/chapter-3.tex [5 <./resources/chapter-2-infrastructure-diagram.png>
+]
+BAB III.
+
+Package blindtext Warning: indonesian not defined, using English instead.
+(blindtext)                 on input line 5.
+
+
+Package blindtext Warning: indonesian not defined, using English instead.
+(blindtext)                 on input line 8.
+
+[6
+
+])
+
+Package blindtext Warning: indonesian not defined, using English instead.
+(blindtext)                 on input line 73.
+
+(./chapters/chapter-4.tex [7]
 BAB IV.
+
+Package blindtext Warning: indonesian not defined, using English instead.
+(blindtext)                 on input line 5.
+
+
+Package blindtext Warning: indonesian not defined, using English instead.
+(blindtext)                 on input line 8.
+
 [8
 
-]) (./chapters/chapter-5.tex [9]
+]
+
+Package blindtext Warning: indonesian not defined, using English instead.
+(blindtext)                 on input line 11.
+
+)
+
+Package blindtext Warning: indonesian not defined, using English instead.
+(blindtext)                 on input line 74.
+
+(./chapters/chapter-5.tex [9]
 BAB V.
-) [10
 
-] [11
+Package blindtext Warning: indonesian not defined, using English instead.
+(blindtext)                 on input line 5.
 
-] [12
+)
+
+Package blindtext Warning: indonesian not defined, using English instead.
+(blindtext)                 on input line 75.
+
+[10
+
+] [11]
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+[12
+
+] [13
 
 ] (./chapters/appendix-1.tex
-Appendix A.
-) (./chapters/appendix-2.tex [13
+Lampiran A.
+) (./chapters/appendix-2.tex [14
 
 ]
-Appendix B.
-) [14
+Lampiran B.
+) [15
 
 ] (/home/jon/Coding/final-project-sti/build/thesis.aux)
  ***********
@@ -870,21 +944,21 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18952 strings out of 474222
- 333648 string characters out of 5748733
+ 18168 strings out of 474222
+ 318921 string characters out of 5748733
  1931975 words of memory out of 5000000
- 40865 multiletter control sequences out of 15000+600000
+ 40084 multiletter control sequences out of 15000+600000
  601233 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,6n,84p,1885b,2268s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 71i,6n,84p,1885b,1454s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmri12.pfb>
-Output written on /home/jon/Coding/final-project-sti/build/thesis.pdf (24 pages
-, 435561 bytes).
+Output written on /home/jon/Coding/final-project-sti/build/thesis.pdf (25 pages
+, 436568 bytes).
 PDF statistics:
- 316 PDF objects out of 1000 (max. 8388607)
- 276 compressed objects within 3 object streams
- 72 named destinations out of 1000 (max. 500000)
+ 323 PDF objects out of 1000 (max. 8388607)
+ 282 compressed objects within 3 object streams
+ 73 named destinations out of 1000 (max. 500000)
  243 words of extra memory for PDF output out of 10000 (max. 10000000)
 

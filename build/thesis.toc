@@ -1,4 +1,4 @@
-\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
 \contentsline {chapter}{Abstrak}{iii}{chapter*.2}%
 \contentsline {chapter}{Abstract}{iv}{chapter*.3}%
 \contentsline {chapter}{Kata Pengantar}{v}{chapter*.4}%
@@ -12,7 +12,7 @@
 \contentsline {chapter}{\numberline {II}Tinjauan Pustaka}{3}{chapter.2}%
 \contentsline {section}{\numberline {II.1}Dasar Teori}{4}{section.2.1}%
 \contentsline {subsection}{\numberline {II.1.1}Subbab}{4}{subsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {II.1.1.1}Subsubbab}{5}{subsubsection.2.1.1.1}%
+\contentsline {subsubsection}{\numberline {II.1.1.1}Subsubbab}{4}{subsubsection.2.1.1.1}%
 \contentsline {section}{\numberline {II.2}Studi Terkait}{5}{section.2.2}%
 \contentsline {chapter}{\numberline {III}Analisis dan Perancangan}{6}{chapter.3}%
 \contentsline {section}{\numberline {III.1}Analisis Masalah}{6}{section.3.1}%
@@ -26,6 +26,6 @@
 \contentsline {chapter}{\numberline {V}Penutup}{10}{chapter.5}%
 \contentsline {section}{\numberline {V.1}Kesimpulan}{10}{section.5.1}%
 \contentsline {section}{\numberline {V.2}Saran}{10}{section.5.2}%
-\contentsline {part}{Lampiran}{11}{chapter*.8}%
-\contentsline {chapter}{\numberline {A}Instrumen Pengujian}{13}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Rincian Kasus Uji}{14}{appendix.B}%
+\contentsline {part}{Lampiran}{12}{chapter*.8}%
+\contentsline {chapter}{\numberline {A}Instrumen Pengujian}{14}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Rincian Kasus Uji}{15}{appendix.B}%
