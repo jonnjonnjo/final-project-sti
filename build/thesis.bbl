@@ -18,7 +18,7 @@
 
 
 \refsection{0}
-  \datalist[entry]{cms/global//global/global}
+  \datalist[entry]{apa/apasortcite//global/global}
     \entry{knuth2001art}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=c7986b8f9a74e8a99dd8346c98b35f3e}{%
@@ -41,6 +41,7 @@
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9780201896831}
@@ -48,6 +49,229 @@
       \field{series}{The Art of Computer Programming: Fundamental Algorithms}
       \field{title}{The Art of Computer Programming: Fundamental Algorithms}
       \field{year}{2001}
+    \endentry
+    \entry{mypaper}{inbook}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5d0ddda3a367ceb26fbaeca02e391c22}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d6cfb2b8c4b3f9440ec4642438129367}{%
+           family={Doe},
+           familyi={D\bibinitperiod},
+           given={Jane},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=aae587aa61831b0b87485957445e5812}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6e43ebb6ec5720336cf271ac877320fe}{%
+           family={Green},
+           familyi={G\bibinitperiod},
+           given={Susan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{organization}{1}{%
+        {ACM}%
+      }
+      \list{publisher}{1}{%
+        {ACM Press}%
+      }
+      \strng{namehash}{45c88cccd97ad3c93e9dfc2a1eefc27c}
+      \strng{fullhash}{45c88cccd97ad3c93e9dfc2a1eefc27c}
+      \strng{bibnamehash}{45c88cccd97ad3c93e9dfc2a1eefc27c}
+      \strng{authorbibnamehash}{45c88cccd97ad3c93e9dfc2a1eefc27c}
+      \strng{authornamehash}{45c88cccd97ad3c93e9dfc2a1eefc27c}
+      \strng{authorfullhash}{45c88cccd97ad3c93e9dfc2a1eefc27c}
+      \strng{editorbibnamehash}{d915e049dc3de501f8a6f94bd8f9af69}
+      \strng{editornamehash}{d915e049dc3de501f8a6f94bd8f9af69}
+      \strng{editorfullhash}{d915e049dc3de501f8a6f94bd8f9af69}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the International Conference on Example}
+      \field{month}{6}
+      \field{number}{2}
+      \field{series}{Example Conference Proceedings}
+      \field{title}{An Analysis of Example}
+      \field{volume}{1}
+      \field{year}{2022}
+      \field{pages}{123\bibrangedash 130}
+      \range{pages}{8}
+    \endentry
+    \entry{4026885}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ab5102bf0ce89471f141ba918330e21d}{%
+           family={Vogels},
+           familyi={V\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ab5102bf0ce89471f141ba918330e21d}
+      \strng{fullhash}{ab5102bf0ce89471f141ba918330e21d}
+      \strng{bibnamehash}{ab5102bf0ce89471f141ba918330e21d}
+      \strng{authorbibnamehash}{ab5102bf0ce89471f141ba918330e21d}
+      \strng{authornamehash}{ab5102bf0ce89471f141ba918330e21d}
+      \strng{authorfullhash}{ab5102bf0ce89471f141ba918330e21d}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2006 IEEE International Conference on Services Computing (SCC'06)}
+      \field{month}{9}
+      \field{title}{Web Services at Amazon.comm}
+      \field{year}{2006}
+      \field{pages}{xxii\bibrangedash xxii}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1109/SCC.2006.116
+      \endverb
+      \keyw{Distributed computing;Technological innovation;Web services}
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global}
+    \entry{knuth2001art}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c7986b8f9a74e8a99dd8346c98b35f3e}{%
+           family={Knuth},
+           familyi={K\bibinitperiod},
+           given={D.E.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{c7986b8f9a74e8a99dd8346c98b35f3e}
+      \strng{fullhash}{c7986b8f9a74e8a99dd8346c98b35f3e}
+      \strng{bibnamehash}{c7986b8f9a74e8a99dd8346c98b35f3e}
+      \strng{authorbibnamehash}{c7986b8f9a74e8a99dd8346c98b35f3e}
+      \strng{authornamehash}{c7986b8f9a74e8a99dd8346c98b35f3e}
+      \strng{authorfullhash}{c7986b8f9a74e8a99dd8346c98b35f3e}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780201896831}
+      \field{number}{v. 1}
+      \field{series}{The Art of Computer Programming: Fundamental Algorithms}
+      \field{title}{The Art of Computer Programming: Fundamental Algorithms}
+      \field{year}{2001}
+    \endentry
+    \entry{mypaper}{inbook}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5d0ddda3a367ceb26fbaeca02e391c22}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d6cfb2b8c4b3f9440ec4642438129367}{%
+           family={Doe},
+           familyi={D\bibinitperiod},
+           given={Jane},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=aae587aa61831b0b87485957445e5812}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6e43ebb6ec5720336cf271ac877320fe}{%
+           family={Green},
+           familyi={G\bibinitperiod},
+           given={Susan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{organization}{1}{%
+        {ACM}%
+      }
+      \list{publisher}{1}{%
+        {ACM Press}%
+      }
+      \strng{namehash}{45c88cccd97ad3c93e9dfc2a1eefc27c}
+      \strng{fullhash}{45c88cccd97ad3c93e9dfc2a1eefc27c}
+      \strng{bibnamehash}{45c88cccd97ad3c93e9dfc2a1eefc27c}
+      \strng{authorbibnamehash}{45c88cccd97ad3c93e9dfc2a1eefc27c}
+      \strng{authornamehash}{45c88cccd97ad3c93e9dfc2a1eefc27c}
+      \strng{authorfullhash}{45c88cccd97ad3c93e9dfc2a1eefc27c}
+      \strng{editorbibnamehash}{d915e049dc3de501f8a6f94bd8f9af69}
+      \strng{editornamehash}{d915e049dc3de501f8a6f94bd8f9af69}
+      \strng{editorfullhash}{d915e049dc3de501f8a6f94bd8f9af69}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the International Conference on Example}
+      \field{month}{6}
+      \field{number}{2}
+      \field{series}{Example Conference Proceedings}
+      \field{title}{An Analysis of Example}
+      \field{volume}{1}
+      \field{year}{2022}
+      \field{pages}{123\bibrangedash 130}
+      \range{pages}{8}
+    \endentry
+    \entry{4026885}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ab5102bf0ce89471f141ba918330e21d}{%
+           family={Vogels},
+           familyi={V\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ab5102bf0ce89471f141ba918330e21d}
+      \strng{fullhash}{ab5102bf0ce89471f141ba918330e21d}
+      \strng{bibnamehash}{ab5102bf0ce89471f141ba918330e21d}
+      \strng{authorbibnamehash}{ab5102bf0ce89471f141ba918330e21d}
+      \strng{authornamehash}{ab5102bf0ce89471f141ba918330e21d}
+      \strng{authorfullhash}{ab5102bf0ce89471f141ba918330e21d}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2006 IEEE International Conference on Services Computing (SCC'06)}
+      \field{month}{9}
+      \field{title}{Web Services at Amazon.comm}
+      \field{year}{2006}
+      \field{pages}{xxii\bibrangedash xxii}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1109/SCC.2006.116
+      \endverb
+      \keyw{Distributed computing;Technological innovation;Web services}
     \endentry
   \enddatalist
 \endrefsection

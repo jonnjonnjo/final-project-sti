@@ -10,22 +10,22 @@
 \contentsline {section}{\numberline {I.5}Metodologi}{2}{section.1.5}%
 \contentsline {section}{\numberline {I.6}Sistematika Pembahasan}{2}{section.1.6}%
 \contentsline {chapter}{\numberline {II}Tinjauan Pustaka}{3}{chapter.2}%
-\contentsline {section}{\numberline {II.1}Dasar Teori}{4}{section.2.1}%
+\contentsline {section}{\numberline {II.1}Dasar Teori}{3}{section.2.1}%
 \contentsline {subsection}{\numberline {II.1.1}Subbab}{4}{subsection.2.1.1}%
 \contentsline {subsubsection}{\numberline {II.1.1.1}Subsubbab}{4}{subsubsection.2.1.1.1}%
-\contentsline {section}{\numberline {II.2}Studi Terkait}{5}{section.2.2}%
-\contentsline {chapter}{\numberline {III}Analisis dan Perancangan}{6}{chapter.3}%
-\contentsline {section}{\numberline {III.1}Analisis Masalah}{6}{section.3.1}%
-\contentsline {section}{\numberline {III.2}Solusi Umum}{6}{section.3.2}%
-\contentsline {section}{\numberline {III.3}Rancangan Solusi}{7}{section.3.3}%
-\contentsline {chapter}{\numberline {IV}Evaluasi dan Pembahasan}{8}{chapter.4}%
-\contentsline {section}{\numberline {IV.1}Tujuan Pengujian}{8}{section.4.1}%
-\contentsline {section}{\numberline {IV.2}Skenario Pengujian}{8}{section.4.2}%
-\contentsline {section}{\numberline {IV.3}Hasil Pengujian}{9}{section.4.3}%
-\contentsline {section}{\numberline {IV.4}Pembahasan}{9}{section.4.4}%
-\contentsline {chapter}{\numberline {V}Penutup}{10}{chapter.5}%
-\contentsline {section}{\numberline {V.1}Kesimpulan}{10}{section.5.1}%
-\contentsline {section}{\numberline {V.2}Saran}{10}{section.5.2}%
-\contentsline {part}{Lampiran}{12}{chapter*.8}%
-\contentsline {chapter}{\numberline {A}Instrumen Pengujian}{14}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Rincian Kasus Uji}{15}{appendix.B}%
+\contentsline {section}{\numberline {II.2}Studi Terkait}{4}{section.2.2}%
+\contentsline {chapter}{\numberline {III}Analisis dan Perancangan}{5}{chapter.3}%
+\contentsline {section}{\numberline {III.1}Analisis Masalah}{5}{section.3.1}%
+\contentsline {section}{\numberline {III.2}Solusi Umum}{5}{section.3.2}%
+\contentsline {section}{\numberline {III.3}Rancangan Solusi}{5}{section.3.3}%
+\contentsline {chapter}{\numberline {IV}Evaluasi dan Pembahasan}{6}{chapter.4}%
+\contentsline {section}{\numberline {IV.1}Tujuan Pengujian}{6}{section.4.1}%
+\contentsline {section}{\numberline {IV.2}Skenario Pengujian}{6}{section.4.2}%
+\contentsline {section}{\numberline {IV.3}Hasil Pengujian}{6}{section.4.3}%
+\contentsline {section}{\numberline {IV.4}Pembahasan}{6}{section.4.4}%
+\contentsline {chapter}{\numberline {V}Penutup}{7}{chapter.5}%
+\contentsline {section}{\numberline {V.1}Kesimpulan}{7}{section.5.1}%
+\contentsline {section}{\numberline {V.2}Saran}{7}{section.5.2}%
+\contentsline {part}{Lampiran}{8}{chapter*.8}%
+\contentsline {chapter}{\numberline {A}Instrumen Pengujian}{10}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Rincian Kasus Uji}{11}{appendix.B}%
