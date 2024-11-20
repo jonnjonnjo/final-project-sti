@@ -49,37 +49,6 @@
       \field{title}{The Art of Computer Programming: Fundamental Algorithms}
       \field{year}{2001}
     \endentry
-    \entry{4026885}{inproceedings}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=ab5102bf0ce89471f141ba918330e21d}{%
-           family={Vogels},
-           familyi={V\bibinitperiod},
-           given={W.},
-           giveni={W\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{ab5102bf0ce89471f141ba918330e21d}
-      \strng{fullhash}{ab5102bf0ce89471f141ba918330e21d}
-      \strng{bibnamehash}{ab5102bf0ce89471f141ba918330e21d}
-      \strng{authorbibnamehash}{ab5102bf0ce89471f141ba918330e21d}
-      \strng{authornamehash}{ab5102bf0ce89471f141ba918330e21d}
-      \strng{authorfullhash}{ab5102bf0ce89471f141ba918330e21d}
-      \field{sortinit}{V}
-      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2006 IEEE International Conference on Services Computing (SCC'06)}
-      \field{title}{Web Services at Amazon.com}
-      \field{year}{2006}
-      \field{pages}{xxii\bibrangedash xxii}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1109/SCC.2006.116
-      \endverb
-      \keyw{Distributed computing;Technological innovation;Web services}
-    \endentry
   \enddatalist
 \endrefsection
 \endinput

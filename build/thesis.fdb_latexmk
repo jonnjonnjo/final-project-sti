@@ -1,20 +1,20 @@
 # Fdb version 4
-["biber /home/jon/Coding/final-project-sti/build/thesis"] 1731302411.371 "/home/jon/Coding/final-project-sti/build/thesis.bcf" "/home/jon/Coding/final-project-sti/build/thesis.bbl" "/home/jon/Coding/final-project-sti/build/thesis" 1731302415.80526 0
-  "/home/jon/Coding/final-project-sti/build/thesis.bcf" 1731302415.71754 203444 30dc2bce704181a5acff490fb24d33fb "pdflatex"
-  "references.bib" 1731302408.64953 601 73724d05d12f7897dfffb6b9365225d2 ""
+["biber /home/jon/Coding/final-project-sti/build/thesis"] 1732085149.58152 "/home/jon/Coding/final-project-sti/build/thesis.bcf" "/home/jon/Coding/final-project-sti/build/thesis.bbl" "/home/jon/Coding/final-project-sti/build/thesis" 1732085156.02077 0
+  "/home/jon/Coding/final-project-sti/build/thesis.bcf" 1732085155.88519 203449 42863caa4fb723ef6a41a09dae060ace "pdflatex"
+  "references.bib" 1731567108.45912 1112 2b9e305fa630e25adcf203c933c234f3 ""
   (generated)
   "/home/jon/Coding/final-project-sti/build/thesis.bbl"
   "/home/jon/Coding/final-project-sti/build/thesis.blg"
   (rewritten before read)
-["pdflatex"] 1731302414.59568 "thesis.tex" "/home/jon/Coding/final-project-sti/build/thesis.pdf" "thesis" 1731302415.80569 0
+["pdflatex"] 1732085154.29889 "thesis.tex" "/home/jon/Coding/final-project-sti/build/thesis.pdf" "thesis" 1732085156.02147 0
   "/etc/texmf/web2c/texmf.cnf" 1728362070.18866 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/jon/Coding/final-project-sti/build/thesis.aux" 1731302415.71654 4728 5f8ca4c4b9059450e36f727eaac083ef "pdflatex"
-  "/home/jon/Coding/final-project-sti/build/thesis.bbl" 1731302412.14753 3045 c9ede84cd330aef825197e3ec7d995e4 "biber /home/jon/Coding/final-project-sti/build/thesis"
-  "/home/jon/Coding/final-project-sti/build/thesis.lof" 1731302415.71854 265 2333e37297a90e7ac10e88edb2cdb63c "pdflatex"
-  "/home/jon/Coding/final-project-sti/build/thesis.lot" 1731302415.71854 173 d6db53aff112cb3b7e83791e626f44e5 "pdflatex"
-  "/home/jon/Coding/final-project-sti/build/thesis.out" 1731302415.71654 3429 ba3af543f8df5f4459a318237bdeeaec "pdflatex"
-  "/home/jon/Coding/final-project-sti/build/thesis.run.xml" 1731302415.71854 2322 3564ef39db35fca0c343552576519b70 "pdflatex"
-  "/home/jon/Coding/final-project-sti/build/thesis.toc" 1731302415.71854 2172 de6a3f3b056c04474628a3230f1cb130 "pdflatex"
+  "/home/jon/Coding/final-project-sti/build/thesis.aux" 1732085155.88219 4651 b0293a46ee3712e1119f27b11b63d701 "pdflatex"
+  "/home/jon/Coding/final-project-sti/build/thesis.bbl" 1732085150.79219 1767 d7fc7048faf8b9131fe5ebfd945a4d4f "biber /home/jon/Coding/final-project-sti/build/thesis"
+  "/home/jon/Coding/final-project-sti/build/thesis.lof" 1732085155.88619 265 2333e37297a90e7ac10e88edb2cdb63c "pdflatex"
+  "/home/jon/Coding/final-project-sti/build/thesis.lot" 1732085155.88619 173 d6db53aff112cb3b7e83791e626f44e5 "pdflatex"
+  "/home/jon/Coding/final-project-sti/build/thesis.out" 1732085155.88319 3429 ba3af543f8df5f4459a318237bdeeaec "pdflatex"
+  "/home/jon/Coding/final-project-sti/build/thesis.run.xml" 1732085155.88619 2322 3564ef39db35fca0c343552576519b70 "pdflatex"
+  "/home/jon/Coding/final-project-sti/build/thesis.toc" 1732085155.88619 2172 de6a3f3b056c04474628a3230f1cb130 "pdflatex"
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1136768653 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
@@ -131,17 +131,17 @@
   "chapters/appendix-2.tex" 1730866554.00362 27 0a393cefcbf4b1d612aa5e2f35d7db24 ""
   "chapters/approval.tex" 1730869020.40167 827 7d989c4c7866052a8b6105126e85cefc ""
   "chapters/chapter-1.tex" 1730866554.00462 2409 a8b3d42b2adc8306c3be19beef78f871 ""
-  "chapters/chapter-2.tex" 1731302145.30809 1217 af01877df2670775be0ab635f85b9044 ""
+  "chapters/chapter-2.tex" 1732085145.07519 1229 8ae214d65f315cc86bd477c4fdcd6d8d ""
   "chapters/chapter-3.tex" 1730866554.00462 146 005730bfef4321d67875e2c6302b2f73 ""
   "chapters/chapter-4.tex" 1730866554.00462 184 30eab075e7d1868f6b12d88fdb4b9d09 ""
   "chapters/chapter-5.tex" 1730866554.00462 78 8e711795d6dad35a56b61bf98627ed2d ""
   "chapters/cover.tex" 1730890511.26974 638 8c39111732598e881899607f2eb344ef ""
   "chapters/forewords.tex" 1730866554.00462 1309 d7c9f0145276de0a5bbeb2542b483d4b ""
   "chapters/statement.tex" 1730869077.2024 801 f6ed89aa3dd21607ca26ad4fec47f103 ""
-  "config/if-itb-thesis.sty" 1731301971.80678 1533 cbb437c465a787fca6f5302127efbf66 ""
+  "config/if-itb-thesis.sty" 1731572345.23509 1575 9ad117f94094229ff418b11314fca1b1 ""
   "resources/chapter-2-infrastructure-diagram.png" 1730866554.00462 146123 48f65fae91e13f5702db192a8c8d0606 ""
   "resources/cover-ganesha.jpg" 1730866554.00562 199078 b0deb353b173e7d1d8c6bf9a4060386d ""
-  "thesis.tex" 1731296664.33835 2393 218c6d85f19134bf1bd27bb6e2c04a9b ""
+  "thesis.tex" 1731573671.14449 2324 b5f31e7c542d7635424ef506631fc195 ""
   (generated)
   "/home/jon/Coding/final-project-sti/build/thesis.aux"
   "/home/jon/Coding/final-project-sti/build/thesis.bcf"

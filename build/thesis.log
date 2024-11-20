@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.8)  11 NOV 2024 12:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.8)  20 NOV 2024 13:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -856,27 +856,30 @@ Package biblatex Warning: Using fallback definition for \mkbibdatelong.
 (biblatex)                for \mkbibdatelong.
 
 
+Package biblatex-chicago Warning: Empty Ibidem citation on input line 17.
+
+
 Package blindtext Warning: indonesian not defined, using English instead.
-(blindtext)                 on input line 23.
+(blindtext)                 on input line 22.
 
 <resources/chapter-2-infrastructure-diagram.png, id=226, 702.625pt x 406.51875p
 t>
 File: resources/chapter-2-infrastructure-diagram.png Graphic file (type png)
 <use resources/chapter-2-infrastructure-diagram.png>
 Package pdftex.def Info: resources/chapter-2-infrastructure-diagram.png  used o
-n input line 26.
+n input line 25.
 (pdftex.def)             Requested size: 330.05322pt x 190.96458pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Package blindtext Warning: indonesian not defined, using English instead.
-(blindtext)                 on input line 33.
+(blindtext)                 on input line 32.
 
 [4])
 
 Package blindtext Warning: indonesian not defined, using English instead.
-(blindtext)                 on input line 72.
+(blindtext)                 on input line 68.
 
 (./chapters/chapter-3.tex [5 <./resources/chapter-2-infrastructure-diagram.png>
 ]
@@ -894,7 +897,7 @@ Package blindtext Warning: indonesian not defined, using English instead.
 ])
 
 Package blindtext Warning: indonesian not defined, using English instead.
-(blindtext)                 on input line 73.
+(blindtext)                 on input line 69.
 
 (./chapters/chapter-4.tex [7]
 BAB IV.
@@ -916,7 +919,7 @@ Package blindtext Warning: indonesian not defined, using English instead.
 )
 
 Package blindtext Warning: indonesian not defined, using English instead.
-(blindtext)                 on input line 74.
+(blindtext)                 on input line 70.
 
 (./chapters/chapter-5.tex [9]
 BAB V.
@@ -927,7 +930,7 @@ Package blindtext Warning: indonesian not defined, using English instead.
 )
 
 Package blindtext Warning: indonesian not defined, using English instead.
-(blindtext)                 on input line 75.
+(blindtext)                 on input line 71.
 
 [10
 
@@ -938,17 +941,6 @@ Package biblatex Warning: Using fallback definition for \mkbibdatelong.
 (biblatex)                If you see this message, the .lbx file could not be
 (biblatex)                loaded, is faulty or does not contain a definition
 (biblatex)                for \mkbibdatelong.
-
-
-Package biblatex Warning: Using fallback definition for \mkbibdatelong.
-(biblatex)                The command should be defined in the .lbx file.
-(biblatex)                If you see this message, the .lbx file could not be
-(biblatex)                loaded, is faulty or does not contain a definition
-(biblatex)                for \mkbibdatelong.
-
-
-Package biblatex Warning: Bibliography string 'in' untranslated
-(biblatex)                at entry '4026885' on input line 79.
 
 [12
 
@@ -974,10 +966,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19840 strings out of 474222
- 355624 string characters out of 5748733
+ 19829 strings out of 474222
+ 355342 string characters out of 5748733
  1931975 words of memory out of 5000000
- 41753 multiletter control sequences out of 15000+600000
+ 41743 multiletter control sequences out of 15000+600000
  601233 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,6n,98p,1299b,1515s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -985,10 +977,10 @@ Here is how much of TeX's memory you used:
 pe1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmri12.pfb>
 Output written on /home/jon/Coding/final-project-sti/build/thesis.pdf (25 pages
-, 439666 bytes).
+, 436629 bytes).
 PDF statistics:
- 327 PDF objects out of 1000 (max. 8388607)
- 286 compressed objects within 3 object streams
- 74 named destinations out of 1000 (max. 500000)
+ 324 PDF objects out of 1000 (max. 8388607)
+ 283 compressed objects within 3 object streams
+ 73 named destinations out of 1000 (max. 500000)
  243 words of extra memory for PDF output out of 10000 (max. 10000000)
 
