@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,8 @@
 
 
 \refsection{0}
-  \datalist[entry]{cms/global//global/global}
-    \entry{knuth2001art}{book}{}
+  \datalist[entry]{cms/global//global/global/global}
+    \entry{knuth2001art}{book}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=c7986b8f9a74e8a99dd8346c98b35f3e}{%
            family={Knuth},
@@ -33,10 +33,12 @@
       }
       \strng{namehash}{c7986b8f9a74e8a99dd8346c98b35f3e}
       \strng{fullhash}{c7986b8f9a74e8a99dd8346c98b35f3e}
+      \strng{fullhashraw}{c7986b8f9a74e8a99dd8346c98b35f3e}
       \strng{bibnamehash}{c7986b8f9a74e8a99dd8346c98b35f3e}
       \strng{authorbibnamehash}{c7986b8f9a74e8a99dd8346c98b35f3e}
       \strng{authornamehash}{c7986b8f9a74e8a99dd8346c98b35f3e}
       \strng{authorfullhash}{c7986b8f9a74e8a99dd8346c98b35f3e}
+      \strng{authorfullhashraw}{c7986b8f9a74e8a99dd8346c98b35f3e}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
@@ -49,7 +51,7 @@
       \field{title}{The Art of Computer Programming: Fundamental Algorithms}
       \field{year}{2001}
     \endentry
-    \entry{4026885}{inproceedings}{}
+    \entry{4026885}{inproceedings}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ab5102bf0ce89471f141ba918330e21d}{%
            family={Vogels},
@@ -60,10 +62,12 @@
       }
       \strng{namehash}{ab5102bf0ce89471f141ba918330e21d}
       \strng{fullhash}{ab5102bf0ce89471f141ba918330e21d}
+      \strng{fullhashraw}{ab5102bf0ce89471f141ba918330e21d}
       \strng{bibnamehash}{ab5102bf0ce89471f141ba918330e21d}
       \strng{authorbibnamehash}{ab5102bf0ce89471f141ba918330e21d}
       \strng{authornamehash}{ab5102bf0ce89471f141ba918330e21d}
       \strng{authorfullhash}{ab5102bf0ce89471f141ba918330e21d}
+      \strng{authorfullhashraw}{ab5102bf0ce89471f141ba918330e21d}
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
       \field{extradatescope}{labelyear}
@@ -71,6 +75,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2006 IEEE International Conference on Services Computing (SCC'06)}
+      \field{month}{9}
       \field{title}{Web Services at Amazon.com}
       \field{year}{2006}
       \field{pages}{xxii\bibrangedash xxii}

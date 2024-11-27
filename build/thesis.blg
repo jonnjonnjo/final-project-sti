@@ -1,16 +1,16 @@
-[0] Config.pm:307> INFO - This is Biber 2.19
-[0] Config.pm:310> INFO - Logfile is '/home/jon/Coding/final-project-sti/build/thesis.blg'
-[61] biber:340> INFO - === Mon Nov 11, 2024, 12:20:11
-[74] Biber.pm:419> INFO - Reading '/home/jon/Coding/final-project-sti/build/thesis.bcf'
-[172] Biber.pm:979> INFO - Found 2 citekeys in bib section 0
-[183] Biber.pm:4419> INFO - Processing section 0
-[191] Biber.pm:4610> INFO - Looking for bibtex file 'references.bib' for section 0
-[191] bibtex.pm:1713> INFO - LaTeX decoding ...
-[194] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[230] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'variable = shifted' with 'variable = non-ignorable'
-[230] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'level = 4' with 'level = 2'
-[230] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[230] Biber.pm:4239> INFO - Sorting list 'cms/global//global/global' of type 'entry' with template 'cms' and locale 'indonesian'
-[230] Biber.pm:4245> INFO - No sort tailoring available for locale 'indonesian'
-[233] bbl.pm:660> INFO - Writing '/home/jon/Coding/final-project-sti/build/thesis.bbl' with encoding 'UTF-8'
-[234] bbl.pm:763> INFO - Output to /home/jon/Coding/final-project-sti/build/thesis.bbl
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is '/home/jon/Coding/final-project-sti/build/thesis.blg'
+[62] biber:340> INFO - === Wed Nov 27, 2024, 15:53:35
+[77] Biber.pm:420> INFO - Reading '/home/jon/Coding/final-project-sti/build/thesis.bcf'
+[177] Biber.pm:994> INFO - Found 2 citekeys in bib section 0
+[187] Biber.pm:4463> INFO - Processing section 0
+[194] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
+[195] bibtex.pm:1713> INFO - LaTeX decoding ...
+[197] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[240] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'variable = shifted' with 'variable = non-ignorable'
+[240] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'level = 4' with 'level = 2'
+[240] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[240] Biber.pm:4283> INFO - Sorting list 'cms/global//global/global/global' of type 'entry' with template 'cms' and locale 'indonesian'
+[241] Biber.pm:4289> INFO - No sort tailoring available for locale 'indonesian'
+[243] bbl.pm:676> INFO - Writing '/home/jon/Coding/final-project-sti/build/thesis.bbl' with encoding 'UTF-8'
+[244] bbl.pm:779> INFO - Output to /home/jon/Coding/final-project-sti/build/thesis.bbl
