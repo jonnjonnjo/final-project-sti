@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.20)  27 NOV 2024 15:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.20)  27 NOV 2024 19:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -137,6 +137,8 @@ Package csquotes Info: ... configuration file loaded successfully.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 ))
+Package csquotes Info: Allocating character ".
+
 (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex-chicago/biblatex-chicago
 .sty
 Package: biblatex-chicago 2022/07/02 v 3.18 biblatex style
@@ -620,14 +622,10 @@ Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
-
-
-Package csquotes Warning: No style for language 'indonesian'.
-(csquotes)                Using fallback style on input line 23.
-
-Package csquotes Info: Redefining alias 'default' -> 'fallback'.
+Package csquotes Info: Redefining alias 'default' -> 'indonesian'.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 23
 .
+
 (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -687,6 +685,7 @@ LaTeX Font Info:    ... okay on input line 23.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+Package csquotes Info: Making character " active on input line 23.
 Package biblatex Info: Trying to load language 'indonesian'...
 Package biblatex Info: ... file 'indonesian.lbx' not found.
 
@@ -885,10 +884,59 @@ Package biblatex Warning: Bibliography string 'september' untranslated
 (biblatex)                at entry '4026885' on input line 18.
 
 
+Package biblatex Warning: Bibliography string 'andothers' untranslated
+(biblatex)                at entry 'alamdari2020systematic' on input line 18.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Bibliography string 'andothers' untranslated
+(biblatex)                at entry 'cho2014learning' on input line 18.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Overfull \hbox (15.74217pt too wide) in paragraph at lines 16--19
+\T1/lmr/m/n/12 2006[]) ([]Ala-mda-ri [] []2020[]) ([]Bur-kov []2019[]) ([]Ca-hu
+-an-tzi []2021[]) ([]Cho []
+ []
+
+
 Package blindtext Warning: indonesian not defined, using English instead.
 (blindtext)                 on input line 23.
 
-<resources/chapter-2-infrastructure-diagram.png, id=226, 702.625pt x 406.51875p
+<resources/chapter-2-infrastructure-diagram.png, id=231, 702.625pt x 406.51875p
 t>
 File: resources/chapter-2-infrastructure-diagram.png Graphic file (type png)
 <use resources/chapter-2-infrastructure-diagram.png>
@@ -979,6 +1027,53 @@ Package blindtext Warning: indonesian not defined, using English instead.
 
 [12]
 
+Package biblatex Warning: Bibliography string 'and' untranslated
+(biblatex)                at entry 'alamdari2020systematic' on input line 79.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Bibliography string 'and' untranslated
+(biblatex)                at entry 'cho2014learning' on input line 79.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Bibliography string 'in' untranslated
+(biblatex)                at entry 'craswell2009mrr' on input line 79.
+
+
 Package biblatex Warning: Using fallback definition for \mkbibdatelong.
 (biblatex)                The command should be defined in the .lbx file.
 (biblatex)                If you see this message, the .lbx file could not be
@@ -1032,22 +1127,22 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20152 strings out of 473362
- 362791 string characters out of 5720989
- 1557471 words of memory out of 5000000
- 42918 multiletter control sequences out of 15000+600000
+ 20194 strings out of 473362
+ 364020 string characters out of 5720989
+ 1560968 words of memory out of 5000000
+ 42955 multiletter control sequences out of 15000+600000
  601233 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,6n,98p,1299b,1531s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,6n,98p,1299b,1545s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/lo
 cal/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texli
 ve/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2024/tex
 mf-dist/fonts/type1/public/lm/lmri12.pfb>
 Output written on /home/jon/Coding/final-project-sti/build/thesis.pdf (26 pages
-, 440089 bytes).
+, 445597 bytes).
 PDF statistics:
- 332 PDF objects out of 1000 (max. 8388607)
- 290 compressed objects within 3 object streams
- 75 named destinations out of 1000 (max. 500000)
+ 351 PDF objects out of 1000 (max. 8388607)
+ 308 compressed objects within 4 object streams
+ 80 named destinations out of 1000 (max. 500000)
  243 words of extra memory for PDF output out of 10000 (max. 10000000)
 

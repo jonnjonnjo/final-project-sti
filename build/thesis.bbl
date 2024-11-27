@@ -19,6 +19,235 @@
 
 \refsection{0}
   \datalist[entry]{cms/global//global/global/global}
+    \entry{alamdari2020systematic}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=695a992d2f49c5028ebe932c546feaf1}{%
+           family={Alamdari},
+           familyi={A\bibinitperiod},
+           given={Pegah\bibnamedelima Malekpour},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=272b33ef7ad1883f8964443fb92719a9}{%
+           family={Navimipour},
+           familyi={N\bibinitperiod},
+           given={Nima\bibnamedelima Jafari},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5872ca7000694885cd7b289aed536271}{%
+           family={Hosseinzadeh},
+           familyi={H\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5cfca8018341e5ed45021d1f95d441b0}{%
+           family={Safaei},
+           familyi={S\bibinitperiod},
+           given={Ali\bibnamedelima Asghar},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b7138a28812ce1a7784ac0a91686852}{%
+           family={Darwesh},
+           familyi={D\bibinitperiod},
+           given={Aso},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6377e11e7c978fba056c9a1a27466a8e}
+      \strng{fullhash}{9e42561a716894f9c63186bd4a25a4e6}
+      \strng{fullhashraw}{9e42561a716894f9c63186bd4a25a4e6}
+      \strng{bibnamehash}{9e42561a716894f9c63186bd4a25a4e6}
+      \strng{authorbibnamehash}{9e42561a716894f9c63186bd4a25a4e6}
+      \strng{authornamehash}{6377e11e7c978fba056c9a1a27466a8e}
+      \strng{authorfullhash}{9e42561a716894f9c63186bd4a25a4e6}
+      \strng{authorfullhashraw}{9e42561a716894f9c63186bd4a25a4e6}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{A Systematic Study on the Recommender Systems in the E-Commerce}
+      \field{volume}{8}
+      \field{year}{2020}
+      \field{pages}{115694\bibrangedash 716}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2020.3002803
+      \endverb
+    \endentry
+    \entry{burkov2019hundred}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e7bec4aeb6cbfe8741541f4a2ab78c26}{%
+           family={Burkov},
+           familyi={B\bibinitperiod},
+           given={Andriy},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e7bec4aeb6cbfe8741541f4a2ab78c26}
+      \strng{fullhash}{e7bec4aeb6cbfe8741541f4a2ab78c26}
+      \strng{fullhashraw}{e7bec4aeb6cbfe8741541f4a2ab78c26}
+      \strng{bibnamehash}{e7bec4aeb6cbfe8741541f4a2ab78c26}
+      \strng{authorbibnamehash}{e7bec4aeb6cbfe8741541f4a2ab78c26}
+      \strng{authornamehash}{e7bec4aeb6cbfe8741541f4a2ab78c26}
+      \strng{authorfullhash}{e7bec4aeb6cbfe8741541f4a2ab78c26}
+      \strng{authorfullhashraw}{e7bec4aeb6cbfe8741541f4a2ab78c26}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Hundred-Page Machine Learning}
+      \field{year}{2019}
+    \endentry
+    \entry{cahuantzi2021comparison}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=86da8e2fe73b3a8109fbd4704dccdeb3}{%
+           family={Cahuantzi},
+           familyi={C\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {University of Manchester}%
+      }
+      \strng{namehash}{86da8e2fe73b3a8109fbd4704dccdeb3}
+      \strng{fullhash}{86da8e2fe73b3a8109fbd4704dccdeb3}
+      \strng{fullhashraw}{86da8e2fe73b3a8109fbd4704dccdeb3}
+      \strng{bibnamehash}{86da8e2fe73b3a8109fbd4704dccdeb3}
+      \strng{authorbibnamehash}{86da8e2fe73b3a8109fbd4704dccdeb3}
+      \strng{authornamehash}{86da8e2fe73b3a8109fbd4704dccdeb3}
+      \strng{authorfullhash}{86da8e2fe73b3a8109fbd4704dccdeb3}
+      \strng{authorfullhashraw}{86da8e2fe73b3a8109fbd4704dccdeb3}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Comparison of LSTM and GRU Networks for Learning Symbolic Sequences}
+      \field{type}{techreport}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb http://eprints.maths.manchester.ac.uk/
+      \endverb
+      \verb{url}
+      \verb http://eprints.maths.manchester.ac.uk/
+      \endverb
+    \endentry
+    \entry{cho2014learning}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=3da7501a79d9346572c7fd6e41b615df}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={Kyunghyun},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d27fe3f9898ba01eeca28e3bd205f9ea}{%
+           family={Merrienboer},
+           familyi={M\bibinitperiod},
+           given={Bart},
+           giveni={B\bibinitperiod},
+           givenun=0,
+           prefix={van},
+           prefixi={v\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=2adc0c92c308f233c731321d55efe58f}{%
+           family={Gulcehre},
+           familyi={G\bibinitperiod},
+           given={Caglar},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d80adec79a13a33e73215c5f46f1605}{%
+           family={Bahdanau},
+           familyi={B\bibinitperiod},
+           given={Dzmitry},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6deedc795e51da1bc7fd6289ab321a48}{%
+           family={Bougares},
+           familyi={B\bibinitperiod},
+           given={Fethi},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=449689e8c1ced50f608244e3a96fe6d3}{%
+           family={Schwenk},
+           familyi={S\bibinitperiod},
+           given={Holger},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9b1920db887fe0d658725c1e606b61f4}
+      \strng{fullhash}{93de344d8644049cc7e61f1b9095d310}
+      \strng{fullhashraw}{93de344d8644049cc7e61f1b9095d310}
+      \strng{bibnamehash}{93de344d8644049cc7e61f1b9095d310}
+      \strng{authorbibnamehash}{93de344d8644049cc7e61f1b9095d310}
+      \strng{authornamehash}{9b1920db887fe0d658725c1e606b61f4}
+      \strng{authorfullhash}{93de344d8644049cc7e61f1b9095d310}
+      \strng{authorfullhashraw}{93de344d8644049cc7e61f1b9095d310}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{arXiv preprint}
+      \field{title}{Learning Phrase Representations Using RNN Encoder-Decoder for Statistical Machine Translation}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1406.1078
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1406.1078
+      \endverb
+    \endentry
+    \entry{craswell2009mrr}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7a3b8c75373fcf308a7e8cda62ddd9ce}{%
+           family={Craswell},
+           familyi={C\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Boston, MA}%
+      }
+      \list{publisher}{1}{%
+        {Springer US}%
+      }
+      \strng{namehash}{7a3b8c75373fcf308a7e8cda62ddd9ce}
+      \strng{fullhash}{7a3b8c75373fcf308a7e8cda62ddd9ce}
+      \strng{fullhashraw}{7a3b8c75373fcf308a7e8cda62ddd9ce}
+      \strng{bibnamehash}{7a3b8c75373fcf308a7e8cda62ddd9ce}
+      \strng{authorbibnamehash}{7a3b8c75373fcf308a7e8cda62ddd9ce}
+      \strng{authornamehash}{7a3b8c75373fcf308a7e8cda62ddd9ce}
+      \strng{authorfullhash}{7a3b8c75373fcf308a7e8cda62ddd9ce}
+      \strng{authorfullhashraw}{7a3b8c75373fcf308a7e8cda62ddd9ce}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Encyclopedia of Database Systems}
+      \field{title}{Mean Reciprocal Rank}
+      \field{year}{2009}
+      \field{pages}{1703\bibrangedash 1703}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/978-0-387-39940-9_488
+      \endverb
+    \endentry
     \entry{knuth2001art}{book}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=c7986b8f9a74e8a99dd8346c98b35f3e}{%

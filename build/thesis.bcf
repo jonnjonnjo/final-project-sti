@@ -4980,6 +4980,11 @@
   <bcf:section number="0">
     <bcf:citekey order="1" intorder="1">knuth2001art</bcf:citekey>
     <bcf:citekey order="2" intorder="1">4026885</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">alamdari2020systematic</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">burkov2019hundred</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">cahuantzi2021comparison</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">cho2014learning</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">craswell2009mrr</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="cms">

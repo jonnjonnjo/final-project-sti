@@ -25,6 +25,15 @@
 % Judul bahasa Indonesia
 \usepackage[indonesian]{babel}
 \usepackage{csquotes}
+\MakeOuterQuote{"}
+% Configure csquotes for Indonesian (if not already defined)
+\DeclareQuoteStyle{indonesian}
+  {\textquotedblleft} % opening double quote
+  {\textquotedblright} % closing double quote
+  [0.05em]
+  {\textquoteleft} % opening single quote
+  {\textquoteright} % closing single quote
+
 % Format citation
 \usepackage[authordate,backend=biber,bibencoding=utf8]{biblatex-chicago}
 %\addbibresource{../resources/references.bib}
