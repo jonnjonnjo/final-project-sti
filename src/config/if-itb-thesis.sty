@@ -20,6 +20,8 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 
+\usepackage{float}
+
 %\usepackage{mathptmx}
 \usepackage[utf8]{inputenc}
 % Judul bahasa Indonesia
@@ -35,10 +37,17 @@
   {\textquoteright} % closing single quote
 
 % Format citation
-\usepackage[authordate,backend=biber,bibencoding=utf8]{biblatex-chicago}
+\usepackage[
+  authordate,
+  backend=biber,
+  bibencoding=utf8,
+  language=english,
+  autolang=other]{biblatex-chicago}
 %\addbibresource{../resources/references.bib}
 \addbibresource{references.bib}
 
+% Declare the language mapping
+\DeclareLanguageMapping{indonesian}{indonesian}
 
 \usepackage{graphicx}
 \usepackage{titling}

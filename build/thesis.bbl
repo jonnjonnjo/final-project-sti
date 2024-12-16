@@ -76,6 +76,126 @@
       \verb 10.1109/ACCESS.2020.3002803
       \endverb
     \endentry
+    \entry{asiavesta2022}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d93021f439c87b2ec674895ce8c4283e}{%
+           family={{Asiavesta}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d93021f439c87b2ec674895ce8c4283e}
+      \strng{fullhash}{d93021f439c87b2ec674895ce8c4283e}
+      \strng{fullhashraw}{d93021f439c87b2ec674895ce8c4283e}
+      \strng{bibnamehash}{d93021f439c87b2ec674895ce8c4283e}
+      \strng{authorbibnamehash}{d93021f439c87b2ec674895ce8c4283e}
+      \strng{authornamehash}{d93021f439c87b2ec674895ce8c4283e}
+      \strng{authorfullhash}{d93021f439c87b2ec674895ce8c4283e}
+      \strng{authorfullhashraw}{d93021f439c87b2ec674895ce8c4283e}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Development of the Indonesian Capital Market}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.asiavesta.com/en/development-of-the-indonesian-capital-market/
+      \endverb
+      \verb{url}
+      \verb https://www.asiavesta.com/en/development-of-the-indonesian-capital-market/
+      \endverb
+    \endentry
+    \entry{bhardwaj2022}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f4ba48f546de7be8abf7a43b0bd2cab5}{%
+           family={Bhardwaj},
+           familyi={B\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a106700d473a98f51524d4a1c79c4822}{%
+           family={Kwatra},
+           familyi={K\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cf57ab9c69171aafa3f8c815fd720165}
+      \strng{fullhash}{cf57ab9c69171aafa3f8c815fd720165}
+      \strng{fullhashraw}{cf57ab9c69171aafa3f8c815fd720165}
+      \strng{bibnamehash}{cf57ab9c69171aafa3f8c815fd720165}
+      \strng{authorbibnamehash}{cf57ab9c69171aafa3f8c815fd720165}
+      \strng{authornamehash}{cf57ab9c69171aafa3f8c815fd720165}
+      \strng{authorfullhash}{cf57ab9c69171aafa3f8c815fd720165}
+      \strng{authorfullhashraw}{cf57ab9c69171aafa3f8c815fd720165}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Indonesian Journal on Computing (Indo-JC)}
+      \field{number}{1}
+      \field{title}{Stock Market Price Forecasting Using Recurrent Neural Network}
+      \field{volume}{7}
+      \field{year}{2022}
+      \field{pages}{51\bibrangedash 60}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.34818/INDOJC.2022.7.1.612
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.34818/INDOJC.2022.7.1.612
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.34818/INDOJC.2022.7.1.612
+      \endverb
+    \endentry
+    \entry{BloomEtAl2019}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=68f8a5bf6811e28fe266609187cee0a5}{%
+           family={Bloom},
+           familyi={B\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5c1c1965b8a7f68495d384371ee34c08}{%
+           family={Kose},
+           familyi={K\bibinitperiod},
+           given={M.A.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=79128e6000e0066a5a91238cb3b8f20b}{%
+           family={Ohnsorge},
+           familyi={O\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c2b65eb53a5e3f23baf6fcd4db827b8e}{%
+           family={Yuriy},
+           familyi={Y\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e0fb622ae0a46cabbb8a0e96ab50fc6f}
+      \strng{fullhash}{38c727dca43faa97e0eec0b155477397}
+      \strng{fullhashraw}{38c727dca43faa97e0eec0b155477397}
+      \strng{bibnamehash}{38c727dca43faa97e0eec0b155477397}
+      \strng{authorbibnamehash}{38c727dca43faa97e0eec0b155477397}
+      \strng{authornamehash}{e0fb622ae0a46cabbb8a0e96ab50fc6f}
+      \strng{authorfullhash}{38c727dca43faa97e0eec0b155477397}
+      \strng{authorfullhashraw}{38c727dca43faa97e0eec0b155477397}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{World Bank Research Observer}
+      \field{title}{Spillovers of Domestic Shocks: Will they Counterbalance the Global Slowdown?}
+      \field{year}{2019}
+    \endentry
     \entry{burkov2019hundred}{book}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=e7bec4aeb6cbfe8741541f4a2ab78c26}{%
@@ -248,6 +368,187 @@
       \verb 10.1007/978-0-387-39940-9_488
       \endverb
     \endentry
+    \entry{FAO2020}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4807e0aebe86c17f559853f35515b533}{%
+           family={FAO},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{4807e0aebe86c17f559853f35515b533}
+      \strng{fullhash}{4807e0aebe86c17f559853f35515b533}
+      \strng{fullhashraw}{4807e0aebe86c17f559853f35515b533}
+      \strng{bibnamehash}{4807e0aebe86c17f559853f35515b533}
+      \strng{authorbibnamehash}{4807e0aebe86c17f559853f35515b533}
+      \strng{authornamehash}{4807e0aebe86c17f559853f35515b533}
+      \strng{authorfullhash}{4807e0aebe86c17f559853f35515b533}
+      \strng{authorfullhashraw}{4807e0aebe86c17f559853f35515b533}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.fao.org}}
+      \field{title}{Food Commodity Markets}
+      \field{year}{2020}
+    \endentry
+    \entry{FekrazadEtAl2022}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=9c66bfe9c47100d1e9e334005bd858f1}{%
+           family={Fekrazad},
+           familyi={F\bibinitperiod},
+           given={Amir},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0f7dd12d4ea9e0c4e36616041fa1b7f9}{%
+           family={Harun},
+           familyi={H\bibinitperiod},
+           given={Syed\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ccd12f372d3ed341c56ebeea72245334}{%
+           family={Sardar},
+           familyi={S\bibinitperiod},
+           given={Naafey},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2ae12d26d45093179a2272cdb870e77f}
+      \strng{fullhash}{2ae12d26d45093179a2272cdb870e77f}
+      \strng{fullhashraw}{2ae12d26d45093179a2272cdb870e77f}
+      \strng{bibnamehash}{2ae12d26d45093179a2272cdb870e77f}
+      \strng{authorbibnamehash}{2ae12d26d45093179a2272cdb870e77f}
+      \strng{authornamehash}{2ae12d26d45093179a2272cdb870e77f}
+      \strng{authorfullhash}{2ae12d26d45093179a2272cdb870e77f}
+      \strng{authorfullhashraw}{2ae12d26d45093179a2272cdb870e77f}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Journal of Economics and Finance}
+      \field{title}{Social Media Sentiment and the Stock Market}
+      \field{volume}{46}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1007/s12197-022-09575-x
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s12197-022-09575-x
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s12197-022-09575-x
+      \endverb
+    \endentry
+    \entry{Goodfellow-et-al-2016}{book}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=5d2585c11210cf1d4512e6e0a03ec315}{%
+           family={Goodfellow},
+           familyi={G\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ccec1ccd2e1aa86960eb2e872c6b7020}{%
+           family={Courville},
+           familyi={C\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{fullhash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{fullhashraw}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{bibnamehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authorbibnamehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authornamehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authorfullhash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authorfullhashraw}{3ae53fe582e8a815b118d26947eaa326}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Deep Learning}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb http://www.deeplearningbook.org
+      \endverb
+      \verb{url}
+      \verb http://www.deeplearningbook.org
+      \endverb
+    \endentry
+    \entry{Hochreiter1997}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=67eed9a763828f8510ead534591a2d63}{%
+           family={Hochreiter},
+           familyi={H\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=07e9fb186fd9976e6be82e64365dc308}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c955bbc46524c46b7bd1441b444cef54}
+      \strng{fullhash}{c955bbc46524c46b7bd1441b444cef54}
+      \strng{fullhashraw}{c955bbc46524c46b7bd1441b444cef54}
+      \strng{bibnamehash}{c955bbc46524c46b7bd1441b444cef54}
+      \strng{authorbibnamehash}{c955bbc46524c46b7bd1441b444cef54}
+      \strng{authornamehash}{c955bbc46524c46b7bd1441b444cef54}
+      \strng{authorfullhash}{c955bbc46524c46b7bd1441b444cef54}
+      \strng{authorfullhashraw}{c955bbc46524c46b7bd1441b444cef54}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Neural Computation}
+      \field{number}{8}
+      \field{title}{Long Short-Term Memory}
+      \field{volume}{9}
+      \field{year}{1997}
+      \field{pages}{1735\bibrangedash 1780}
+      \range{pages}{46}
+    \endentry
+    \entry{IMF2022}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5a61e97538559e31e7c9ec6aa5fad772}{%
+           family={IMF},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{5a61e97538559e31e7c9ec6aa5fad772}
+      \strng{fullhash}{5a61e97538559e31e7c9ec6aa5fad772}
+      \strng{fullhashraw}{5a61e97538559e31e7c9ec6aa5fad772}
+      \strng{bibnamehash}{5a61e97538559e31e7c9ec6aa5fad772}
+      \strng{authorbibnamehash}{5a61e97538559e31e7c9ec6aa5fad772}
+      \strng{authornamehash}{5a61e97538559e31e7c9ec6aa5fad772}
+      \strng{authorfullhash}{5a61e97538559e31e7c9ec6aa5fad772}
+      \strng{authorfullhashraw}{5a61e97538559e31e7c9ec6aa5fad772}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.imf.org}}
+      \field{title}{World Economic Outlook}
+      \field{year}{2022}
+    \endentry
     \entry{knuth2001art}{book}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=c7986b8f9a74e8a99dd8346c98b35f3e}{%
@@ -279,6 +580,222 @@
       \field{series}{The Art of Computer Programming: Fundamental Algorithms}
       \field{title}{The Art of Computer Programming: Fundamental Algorithms}
       \field{year}{2001}
+    \endentry
+    \entry{Lim2020}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=ae79ceb303df628c5461fb3fda3f01e2}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={Bryan},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=72627f6a0d57c6bcb972628b5d434f0e}{%
+           family={Arik},
+           familyi={A\bibinitperiod},
+           given={Sercan\bibnamedelima O.},
+           giveni={S\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6268f5aa3e045416a89804df1d8bef4d}{%
+           family={Loeff},
+           familyi={L\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f769e681ea0c0a3a6ba5a36ddd18c253}{%
+           family={Pfister},
+           familyi={P\bibinitperiod},
+           given={Tomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{91f35d17764be4acab630afb9a763287}
+      \strng{fullhash}{68bb4d0b7b5946bfa9cc8a435a96efd8}
+      \strng{fullhashraw}{68bb4d0b7b5946bfa9cc8a435a96efd8}
+      \strng{bibnamehash}{68bb4d0b7b5946bfa9cc8a435a96efd8}
+      \strng{authorbibnamehash}{68bb4d0b7b5946bfa9cc8a435a96efd8}
+      \strng{authornamehash}{91f35d17764be4acab630afb9a763287}
+      \strng{authorfullhash}{68bb4d0b7b5946bfa9cc8a435a96efd8}
+      \strng{authorfullhashraw}{68bb4d0b7b5946bfa9cc8a435a96efd8}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{arXiv preprint arXiv:1912.09363}
+      \field{note}{Version 3, submitted on 27 Sep 2020}
+      \field{title}{Temporal Fusion Transformers for Interpretable Multi-Horizon Time Series Forecasting}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.48550/arXiv.1912.09363
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1912.09363
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1912.09363
+      \endverb
+    \endentry
+    \entry{NapitupuluWijaya2013}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1f7999969db9f9eb21ea18763cb0c141}{%
+           family={Napitupulu},
+           familyi={N\bibinitperiod},
+           given={Togar\bibnamedelima Alam},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e43f720c521dfe2cfabb76004360cf29}{%
+           family={Wijaya},
+           familyi={W\bibinitperiod},
+           given={Yohanes\bibnamedelima Budiman},
+           giveni={Y\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{314e592f8e74a1132b282adcb43ed132}
+      \strng{fullhash}{314e592f8e74a1132b282adcb43ed132}
+      \strng{fullhashraw}{314e592f8e74a1132b282adcb43ed132}
+      \strng{bibnamehash}{314e592f8e74a1132b282adcb43ed132}
+      \strng{authorbibnamehash}{314e592f8e74a1132b282adcb43ed132}
+      \strng{authornamehash}{314e592f8e74a1132b282adcb43ed132}
+      \strng{authorfullhash}{314e592f8e74a1132b282adcb43ed132}
+      \strng{authorfullhashraw}{314e592f8e74a1132b282adcb43ed132}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Journal of Theoretical and Applied Information Technology}
+      \field{number}{1}
+      \field{title}{Prediction of Stock Price Using Artificial Neural Network: A Case of Indonesia}
+      \field{volume}{54}
+      \field{year}{2013}
+      \field{pages}{36\bibrangedash 41}
+      \range{pages}{6}
+      \verb{urlraw}
+      \verb https://www.academia.edu/87178436/Prediction_of_Stock_Price_Using_Artificial_Neural_Network_A_Case_of_Indonesia
+      \endverb
+      \verb{url}
+      \verb https://www.academia.edu/87178436/Prediction_of_Stock_Price_Using_Artificial_Neural_Network_A_Case_of_Indonesia
+      \endverb
+    \endentry
+    \entry{OECD2019}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bdbed435a416a918aa494017fda4c7fb}{%
+           family={OECD},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{bdbed435a416a918aa494017fda4c7fb}
+      \strng{fullhash}{bdbed435a416a918aa494017fda4c7fb}
+      \strng{fullhashraw}{bdbed435a416a918aa494017fda4c7fb}
+      \strng{bibnamehash}{bdbed435a416a918aa494017fda4c7fb}
+      \strng{authorbibnamehash}{bdbed435a416a918aa494017fda4c7fb}
+      \strng{authornamehash}{bdbed435a416a918aa494017fda4c7fb}
+      \strng{authorfullhash}{bdbed435a416a918aa494017fda4c7fb}
+      \strng{authorfullhashraw}{bdbed435a416a918aa494017fda4c7fb}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.oecd.org/daf/inv/investment-policy/}}
+      \field{title}{OECD Investment Policy Reviews: Indonesia 2020}
+      \field{year}{2019}
+    \endentry
+    \entry{OJK2007}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=16be62b545667587a0e28b7fe8a59971}{%
+           family={OJK},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{16be62b545667587a0e28b7fe8a59971}
+      \strng{fullhash}{16be62b545667587a0e28b7fe8a59971}
+      \strng{fullhashraw}{16be62b545667587a0e28b7fe8a59971}
+      \strng{bibnamehash}{16be62b545667587a0e28b7fe8a59971}
+      \strng{authorbibnamehash}{16be62b545667587a0e28b7fe8a59971}
+      \strng{authornamehash}{16be62b545667587a0e28b7fe8a59971}
+      \strng{authorfullhash}{16be62b545667587a0e28b7fe8a59971}
+      \strng{authorfullhashraw}{16be62b545667587a0e28b7fe8a59971}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Laporan Resmi OJK, 2007}
+      \field{title}{Laporan Tentang Penggabungan Bursa Efek Jakarta dan Bursa Efek Surabaya}
+      \field{year}{2007}
+    \endentry
+    \entry{Vaswani2017}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=dd8654367c923279fc35fe561acfbf40}{%
+           family={Vaswani},
+           familyi={V\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=abdbd208c433bc733dca7a571a7e912d}{%
+           family={Shazeer},
+           familyi={S\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc812302a6c6b2c755bb485756f4ea59}{%
+           family={Parmar},
+           familyi={P\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=31fd5b4ba57910f2b387b8e2ac465db9}{%
+           family={Uszkoreit},
+           familyi={U\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=39b701b10f089b6b5ccf6776adb4c595}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3e9f181f0d7d081024cf247b38c44a76}{%
+           family={Gomez},
+           familyi={G\bibinitperiod},
+           given={A.N.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3411e83fb4cbfd0ba7b2e049267087bb}{%
+           family={Kaiser},
+           familyi={K\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e373d6f9d11d73cda8e64a41ed65a1ec}{%
+           family={Polosukhin},
+           familyi={P\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8fcf8c16f56e86ff4983fb2c5cad59e1}
+      \strng{fullhash}{be735b36a509d9741e9de0f5b79a4225}
+      \strng{fullhashraw}{be735b36a509d9741e9de0f5b79a4225}
+      \strng{bibnamehash}{be735b36a509d9741e9de0f5b79a4225}
+      \strng{authorbibnamehash}{be735b36a509d9741e9de0f5b79a4225}
+      \strng{authornamehash}{8fcf8c16f56e86ff4983fb2c5cad59e1}
+      \strng{authorfullhash}{be735b36a509d9741e9de0f5b79a4225}
+      \strng{authorfullhashraw}{be735b36a509d9741e9de0f5b79a4225}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Advances in Neural Information Processing Systems}
+      \field{title}{Attention is All You Need}
+      \field{volume}{30}
+      \field{year}{2017}
     \endentry
     \entry{4026885}{inproceedings}{}{}
       \name{author}{1}{}{%
@@ -313,6 +830,106 @@
       \verb 10.1109/SCC.2006.116
       \endverb
       \keyw{Distributed computing;Technological innovation;Web services}
+    \endentry
+    \entry{datasciencecentral2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=eaebb6fc73e54b3f6feb0b1a96f65759}{%
+           family={Vorhies},
+           familyi={V\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{eaebb6fc73e54b3f6feb0b1a96f65759}
+      \strng{fullhash}{eaebb6fc73e54b3f6feb0b1a96f65759}
+      \strng{fullhashraw}{eaebb6fc73e54b3f6feb0b1a96f65759}
+      \strng{bibnamehash}{eaebb6fc73e54b3f6feb0b1a96f65759}
+      \strng{authorbibnamehash}{eaebb6fc73e54b3f6feb0b1a96f65759}
+      \strng{authornamehash}{eaebb6fc73e54b3f6feb0b1a96f65759}
+      \strng{authorfullhash}{eaebb6fc73e54b3f6feb0b1a96f65759}
+      \strng{authorfullhashraw}{eaebb6fc73e54b3f6feb0b1a96f65759}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{CRISP-DM: A Standard Methodology to Ensure a Good Outcome}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.datasciencecentral.com/crisp-dm-a-standard-methodology-to-ensure-a-good-outcome/
+      \endverb
+      \verb{url}
+      \verb https://www.datasciencecentral.com/crisp-dm-a-standard-methodology-to-ensure-a-good-outcome/
+      \endverb
+    \endentry
+    \entry{WorldBank2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=29635cd46ec088bb4bbcc96e22f9b93e}{%
+           family={WB},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{29635cd46ec088bb4bbcc96e22f9b93e}
+      \strng{fullhash}{29635cd46ec088bb4bbcc96e22f9b93e}
+      \strng{fullhashraw}{29635cd46ec088bb4bbcc96e22f9b93e}
+      \strng{bibnamehash}{29635cd46ec088bb4bbcc96e22f9b93e}
+      \strng{authorbibnamehash}{29635cd46ec088bb4bbcc96e22f9b93e}
+      \strng{authornamehash}{29635cd46ec088bb4bbcc96e22f9b93e}
+      \strng{authorfullhash}{29635cd46ec088bb4bbcc96e22f9b93e}
+      \strng{authorfullhashraw}{29635cd46ec088bb4bbcc96e22f9b93e}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.worldbank.org}}
+      \field{title}{Indonesia Economic Prospects}
+      \field{year}{2023}
+    \endentry
+    \entry{Yuliani2017}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=5ce36bdebb25eaf67c3839312249b6e3}{%
+           family={Yuliani},
+           familyi={Y\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=1132e0327b6be7257ca6630d8339b8da}{%
+           family={Isnurhadi},
+           familyi={I\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=352f99bda754c89d7c84fe1f4bd5a359}{%
+           family={Jie},
+           familyi={J\bibinitperiod},
+           given={Ferry},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e0bc17ca723e910d91ef71125b521706}
+      \strng{fullhash}{e0bc17ca723e910d91ef71125b521706}
+      \strng{fullhashraw}{e0bc17ca723e910d91ef71125b521706}
+      \strng{bibnamehash}{e0bc17ca723e910d91ef71125b521706}
+      \strng{authorbibnamehash}{e0bc17ca723e910d91ef71125b521706}
+      \strng{authornamehash}{e0bc17ca723e910d91ef71125b521706}
+      \strng{authorfullhash}{e0bc17ca723e910d91ef71125b521706}
+      \strng{authorfullhashraw}{e0bc17ca723e910d91ef71125b521706}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Investment Management and Financial Innovations}
+      \field{number}{2}
+      \field{title}{Risk Perception and Psychological Behavior of Investors in Emerging Market: Indonesian Stock Exchange}
+      \field{volume}{14}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.21511/imfi.14(2-2).2017.06
+      \endverb
+      \verb{urlraw}
+      \verb https://www.businessperspectives.org/index.php/journals/investment-management-and-financial-innovations/issue-2-cont-12/risk-perception-and-psychological-behavior-of-investors-in-emerging-market-indonesian-stock-exchange
+      \endverb
+      \verb{url}
+      \verb https://www.businessperspectives.org/index.php/journals/investment-management-and-financial-innovations/issue-2-cont-12/risk-perception-and-psychological-behavior-of-investors-in-emerging-market-indonesian-stock-exchange
+      \endverb
     \endentry
   \enddatalist
 \endrefsection
