@@ -1,16 +1,20 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is '/home/jon/Coding/final-project-sti/build/thesis.blg'
-[57] biber:340> INFO - === Sat Dec 14, 2024, 18:15:08
-[71] Biber.pm:420> INFO - Reading '/home/jon/Coding/final-project-sti/build/thesis.bcf'
-[182] Biber.pm:994> INFO - Found 23 citekeys in bib section 0
-[192] Biber.pm:4463> INFO - Processing section 0
-[199] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
-[200] bibtex.pm:1713> INFO - LaTeX decoding ...
-[219] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[390] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'variable = shifted' with 'variable = non-ignorable'
-[391] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[391] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'level = 4' with 'level = 2'
-[391] Biber.pm:4283> INFO - Sorting list 'cms/global//global/global/global' of type 'entry' with template 'cms' and locale 'indonesian'
-[391] Biber.pm:4289> INFO - No sort tailoring available for locale 'indonesian'
-[411] bbl.pm:676> INFO - Writing '/home/jon/Coding/final-project-sti/build/thesis.bbl' with encoding 'UTF-8'
-[420] bbl.pm:779> INFO - Output to /home/jon/Coding/final-project-sti/build/thesis.bbl
+[60] biber:340> INFO - === Sat Dec 21, 2024, 14:58:38
+[75] Biber.pm:420> INFO - Reading '/home/jon/Coding/final-project-sti/build/thesis.bcf'
+[196] Biber.pm:994> INFO - Found 37 citekeys in bib section 0
+[206] Biber.pm:4463> INFO - Processing section 0
+[214] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
+[216] bibtex.pm:1713> INFO - LaTeX decoding ...
+[248] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[509] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[509] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'level = 4' with 'level = 2'
+[509] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'variable = shifted' with 'variable = non-ignorable'
+[509] Biber.pm:4283> INFO - Sorting list 'cms/global//global/global/global' of type 'entry' with template 'cms' and locale 'indonesian'
+[509] Biber.pm:4289> INFO - No sort tailoring available for locale 'indonesian'
+[540] bbl.pm:676> INFO - Writing '/home/jon/Coding/final-project-sti/build/thesis.bbl' with encoding 'UTF-8'
+[554] bbl.pm:779> INFO - Output to /home/jon/Coding/final-project-sti/build/thesis.bbl
+[555] Biber.pm:131> WARN - Duplicate entry key: 'BloomEtAl2019' in file 'references.bib', skipping ...
+[555] Biber.pm:131> WARN - legacy month field 'Nov' in entry 'ishwarya2024rnn' is not an integer - this will probably not sort properly.
+[555] Biber.pm:131> WARN - I didn't find a database entry for 'Neal2005' (section 0)
+[555] Biber.pm:133> INFO - WARNINGS: 3
