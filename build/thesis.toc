@@ -15,6 +15,8 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
 \contentsline {chapter}{\numberline {I}Pendahuluan}{1}{chapter.1}%
 \contentsline {section}{\numberline {I.1}Latar Belakang}{1}{section.1.1}%
 \babel@toc {english}{}\relax 
@@ -121,44 +123,38 @@
 \contentsline {subsubsection}{\numberline {II.5.1.1}Vanilla RNN}{18}{subsubsection.2.5.1.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsubsection}{\numberline {II.5.1.2}Gated RNN}{20}{subsubsection.2.5.1.2}%
+\contentsline {subsubsection}{\numberline {II.5.1.2}Gated RNN}{21}{subsubsection.2.5.1.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsubsection}{\numberline {II.5.1.3}Varian RNN lainnya }{21}{subsubsection.2.5.1.3}%
-\contentsline {subsection}{\numberline {II.5.2}Transformer}{21}{subsection.2.5.2}%
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\contentsline {subsubsection}{\numberline {II.5.2.1}Positional Encoding}{22}{subsubsection.2.5.2.1}%
-\contentsline {subsubsection}{\numberline {II.5.2.2}Attention Mechanism}{22}{subsubsection.2.5.2.2}%
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\contentsline {subsubsection}{\numberline {II.5.2.3}Core Transformer Architecture}{23}{subsubsection.2.5.2.3}%
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\contentsline {subsubsection}{\numberline {II.5.2.4}Extended Transformer}{24}{subsubsection.2.5.2.4}%
-\contentsline {subsubsection}{\numberline {II.5.2.5}Temporal Fusion Transformer}{24}{subsubsection.2.5.2.5}%
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\contentsline {section}{\numberline {II.6}Evaluation Metrics}{25}{section.2.6}%
-\contentsline {section}{\numberline {II.7}Penelitian Terkait}{25}{section.2.7}%
+\contentsline {subparagraph}{1. Forget Gate (\(\mathbf {f}_t\))}{22}{figure.2.5.6}%
+\contentsline {subparagraph}{2. Input Gate (\(\mathbf {i}_t\)) \& Candidate Cell State (\(\tilde {\mathbf {C}}_t\))}{22}{figure.2.5.6}%
+\contentsline {subparagraph}{3. Update Cell State (\(\mathbf {C}_t\))}{23}{Item.26}%
+\contentsline {subparagraph}{4. Output Gate (\(\mathbf {o}_t\)) \& Hidden State (\(\mathbf {h}_t\))}{23}{Item.26}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
+\contentsline {subsubsection}{\numberline {II.5.1.3}Varian RNN lainnya }{25}{subsubsection.2.5.1.3}%
+\contentsline {subsection}{\numberline {II.5.2}Transformer}{25}{subsection.2.5.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsubsection}{\numberline {II.5.2.1}Positional Encoding}{26}{subsubsection.2.5.2.1}%
+\contentsline {subsubsection}{\numberline {II.5.2.2}Attention Mechanism}{26}{subsubsection.2.5.2.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
+\contentsline {subsubsection}{\numberline {II.5.2.3}Core Transformer Architecture}{26}{subsubsection.2.5.2.3}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
+\contentsline {subsubsection}{\numberline {II.5.2.4}Extended Transformer}{27}{subsubsection.2.5.2.4}%
+\contentsline {subsubsection}{\numberline {II.5.2.5}Temporal Fusion Transformer}{28}{subsubsection.2.5.2.5}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {II.6}Evaluation Metrics}{28}{section.2.6}%
+\contentsline {section}{\numberline {II.7}Penelitian Terkait}{28}{section.2.7}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -217,6 +213,22 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {part}{Lampiran}{29}{chapter*.5}%
-\contentsline {chapter}{\numberline {A}Instrumen Pengujian}{31}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Rincian Kasus Uji}{32}{appendix.B}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {part}{Lampiran}{33}{chapter*.5}%
+\contentsline {chapter}{\numberline {A}Instrumen Pengujian}{35}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Rincian Kasus Uji}{36}{appendix.B}%

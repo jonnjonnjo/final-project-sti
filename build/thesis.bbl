@@ -977,6 +977,38 @@
       \field{title}{Laporan Tentang Penggabungan Bursa Efek Jakarta dan Bursa Efek Surabaya}
       \field{year}{2007}
     \endentry
+    \entry{olah2015lstm}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dea937fb216bfbba25c1bfa1f36a63fe}{%
+           family={Olah},
+           familyi={O\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dea937fb216bfbba25c1bfa1f36a63fe}
+      \strng{fullhash}{dea937fb216bfbba25c1bfa1f36a63fe}
+      \strng{fullhashraw}{dea937fb216bfbba25c1bfa1f36a63fe}
+      \strng{bibnamehash}{dea937fb216bfbba25c1bfa1f36a63fe}
+      \strng{authorbibnamehash}{dea937fb216bfbba25c1bfa1f36a63fe}
+      \strng{authornamehash}{dea937fb216bfbba25c1bfa1f36a63fe}
+      \strng{authorfullhash}{dea937fb216bfbba25c1bfa1f36a63fe}
+      \strng{authorfullhashraw}{dea937fb216bfbba25c1bfa1f36a63fe}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Understanding LSTM Networks}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+      \endverb
+      \verb{url}
+      \verb https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+      \endverb
+    \endentry
     \entry{orr2021biology}{book}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=b5efd1471f14b159daa262418e7aaf1b}{%

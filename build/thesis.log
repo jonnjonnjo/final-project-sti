@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.20)  21 DEC 2024 14:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.20)  21 DEC 2024 17:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -962,7 +962,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 BAB I.
 Package newfloat Info: Setting Plan B file extension to `lof'... on input line 
 1.
-<resources/chapter-1-1.1-capitalmarketinvestor.png, id=180, 770.88pt x 385.44pt
+<resources/chapter-1-1.1-capitalmarketinvestor.png, id=184, 770.88pt x 385.44pt
 >
 File: resources/chapter-1-1.1-capitalmarketinvestor.png Graphic file (type png)
 
@@ -975,7 +975,7 @@ d on input line 16.
 [1
 
 ]
-<resources/chapter-1-1.1-numberofcompanies.png, id=190, 770.88pt x 385.44pt>
+<resources/chapter-1-1.1-numberofcompanies.png, id=194, 770.88pt x 385.44pt>
 File: resources/chapter-1-1.1-numberofcompanies.png Graphic file (type png)
 <use resources/chapter-1-1.1-numberofcompanies.png>
 Package pdftex.def Info: resources/chapter-1-1.1-numberofcompanies.png  used on
@@ -1001,7 +1001,7 @@ vi-ce \T1/lmr/m/n/12 Lap-top Le-no-vo Le-gion 5 15IMH05
 
 
 [5]
-<resources/chapter-1-1.5-crispdm.png, id=252, 480.79625pt x 481.8pt>
+<resources/chapter-1-1.5-crispdm.png, id=256, 480.79625pt x 481.8pt>
 File: resources/chapter-1-1.5-crispdm.png Graphic file (type png)
 <use resources/chapter-1-1.5-crispdm.png>
 Package pdftex.def Info: resources/chapter-1-1.5-crispdm.png  used on input lin
@@ -1035,7 +1035,7 @@ Package biblatex-chicago Warning: Empty Ibidem citation on input line 25.
 [12]
 
 [13]
-<resources/chapter-2-biological-neuron.png, id=332, 523.9575pt x 451.6875pt>
+<resources/chapter-2-biological-neuron.png, id=336, 523.9575pt x 451.6875pt>
 File: resources/chapter-2-biological-neuron.png Graphic file (type png)
 <use resources/chapter-2-biological-neuron.png>
 Package pdftex.def Info: resources/chapter-2-biological-neuron.png  used on inp
@@ -1044,7 +1044,7 @@ ut line 51.
 
 
 [14 <./resources/chapter-2-biological-neuron.png>]
-<resources/chapter-2-neural-network-graph.png, id=342, 853.1875pt x 499.8675pt>
+<resources/chapter-2-neural-network-graph.png, id=346, 853.1875pt x 499.8675pt>
 
 File: resources/chapter-2-neural-network-graph.png Graphic file (type png)
 <use resources/chapter-2-neural-network-graph.png>
@@ -1055,7 +1055,7 @@ input line 62.
 
 [15{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc} <./res
 ources/chapter-2-neural-network-graph.png>]
-<resources/chapter-2-nonlinear-neuron.png, id=353, 369.38pt x 248.93pt>
+<resources/chapter-2-nonlinear-neuron.png, id=357, 369.38pt x 248.93pt>
 File: resources/chapter-2-nonlinear-neuron.png Graphic file (type png)
 <use resources/chapter-2-nonlinear-neuron.png>
 Package pdftex.def Info: resources/chapter-2-nonlinear-neuron.png  used on inpu
@@ -1063,7 +1063,7 @@ t line 71.
 (pdftex.def)             Requested size: 330.05322pt x 222.4282pt.
 Package hyperref Info: bookmark level for unknown equationfloat defaults to 0 o
 n input line 80.
-<resources/chapter-2-non-linearity-data.png, id=358, 537.00626pt x 243.91125pt>
+<resources/chapter-2-non-linearity-data.png, id=362, 537.00626pt x 243.91125pt>
 
 File: resources/chapter-2-non-linearity-data.png Graphic file (type png)
 <use resources/chapter-2-non-linearity-data.png>
@@ -1078,7 +1078,7 @@ put line 103.
 ar-neuron.png>]
 
 [17 <./resources/chapter-2-non-linearity-data.png>]
-<resources/chapter-2-recurrentNN.png, id=380, 1405.25pt x 515.9275pt>
+<resources/chapter-2-recurrentNN.png, id=384, 1405.25pt x 515.9275pt>
 File: resources/chapter-2-recurrentNN.png Graphic file (type png)
 <use resources/chapter-2-recurrentNN.png>
 Package pdftex.def Info: resources/chapter-2-recurrentNN.png  used on input lin
@@ -1097,27 +1097,32 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 [19{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
 
 [20]
+<resources/chapter-2-lstm-cell.png, id=424, 806.89455pt x 303.17265pt>
+File: resources/chapter-2-lstm-cell.png Graphic file (type png)
+<use resources/chapter-2-lstm-cell.png>
+Package pdftex.def Info: resources/chapter-2-lstm-cell.png  used on input line 
+202.
+(pdftex.def)             Requested size: 330.05322pt x 124.01015pt.
+
 
 [21]
 
-[22]
+[22 <./resources/chapter-2-lstm-cell.png>]
 
-[23])
-
-Package blindtext Warning: indonesian not defined, using English instead.
-(blindtext)                 on input line 73.
-
-
+[23]
 
 [24]
 
 [25]
 
-[26
+[26]
 
-]
+[27])
 
-[27]
+Package blindtext Warning: indonesian not defined, using English instead.
+(blindtext)                 on input line 73.
+
+
 
 [28]
 
@@ -1125,17 +1130,27 @@ Package blindtext Warning: indonesian not defined, using English instead.
 
 [30
 
+]
+
+[31]
+
+[32]
+
+[33]
+
+[34
+
 ] (./chapters/appendix-1.tex
 Lampiran A.
 ) (./chapters/appendix-2.tex
 
-[31
+[35
 
 ]
 Lampiran B.
 )
 
-[32
+[36
 
 ] (/home/jon/Coding/final-project-sti/build/thesis.aux)
  ***********
@@ -1156,10 +1171,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23419 strings out of 473362
- 421882 string characters out of 5720989
- 1622290 words of memory out of 5000000
- 46058 multiletter control sequences out of 15000+600000
+ 23452 strings out of 473362
+ 422528 string characters out of 5720989
+ 1626420 words of memory out of 5000000
+ 46073 multiletter control sequences out of 15000+600000
  621922 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,11n,98p,1549b,4396s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1178,11 +1193,11 @@ e1/public/lm/lmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/
 lm/lmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pf
 b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm1
 0.pfb>
-Output written on /home/jon/Coding/final-project-sti/build/thesis.pdf (38 pages
-, 913432 bytes).
+Output written on /home/jon/Coding/final-project-sti/build/thesis.pdf (42 pages
+, 1113007 bytes).
 PDF statistics:
- 653 PDF objects out of 1000 (max. 8388607)
- 553 compressed objects within 6 object streams
- 155 named destinations out of 1000 (max. 500000)
- 198 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 695 PDF objects out of 1000 (max. 8388607)
+ 589 compressed objects within 6 object streams
+ 173 named destinations out of 1000 (max. 500000)
+ 203 words of extra memory for PDF output out of 10000 (max. 10000000)
 

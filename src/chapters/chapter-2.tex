@@ -187,8 +187,125 @@ Vanilla RNN tidak efektif dalam hal komputasi karena prosesnya tidak dapat berja
 
 
 
-    \subsubsection{Gated RNN}
-Gated RNN seperti LSTM (\textit{Long Short-Term Memory}) \parencite{Hochreiter1997} dan GRU (\textit{Gated Recurrent Unit}) \parencite{Cho2014} menggunakan gerbang (gate) untuk mengendalikan aliran informasi. LSTM sebagai contoh memiliki tiga gerbang: input gate ($i_t$), forget gate ($f_t$), dan output gate ($o_t$), serta cell state ($c_t$) yang berfungsi sebagai memori jangka panjang.
+\subsubsection{Gated RNN}
+
+Salah satu solusi untuk mengatasi permasalahan \textit{vanishing} dan \textit{exploding gradient} pada \textit{Vanilla RNN} adalah dengan menambahkan mekanisme \textbf{\textit{gating}} ke dalam arsitektur RNN. Arsitektur RNN dengan mekanisme \textit{gating} ini sering disebut sebagai \textit{Gated RNN}. Dua jenis Gated RNN yang paling populer adalah \textit{Long Short-Term Memory (LSTM)} dan \textit{Gated Recurrent Unit (GRU)}.
+
+Ide utama dari Gated RNN adalah menambahkan “gerbang-gerbang” (\textit{gates}) yang secara eksplisit mengatur aliran informasi di dalam \textit{hidden state} sehingga model dapat melakukan \textit{retaining} informasi penting lebih pada \textit{timepoint} yang lebih lawas dan membuang informasi yang dianggap tidak relevan. Pada LSTM, terdapat 3 jenis gerbang yaitu \textit{forget gate, input gate} dan \textit{output gate}. Pada GRU, beberapa gerbang di LSTM digabungkan sehingga memiliki arsitektur yang lebih simpel.
+
+\begin{enumerate}
+\item LSTM (\textit{Long Short-Term Memory}) \\
+LSTM dikemukakan pertama kali oleh \parencite{Hochreiter1997} \textit{long-term dependencies} yang dialami oleh \textit{Vanilla RNN}. LSTM menambahkan beberapa komponen \textbf{\textit{gates}} dan sebuah \textbf{\textit{cell state}} (\(\mathbf{C}_t\)) yang berfungsi sebagai “jalur informasi” jangka panjang. Tujuannya adalah untuk mencegah informasi penting mengalami \textit{vanishing gradient} ketika dilatih dengan \textit{Backpropagation Through Time (BPTT)} pada sekuens yang panjang. Arsitektur tersebut dapat terlihat pada gambar \ref{fig:diagram-lstm}.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{resources/chapter-2-lstm-cell.png}
+        \caption{ Diagram LSTM \parencite{olah2015lstm}}  
+        \label{fig:diagram-lstm}   
+    \end{figure}
+
+LSTM mengatur aliran informasi melalui tiga jenis gerbang utama (\textit{forget gate}, \textit{input gate}, \textit{output gate}) dan satu \textit{cell state}. Pada setiap langkah waktu \(t\), kita akan menyimpan :
+\begin{itemize}
+    \item \(\mathbf{x}_t\) : \textit{input} pada waktu \(t\).
+    \item \(\mathbf{h}_{t-1}\) : \textit{hidden state} pada waktu \(t-1\).
+    \item \(\mathbf{C}_{t-1}\) : \textit{cell state} pada waktu \(t-1\).
+\end{itemize}
+
+Untuk setiap langkah waktu di setiap iterasi, kita akan melakukan komputasi untuk setiap gerbang ini. 
+\subparagraph{1. Forget Gate (\(\mathbf{f}_t\))}
+Gerbang ini memutuskan seberapa banyak memori dalam \(\mathbf{C}_{t-1}\) yang perlud dibuang.  
+\[
+\mathbf{f}_t = \sigma\Bigl(W_f \bigl[\mathbf{h}_{t-1},\, \mathbf{x}_t\bigr] + \mathbf{b}_f\Bigr)
+\]
+\(\sigma(\cdot)\) adalah \textit{sigmoid function} yang memetakan nilai \textit{input} ke rentang \([0,1]\). Nilai 1 berarti tetap mempertahankan memori dan 0 berarti buang sepenuhnya.
+
+\subparagraph{2. Input Gate (\(\mathbf{i}_t\)) \& Candidate Cell State (\(\tilde{\mathbf{C}}_t\))}
+\begin{enumerate}
+    \item \(\mathbf{i}_t\) (\textit{input gate}) menentukan seberapa besar memori baru yang akan disimpan ke dalam \(\mathbf{C}_t\).
+    \[
+    \mathbf{i}_t = \sigma\Bigl(W_i \bigl[\mathbf{h}_{t-1},\, \mathbf{x}_t\bigr] + \mathbf{b}_i\Bigr)
+    \]
+    \item \(\tilde{\mathbf{C}}_t\) (\textit{candidate cell state}) adalah kandidat memori baru yang akan ditambahkan. Fungsi \(\tanh\) akan digunakan agar nilai yang dihasilkan berada di rentang \([-1,1]\).
+    \[
+    \tilde{\mathbf{C}}_t = \tanh\Bigl(W_C \bigl[\mathbf{h}_{t-1},\, \mathbf{x}_t\bigr] + \mathbf{b}_C\Bigr)
+    \]
+\end{enumerate}
+
+\noindent
+Kedua komponen ini bersama-sama menentukan informasi apa yang akan ditambahkan ke \(\mathbf{C}_t\).
+
+\subparagraph{3. Update Cell State (\(\mathbf{C}_t\))} 
+
+Setelah \(\mathbf{f}_t\) memutuskan seberapa banyak informasi lama dipertahankan, dan \(\mathbf{i}_t\) menentukan seberapa banyak memori baru (melalui \(\tilde{\mathbf{C}}_t\)) yang ditambahkan, \(\mathbf{C}_t\) diperbarui dengan:
+\[
+\mathbf{C}_t \;=\; 
+\mathbf{f}_t \,\odot\, \mathbf{C}_{t-1}
+\;+\;
+\mathbf{i}_t \,\odot\, \tilde{\mathbf{C}}_t
+\]
+Simbol \(\odot\) menyatakan perkalian \textit{element-wise} (perkalian \textit{one-on-one} antar komponen vektor). Proses ini memungkinkan LSTM mempertahankan sebagian memori dari \(\mathbf{C}_{t-1}\), sekaligus menambahkan informasi baru dari \(\tilde{\mathbf{C}}_t\).
+
+\subparagraph{4. Output Gate (\(\mathbf{o}_t\)) \& Hidden State (\(\mathbf{h}_t\))}
+\begin{enumerate}
+    \item \textbf{Output Gate} (\(\mathbf{o}_t\)) memutuskan seberapa banyak informasi (yang tersimpan di \(\mathbf{C}_t\)) akan dipropagasikan ke \(\mathbf{h}_t\).
+    \[
+    \mathbf{o}_t = \sigma\Bigl(W_o \bigl[\mathbf{h}_{t-1},\, \mathbf{x}_t\bigr] + \mathbf{b}_o\Bigr)
+    \]
+    \item \textbf{Hidden State} (\(\mathbf{h}_t\)) kemudian dihitung dengan memfilter \(\mathbf{C}_t\) melalui \(\tanh\), dan kemudian dikalikan dengan \(\mathbf{o}_t\):
+    \[
+    \mathbf{h}_t \;=\; \mathbf{o}_t \,\odot\, \tanh\bigl(\mathbf{C}_t\bigr)
+    \]
+\end{enumerate}
+
+\begin{enumerate}
+    \item \textbf{\textit{Cell State} (\(\mathbf{C}_t\))}:  
+    Aliran informasi jangka panjang yang mengalir di sepanjang urutan waktu. LSTM memungkinkan informasi mengalir tanpa banyak modifikasi dengan mekanisme gerbang.
+
+    \item \textbf{\textit{Forget Gate} (\(\mathbf{f}_t\))}:  
+    Menentukan informasi mana yang akan dilupakan dari \(\mathbf{C}_{t-1}\).  
+    \[
+    \mathbf{f}_t = \sigma\bigl(W_f [\mathbf{h}_{t-1}, \mathbf{x}_t] + \mathbf{b}_f\bigr)
+    \] 
+    \(\sigma\) adalah \textit{sigmoid function} yang \textit{output}-nya berada di \([0,1]\). Nilai 0 berarti buang sedangkan 1 berarti pertahankan.
+
+    \item \textbf{\textit{Input Gate} (\(\mathbf{i}_t\))}:  
+    Mengatur seberapa besar informasi baru yang akan disimpan ke dalam \(\mathbf{C}_t\).  
+    \[
+    \mathbf{i}_t = \sigma\bigl(W_i [\mathbf{h}_{t-1}, \mathbf{x}_t] + \mathbf{b}_i\bigr)
+    \]
+
+    \item \textbf{\textit{Candidate Cell State} (\(\tilde{\mathbf{C}}_t\))}:  
+    Kandidat memori baru yang akan ditambahkan ke dalam \(\mathbf{C}_t\).  
+    \[
+    \tilde{\mathbf{C}}_t = \tanh\bigl(W_C [\mathbf{h}_{t-1}, \mathbf{x}_t] + \mathbf{b}_C\bigr)
+    \]
+
+    \item \textbf{\textit{Update Cell State}}:  
+    Setelah memutuskan seberapa banyak informasi yang dibuang dan seberapa banyak yang ditambahkan  \(\mathbf{C}_t\) diupdate dengan:
+    \[
+    \mathbf{C}_t = \mathbf{f}_t \odot \mathbf{C}_{t-1} + \mathbf{i}_t \odot \tilde{\mathbf{C}}_t
+    \]
+    Di sini, \(\odot\) menandakan operasi perkalian \textit{elementwise}.
+
+    \item \textbf{\textit{Output Gate} (\(\mathbf{o}_t\))}:
+    Mengatur seberapa banyak informasi pada \(\mathbf{C}_t\) yang diambil untuk menghasilkan \(\mathbf{h}_t\).  
+    \[
+    \mathbf{o}_t = \sigma\bigl(W_o [\mathbf{h}_{t-1}, \mathbf{x}_t] + \mathbf{b}_o\bigr)
+    \]
+
+    \item \textbf{\textit{Hidden State} (\(\mathbf{h}_t\))}:  
+    Nilai \(\mathbf{h}_t\) dihitung dengan “menyaring” \(\mathbf{C}_t\) melalui \(\tanh\) dan dikalikan dengan \(\mathbf{o}_t\):
+    \[
+    \mathbf{h}_t = \mathbf{o}_t \odot \tanh(\mathbf{C}_t)
+    \]
+\end{enumerate}
+
+
+
+
+\end{enumerate}
+
+
 
 \begin{center}
 \[
