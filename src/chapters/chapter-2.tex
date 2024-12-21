@@ -300,28 +300,52 @@ Simbol \(\odot\) menyatakan perkalian \textit{element-wise} (perkalian \textit{o
     \]
 \end{enumerate}
 
+  
+\textit{Gated Recurrent Unit (GRU)} pertama kali diperkenalkan oleh \textcite{cho2014learning} dan dapat dianggap sebagai variasi \textit{gating} yang lebih sederhanadari LSTM. GRU menggabungkan beberapa gerbang LSTM menjadi satu sehingga arsitekturnya lebih ringkas dan memiliki jumlah parameter yang lebih sedikit dibandingkan LSTM. Meskipun demikian, GRU tetap mampu mengatasi masalah \textit{vanishing gradient} dan \textit{exploding gradient} dengan lebih baik daripada \textit{Vanilla RNN}. Arsitektur dari GRU dapat dilihat pada gambar \ref{fig:diagram-gru}.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{resources/chapter-2-architecture-GRU.png}
+    \caption{Diagram Sel GRU \parencite{bibi2020gru}}
+    \label{fig:diagram-gru}
+\end{figure}
 
+Pada GRU, kita memiliki dua gerbang utama, yaitu \textbf{\textit{update gate}} (\(\mathbf{z}_t\)) dan \textbf{\textit{reset gate}} (\(\mathbf{r}_t\)). Secara umum, komputasi pada waktu \(t\) dapat dijabarkan sebagai berikut:
 
+\begin{enumerate}
+    \item \textbf{\textit{Update Gate} (\(\mathbf{z}_t\))} \\
+    Gerbang ini berfungsi mengontrol seberapa besar memori lama \((\mathbf{h}_{t-1})\) akan tetap dipertahankan dan seberapa besar memori baru akan ditambahkan:
+    \[
+    \mathbf{z}_t = \sigma\Bigl(W_z [\mathbf{h}_{t-1}, \mathbf{x}_t] + \mathbf{b}_z\Bigr)
+    \]
+    Nilai \(\sigma(\cdot)\) dalam rentang \([0,1]\). Semakin tinggi \(\mathbf{z}_t\), semakin besar kontribusi memori baru (\(\tilde{\mathbf{h}}_t\)) terhadap pembentukan \(\mathbf{h}_t\).
+
+    \item \textbf{\textit{Reset Gate} (\(\mathbf{r}_t\))} \\
+    Gerbang ini menentukan seberapa besar memori lama \((\mathbf{h}_{t-1})\) akan dibang sebelum dikombinasikan dengan \textit{input} baru \((\mathbf{x}_t)\):
+    \[
+    \mathbf{r}_t = \sigma\Bigl(W_r [\mathbf{h}_{t-1}, \mathbf{x}_t] + \mathbf{b}_r\Bigr)
+    \]
+    Jika \(\mathbf{r}_t\) bernilai mendekati 0, maka mayoritas memori lama akan dilupakan. Jika bernilai mendekati 1, maka mayoritas memori lama akan banyak dipertahankan.
+
+    \item \textbf{\textit{Candidate Hidden State} (\(\tilde{\mathbf{h}}_t\))} \\
+    Setelah diperoleh \(\mathbf{r}_t\), model akan menghitung \textit{candidate hidden state} \(\tilde{\mathbf{h}}_t\) dengan:
+    \[
+    \tilde{\mathbf{h}}_t = \tanh\Bigl(W_h [(\mathbf{r}_t \odot \mathbf{h}_{t-1}),\, \mathbf{x}_t] + \mathbf{b}_h\Bigr)
+    \]
+    Di sini, \(\mathbf{r}_t \odot \mathbf{h}_{t-1}\) menunjukkan bahwa memori lama \(\mathbf{h}_{t-1}\) terlebih dahulu difilter oleh \(\mathbf{r}_t\) sebelum dicampurkan dengan \textit{input} baru \(\mathbf{x}_t\).
+
+    \item \textbf{\textit{Hidden State} (\(\mathbf{h}_t\))} \\
+    Nilai \(\mathbf{h}_t\) diperbarui dengan memadukan \(\mathbf{h}_{t-1}\) dan \(\tilde{\mathbf{h}}_t\) sesuai seberapa besar \(\mathbf{z}_t\) memperbolehkan memori baru untuk menggantikan memori lama:
+    \[
+    \mathbf{h}_t = (1 - \mathbf{z}_t) \odot \mathbf{h}_{t-1} \;+\; \mathbf{z}_t \odot \tilde{\mathbf{h}}_t
+    \]
+    Apabila \(\mathbf{z}_t\) bernilai besar (mendekati 1), lebih banyak informasi baru \(\tilde{\mathbf{h}}_t\) yang akan berkontribusi. Sebaliknya, jika \(\mathbf{z}_t\) bernilai kecil (mendekati 0), memori lama \(\mathbf{h}_{t-1}\) akan lebih dominan dipertahankan.
 \end{enumerate}
 
 
+GRU memiliki arsitektur yang lebih sederhana dibandingkan LSTM karena hanya menggunakan dua gerbang, yaitu \textit{update} dan \textit{reset}, sehingga jumlah parameternya lebih sedikit. Hal ini membuat waktu \textit{training} dan memori yang dibutuhkan menjadi lebih efisien tanpa mengurangi kemampuan GRU untuk mengatasi masalah \textit{vanishing gradient}. GRU tidak memiliki \textit{cell state} terpisah dan hanya mengandalkan \textit{hidden state} Tunggal sehingga dalam beberapa konteks tertentu, LSTM dengan \textit{cell state}khusus dapat menyimpan informasi lebih stabil. Selain itu, GRU,seperti halnya LSTM,masih memproses data secara berurutan sehingga belum mampu menyaingi model berbasis \textit{attention} (misalnya \textit{Transformers}) dalam hal paralelisasi. Performa GRU juga sangat bergantung pada konfigurasi \textit{hyperparameter} (\textit{learning rate}, jumlah \textit{hidden units}, dan sebagainya).
+\end{enumerate}
 
-\begin{center}
-\[
-\mathbf{i}_t = \sigma(\mathbf{W}_{ix}\mathbf{x}_t + \mathbf{W}_{ih}\mathbf{h}_{t-1} + \mathbf{b}_i), \quad
-\mathbf{f}_t = \sigma(\mathbf{W}_{fx}\mathbf{x}_t + \mathbf{W}_{fh}\mathbf{h}_{t-1} + \mathbf{b}_f)
-\]
-\[
-\mathbf{o}_t = \sigma(\mathbf{W}_{ox}\mathbf{x}_t + \mathbf{W}_{oh}\mathbf{h}_{t-1} + \mathbf{b}_o), \quad
-\mathbf{\tilde{c}}_t = \tanh(\mathbf{W}_{cx}\mathbf{x}_t + \mathbf{W}_{ch}\mathbf{h}_{t-1} + \mathbf{b}_c)
-\]
-\[\mathbf{c}_t = \mathbf{f}_t \odot \mathbf{c}_{t-1} + \mathbf{i}_t \odot \mathbf{\tilde{c}}_t\]
-\[
-\mathbf{h}_t = \mathbf{o}_t \odot \tanh(\mathbf{c}_t)
-\]
-\end{center}
-di mana $\sigma$ adalah sigmoid dan $\odot$ adalah perkalian elemen-wise. Struktur ini membantu LSTM mempertahankan informasi penting lebih lama sehingga membuat LSTM lebih bagus untuk pemodelan \textit{time series} yang lebih kompleks. GRU menyederhanakan mekanisme ini dengan hanya menyediakan dua gerbang (update dan reset).
 
 \subsubsection{Varian RNN lainnya }
 Selain LSTM dan GRU, telah dikembangkan juga beberapa varian lainnya:
@@ -331,62 +355,99 @@ Melakukan \textit{processing input} dari dua arah (depan-belakang).
 \item \textbf{Stacked RNN} \\
 Menggunakan beberapa lapisan RNN sehingga model dapat mempelajari representasi yang lebih kompleks
 \end{enumerate}
-  \subsection{Transformer}
-Transformer adalah arsitektur yang menghilangkan ketergantungan pada koneksi berulang (\textit{recurrent connections}) seperti pada RNN. Dengan menggunakan mekanisme perhatian (\textit{attention}) sebagai komponen utama, Transformer dapat memodelkan hubungan antar elemen sekuens tanpa harus memprosesnya secara serial, sehingga pelatihan dapat diparalelisasi \parencite{Vaswani2017}.
 
-Inti dari Transformer adalah mekanisme \textit{attention} yang memungkinkan model untuk “memperhatikan” bagian \textit{input} yang paling relevan ketika memproses sebuah token tertentu. Hal ini memudahkan penangkapan hubungan jangka panjang dalam data sekuensial tanpa mengalami masalah \textit{vanishing gradient}.
 
-\subsubsection{Positional Encoding}
-Untuk memberikan informasi posisi token dalam sekuens, Transformer menggunakan \textit{positional encoding}, yang menambahkan embedding posisi ke embedding token. Pendekatan ini memungkinkan model untuk membedakan posisi relatif antar token, sehingga hubungan temporal atau urutan data dapat ditangkap.
-
-\begin{center}
-\[
-\text{PE}_{(pos,2i)} = \sin\left(\frac{pos}{10000^{2i/d_{model}}}\right), \quad
-\text{PE}_{(pos,2i+1)} = \cos\left(\frac{pos}{10000^{2i/d_{model}}}\right)
-\]
-\end{center}
-
-di mana $pos$ adalah indeks posisi token dalam sekuens dan $i$ mengindeks dimensi embedding. Rumus ini menghasilkan pola sinusoidal yang unik untuk setiap posisi, memungkinkan model mempelajari makna posisi relatif secara implisit.
-
-    \subsubsection{Attention Mechanism}
-Mekanisme perhatian \parencite{Bahdanau2015,Luong2015} dapat dipandang sebagai fungsi yang memetakan query (Q) dan pasangan key-value (K, V) menjadi suatu keluaran. Bentuk paling umum adalah \textit{Scaled Dot-Product Attention}:
-
-\begin{center}
-\[
-\text{Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right)V
-\]
-\end{center}
-di mana \( d_k \) adalah dimensi key. Fungsi ini memberikan bobot lebih besar pada elemen input yang relevan sesuai dengan query yang diberikan. Dengan multi-head attention, beberapa set (Q, K, V) digunakan secara paralel, sehingga model dapat belajar jenis relasi yang berbeda pada waktu yang sama.
+\subsection{Transformer}
+Transformer merupakan arsitektur pemrosesan sekuensial yang tidak mengandalkan koneksi berulang (\textit{recurrent connections}) seperti pada RNN. Arsitektur ini memanfaatkan mekanisme perhatian (\textit{attention}) sebagai komponen utama untuk memodelkan hubungan antar elemen tanpa harus memprosesnya secara serial sehingga dapat mempercepat pelatihan melalui paralelisasi. \parencite{Vaswani2017}.
 
     \subsubsection{Core Transformer Architecture}
-Arsitektur inti Transformer terdiri atas \textit{encoder} dan \textit{decoder}. \textit{Encoder } mengubah input menjadi representasi fitur-fitur, sedangkan decoder menggunakan representasi tersebut untuk menghasilkan output secara autoregresif.Setiap lapisan \textit{encoder} memiliki dua sub-lapisan: \textit{Multi-Head Self-Attention} dan \textit{Feed-Forward Network} (FFN). 
+\textit{Core Transformer} terdiri dari dua komponen utama: \textit{encoder} dan \textit{decoder}. \textit{Encoder} bertugas mengekstraksi fitur-fitur dari \textit{input}, sementara \textit{decoder} memanfaatkan representasi yang dihasilkan \textit{encoder} untuk memprediksi \textit{output} secara \textit{autoregressive}. Kedua bagian ini menggunakan \textit{positional encoding} dan \textit{attention mechanism} sebagai fondasi pemrosesan data sekuensial. Arsitektur tersebut terlihat pada gambar \ref{fig:diagram-gru}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{resources/chapter-2-transformer.png}
+    \caption{Arsitektur \textit{Transformer} \parencite{Vaswani2017}}
+    \label{fig:diagram-gru}
+\end{figure}
+
 \begin{enumerate}
-\item Multi-head self-attention \\
-Mengaplikasikan \textit{attention} pada input itu sendiri (self-attention) untuk menangkap hubungan antar token dalam sekuens.
-\item Position-wise feed-forward network \\
-Sebuah Multi-layer perceptron yang diterapkan secara independen pada setiap posisi token.
+\item \textbf{Positional encoding} \\
+Meskipun Transformer tidak memproses data secara berurutan seperti RNN, tetap diperlukan informasi posisi dari token atau data untuk menjaga urutan dalam sekuens. Untuk itu, digunakan \textit{positional encoding} yaitu penambahan \textit{embedding} posisi atau indeks ke \textit{embedding} token. Pendekatan ini memungkinkan model membedakan posisi relatif antar token sehingga hubungan temporal atau urutan data dapat dikonsiderasi meskipun data diproses secara paralel.
+
+\begin{equationfloat}
+\begin{equation}
+\text{PE}_{(pos,2i)} = \sin\Bigl(\frac{pos}{10000^{2i/d_{\text{model}}}}\Bigr), 
+\quad
+\text{PE}_{(pos,2i+1)} = \cos\Bigl(\frac{pos}{10000^{2i/d_{\text{model}}}}\Bigr)
+\end{equation}
+\caption{Persamaan \textit{positional encoding}}
+\label{eq:positional-encoding}
+\end{equationfloat}
+
+Pada persamaan \ref{eq:positional-encoding}, \(pos\) adalah indeks posisi token dalam sekuens, \(d_{\text{model}}\) dimensi \textit{embedding}, dan \(i\) indeks dimensi. Persamaan ini akan menghasilkan pola sinusoidal yang unik untuk setiap posisi sehingga memungkinkan model untuk mempelajari makna posisi relatif secara implisit.
+
+\item \textbf{Attention Mechanism} \\
+Mekanisme perhatian \parencite{Bahdanau2015,Luong2015} memiliki peran penting dalam \textit{Transformer}. Ide utama dari \textit{attention mechanism} adalah membiarkan model memfokuskan perhatian pada elemen-elemen \textit{input} yang paling relevan saat memproses token tertentu. Bentuk paling umum adalah \textbf{\textit{Scaled Dot-Product Attention}} pada persamaan \ref{eq:scaled-dot-product}. 
+
+\begin{equationfloat}
+\begin{equation}
+\text{Attention}(Q,K,V) 
+= \text{softmax}\Bigl(\frac{QK^\top}{\sqrt{d_k}}\Bigr)V
+\end{equation}
+\caption{\textit{Scaled Dot-Product Attention}}
+\label{eq:scaled-dot-product}
+\end{equationfloat}
+
+dengan:
+\begin{itemize}
+    \item \(Q\) (\textit{query}), \(K\) (\textit{key}), dan \(V\) (\textit{value}) adalah representasi vektor yang dibentuk dari masukan.
+    \item \(d_k\) adalah dimensi dari \textit{key} dan \textit{query}.
+    \item Fungsi \(\text{softmax}\) memastikan bobot \textit{attention} dijumlahkan menjadi 1 di sepanjang dimensi sekuens.
+\end{itemize}
+
+\textbf{Multi-head attention} adalah ekstensi \textit{attention} dengan menggunakan beberapa set (\(Q, K, V\)) secara paralel. Setiap \textit{head} dapat belajar jenis relasi yang berbeda di waktu yang sama  dan hasilnya akan digabungkan (\textit{concatenate}) sebelum diproyeksikan kembali.
+
+\item \textbf{Arsitektur \textit{encoder-decoder}} \\
+\textit{Encoder} dan \textit{decoder} pada \textit{Transformer} terdiri atas beberapa lapisan (\textit{stacked layers}). Setiap lapisan \textit{encoder} memiliki dua sub-lapisan berikut:
+
+\begin{enumerate}
+    \item \textbf{Multi-head self-attention} \\
+    Menerapkan \textit{attention} pada \textit{input} itu sendiri (disebut \textit{self-attention}) agar model dapat memahami hubungan antar token dalam sekuens.
+    \item \textbf{Feed-forward network} \\
+    Sebuah \textit{multi-layer perceptron} (MLP) yang diterapkan secara independen pada setiap posisi token, disebut \textit{position-wise feed-forward network}.
 \end{enumerate}
 
-Setelah sub-lapisan ini, dilakukan \textit{residual connection} dan \textit{layer normalization} \parencite{Vaswani2017}. Secara matematis, jika \textbf{H} adalah masukan dari lapisan, maka satu lapisan Transformer akan  melakukan:
-\begin{center}
-\[
-\mathbf{H}' = \text{LayerNorm}\left(\mathbf{H} + \text{MultiHeadAttention}(\mathbf{H},\mathbf{H},\mathbf{H})\right)
-\]
-\[
-\mathbf{H}^{\star} = \text{LayerNorm}\left(\mathbf{H}' + \text{FFN}(\mathbf{H}')\right)
-\]
-\end{center}
+Pada setiap sub-lapisan (\textit{attention} dan \textit{feed-forward}), ditambahkan \textit{residual connection} \parencite{He2016resnet} dan \textit{layer normalization} \parencite{Ba2016layernorm}, sehingga lapisan ke-\(l\) dapat direpresentasikan sebagai:
 
-Decoder memiliki struktur serupa tetapi juga lebih berfokus kepada \textit{output encoder} serta \textit{masking} pada \textit{self-attention}untuk mencegah model “melihat” token masa depan saat memprediksi token saat ini.
+\begin{equationfloat}
+\begin{equation}
+\mathbf{H}' = \text{LayerNorm}\Bigl(\mathbf{H} + \text{MultiHeadAttention}(\mathbf{H},\mathbf{H},\mathbf{H})\Bigr)
+\end{equation}
+\caption{\textit{Residual connection} \& \textit{multi-head self-attention}}
+\label{eq:transformer-encoder-1}
+\end{equationfloat}
 
-Salah satu tantangan pada Transformer adalah kompleksitas komputasi yang mencapai $O(T^2)$ untuk panjang sekuens $T$. Pada sekuens yang sangat panjang, ini dapat menjadi masalah. Sebagai perbandingan, RNN seperti LSTM atau GRU memproses data secara serial, namun lebih sulit diparalelisasi dan kurang efektif dalam menangkap dependensi jangka panjang. Transformer mengatasi masalah ini melalui mekanisme \textit{attention} yang dapat menjangkau seluruh sekuens secara langsung, meskipun dengan beban komputasi kuadratik.
-  \subsubsection{Extended Transformer}  
-Berbagai varian dari Transformer telah dikembangkan untuk mengatasi isu efisiensi, diperlukannya konteks yang lebih panjang, dan domain khusus:
-\begin{enumerate}
-\item \textbf{Longformer, Reformer:} Menggunakan \textit{attention} yang lebih efisien (\textit{sparse } atau berbasis hashing) untuk mengurangi kompleksitas.
-\item \textbf{Vision Transformer (ViT):} Mengaplikasikan \textit{attention} pada patch citra.
-\item \textbf{BERT, GPT:} Spesialisasi dalam pemahaman bahasa (BERT) dan generasi teks (GPT).
+
+\begin{equationfloat}
+\begin{equation}
+\mathbf{H}^{\star} = \text{LayerNorm}\Bigl(\mathbf{H}' + \text{FFN}(\mathbf{H}')\Bigr)
+\end{equation}
+\caption{\textit{Residual connection} \& \textit{feed-forward network}}
+\label{eq:transformer-encoder-2}
+\end{equationfloat}
+
+\(\mathbf{H}\) adalah \textit{input layer}, \(\mathbf{H}'\) adalah \textit{output} sub-lapisan \textit{self-attention}, dan \(\mathbf{H}^{\star}\) menjadi \textit{outpu} akhir setelah melalui sub-lapisan \textit{feed-forward}. Proses serupa diterapkan pada \textit{decoder}, dengan perbedaan utama adanya:
+\begin{itemize}
+    \item \textbf{Masked self-attention} pada \textit{decoder} untuk mencegah model megambil informasi token masa depan ketika memprediksi token saat ini.
+    \item \textbf{Cross-attention} pada \textit{decoder} yang mengambil \(\mathbf{H}^{\star}_{\text{encoder}}\) sebagai \((K, V)\), sementara \(\mathbf{h}_\text{decoder}\) berperan sebagai \(Q\).
+\end{itemize}
+
+\item \textbf{Computation Complexity} \\
+Salah satu kelemahan Transformer adalah kompleksitas komputasi \textbf{kuadratik} \(\bigl(O(T^2)\bigr)\) dengan panjang sekuens sebagai \(T\). Setiap token harus menghitung \textit{attention} terhadap semua token lain dalam sekuens sehingga pada sekuens yang sangat panjang, hal ini bisa menjadi \textit{bottleneck}. Meskipun demikian,\textbf{paralelisasi} tetap membuat Transformer efisien.
+
 \end{enumerate}
+
+
  \subsubsection{Temporal Fusion Transformer}
 Temporal Fusion Transformer \parencite{Lim2020} adalah varian Transformer yang dirancang khusus untuk peramalan deret waktu \textit{multi-horizon}. TFT menggabungkan ide \textit{attention} dengan mekanisme \textit{gating} dan \textit{Gated Residual Network} untuk memilih variabel yang relevan dan mempelajari hubungan variabel antar waktu.
 

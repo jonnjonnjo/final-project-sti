@@ -133,6 +133,56 @@
       \verb https://doi.org/10.34818/INDOJC.2022.7.1.612
       \endverb
     \endentry
+    \entry{bibi2020gru}{online}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=e71550319353cf26f6da7539e4b38362}{%
+           family={Bibi},
+           familyi={B\bibinitperiod},
+           given={Iram},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5402add1a16a4d0104e5b6a93e32d5d7}{%
+           family={Akhunzada},
+           familyi={A\bibinitperiod},
+           given={Adnan},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d1adc2cd2021c89e9ded7f6c3a7b4b00}{%
+           family={Malik},
+           familyi={M\bibinitperiod},
+           given={Jahanzaib},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=949122db58bfb1ed9d537dab5364e611}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Sung\bibnamedelima Won},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5034e89e70dc7a795c693d5734877e62}
+      \strng{fullhash}{f811d5fad057441a46bbb6ec46eae6b8}
+      \strng{fullhashraw}{f811d5fad057441a46bbb6ec46eae6b8}
+      \strng{bibnamehash}{f811d5fad057441a46bbb6ec46eae6b8}
+      \strng{authorbibnamehash}{f811d5fad057441a46bbb6ec46eae6b8}
+      \strng{authornamehash}{5034e89e70dc7a795c693d5734877e62}
+      \strng{authorfullhash}{f811d5fad057441a46bbb6ec46eae6b8}
+      \strng{authorfullhashraw}{f811d5fad057441a46bbb6ec46eae6b8}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Dynamic DL-Driven Architecture to Combat Sophisticated Android Malware}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/figure/The-Architecture-of-basic-Gated-Recurrent-Unit-GRU_fig1_343002752
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/figure/The-Architecture-of-basic-Gated-Recurrent-Unit-GRU_fig1_343002752
+      \endverb
+    \endentry
     \entry{BloomEtAl2019}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=68f8a5bf6811e28fe266609187cee0a5}{%
@@ -209,7 +259,7 @@
       \field{title}{The Analysis of Time Series: An Introduction}
       \field{year}{2003}
     \endentry
-    \entry{Cho2014}{inproceedings}{}{}
+    \entry{cho2014learning}{article}{}{}
       \name{author}{7}{}{%
         {{un=0,uniquepart=base,hash=3da7501a79d9346572c7fd6e41b615df}{%
            family={Cho},
@@ -270,10 +320,16 @@
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP)}
-      \field{title}{Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{arXiv preprint}
+      \field{title}{Learning Phrase Representations Using RNN Encoder-Decoder for Statistical Machine Translation}
       \field{year}{2014}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1406.1078
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1406.1078
+      \endverb
     \endentry
     \entry{FAO2020}{misc}{}{}
       \name{author}{1}{}{%
@@ -1405,6 +1461,8 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{Ba2016layernorm}
+  \missing{He2016resnet}
   \missing{Neal2005}
 \endrefsection
 \endinput
