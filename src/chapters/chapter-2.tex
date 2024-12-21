@@ -449,26 +449,119 @@ Salah satu kelemahan Transformer adalah kompleksitas komputasi \textbf{kuadratik
 
 
  \subsubsection{Temporal Fusion Transformer}
-Temporal Fusion Transformer \parencite{Lim2020} adalah varian Transformer yang dirancang khusus untuk peramalan deret waktu \textit{multi-horizon}. TFT menggabungkan ide \textit{attention} dengan mekanisme \textit{gating} dan \textit{Gated Residual Network} untuk memilih variabel yang relevan dan mempelajari hubungan variabel antar waktu.
+\textit{Temporal Fusion Transformer (TFT)} \parencite{Lim2020} adalah versi arsitektur \textit{Transformer} untuk prediksi deret waktu \textit{multi-horizon}. Tujuan utama TFT adalah memaksimalkan pemanfaatan informasi yang sering kali bersifat heterogen ( seperti variabel kualitatif, numerik, serta data yang bervariasi sepanjang waktu).
 
-Pada TFT, Variable Selection Network (VSN) digunakan untuk mengekstrak fitur yang paling penting, sementara Gated Residual Network (GRN) membantu mengontrol aliran informasi dan mengatasi overfitting.
-    
-\begin{center}
-\[
-\mathbf{h}^{\text{selected}} = \text{VSN}(\mathbf{X})
-\]
-\[
-\mathbf{h}^{\text{processed}} = \text{GRN}(\mathbf{h}^{\text{selected}})
-\]
-\[
-\mathbf{H}_{att} = \text{MultiHeadAttention}(Q=\mathbf{h}^{\text{processed}},K=\mathbf{h}^{\text{processed}},V=\mathbf{h}^{\text{processed}})
-\]
-\[
-\mathbf{Z}_{final} = \text{GRN}(\mathbf{H}_{att})
-\]
+Data deret waktu umumnya bersifat heterogen, mencakup variabel kategorikal, kontinu, statik, dan bervariasi dari waktu ke waktu. Model harus mampu mengidentifikasi variabel-variabel mana yang paling penting serta memahami relasi di antara variabel-variabel tersebut pada setiap titik waktu. Selain itu, dengan memanfaatkan keunggulan \textit{attention} pada \textit{Transformer}, \textit{Temporal Fusion Transformer} (TFT) dapat menangkap \textit{long-term dependencies} secara paralel, sementara mekanisme \textit{gating} (terinspirasi dari LSTM/GRU) membantu menjaga stabilitas saat mempelajari relasi antar variabel. TFT menggunakan \textit{Variable Selection Networks}, mekanisme \textit{attention}, serta \textit{Gated Residual Networks (GRN)} untuk menyaring dan mengalirkan informasi secara tepat.
 
-\end{center}
+\begin{enumerate}
+    \item \textbf{Variable Selection Network (VSN)} \\
+    Komponen yang secara eksplisit memilih fitur mana yang paling relevan pada setiap waktu. VSN mengeluarkan koefisien atau \textit{weight} untuk setiap variabel lalu hanya variabel yang bobotnya signifikan yang akan dilanjutkan ke tahap waktu berikutnya.
+    \[
+    \mathbf{h}^{\text{selected}} = \text{VSN}(\mathbf{X}),
+    \]
+    di mana \(\mathbf{X}\) mewakili kumpulan semua variabel (static, temporal, dsb.), sedangkan \(\mathbf{h}^{\text{selected}}\) adalah hasil seleksi variabel.
+
+    \item \textbf{Gated Residual Network (GRN)} \\
+    Berfungsi untuk memproses \textit{input} terpilih dan memberikan mekanisme \textit{gating} yang dapat mengatur seberapa banyak informasi dilewatkan. GRN memiliki struktur \textit{residual connection}, serupa dengan blok Transformer:
+    \[
+    \mathbf{h}^{\text{processed}} = \text{GRN}\bigl(\mathbf{h}^{\text{selected}}\bigr).
+    \]
+    Kombinasi GRN dan VSN membuat TFT bagus dalam menangani ragam variabel yang kompleks.
+
+    \item \textbf{Multi-Head Attention} \\
+    Setelah tahap \textbf{VSN} dan \textbf{GRN}, TFT menerapkan mekanisme \textit{attention} (\textit{self-attention} ataupun \textit{cross-attention}) pada representasi tersebut. Dengan demikian, interaksi antar token (waktu) dapat ditangkap secara eksplisit:
+    \[
+    \mathbf{H}_{att} = \text{MultiHeadAttention}\Bigl(
+        Q = \mathbf{h}^{\text{processed}},\,
+        K = \mathbf{h}^{\text{processed}},\,
+        V = \mathbf{h}^{\text{processed}}
+    \Bigr).
+    \]
+
+    \item \textbf{Output GRN \& \textit{Final Projection}} \\
+    Hasil \(\mathbf{H}_{att}\) dapat kembali diproses oleh GRN guna menggabungkan informasi \textit{attention} dengan mekanisme \textit{gating}. Selanjutnya, proyeksi akhir dilakukan untuk menghasilkan \textit{forecast} pada setiap langkah waktu mendatang:
+    \[
+    \mathbf{Z}_{\text{final}} = \text{GRN}\bigl(\mathbf{H}_{att}\bigr).
+    \]
+    Model kemudian memetakan \(\mathbf{Z}_{\text{final}}\) ke \textit{output} yang diinginkan.
+\end{enumerate}
+
+Salah satu kelebihan utama TFT adalah kemampuannya untuk \textit{memilih variabel} secara otomatis melalui \textit{Variable Selection Network} (VSN), sehingga model hanya fokus pada variabel yang paling relevan. Selain itu, \textit{attention} memungkinkan penangkapan \textit{long-term dependencies} dalam data deret waktu tanpa harus memproses token secara serial  sehingga dapat mengakses setiap posisi (waktu) sekaligus. Mekanisme \textit{gating} (seperti pada \textit{Gated Residual Network}) berperan penting dalam menambah stabilitas model, membantu mengurangi risiko \textit{overfitting} dan sekaligus memperkuat \textit{feature representation} yang dihasilkan.
+
+Di sisi lain, kompleksitas arsitektur TFT meningkat akibat penggabungan VSN, \textit{Gated Residual Networks}, dan \textit{multi-head attention}, yang secara keseluruhan menambah jumlah parameter dan membutuhkan sumber daya komputasi lebih besar. Meskipun mekanisme \textit{attention} lebih mudah diparalelkan daripada RNN, kompleksitas kuadratik \(\mathcal{O}(T^2)\) tetap menjadi kendala saat memproses deret waktu berdurasi sangat panjang. Selain itu, konfigurasi \textit{hyperparameter} seperti dimensi \textit{hidden state} dan jumlah \textit{heads} yang tinggi sehingga iterasi sering kali diperlukan demi mengoptimalkan performa model. 
+
     
 \section{Evaluation Metrics}
+Dalam penelitian ini, pemodelan \textit{time series} pasar saham Indonesia menggunakan arsitektur \textit{Temporal Fusion Transformer} (TFT) dan \textit{Long Short-Term Memory} (LSTM) beserta variannya akan dievaluasi dengan tiga metrik utama. Ketiga metrik ini dipilih agar dapat menilai baik tingkat kesalahan numerik terhadap harga saham, maupun kemampuan model dalam menangkap pergerakan arah (\textit{direction}) harga. Berikut adalah penjelasan masing-masing metrik.
+
+subsection{Root Mean Squared Error (RMSE)}
+\label{subsec:rmse}
+
+\noindent
+\textbf{Root Mean Squared Error (RMSE)} mengukur seberapa besar perbedaan antara nilai prediksi (\(\hat{y}_i\)) dan nilai sebenarnya (\(y_i\)) pada data \textit{time series}. RMSE dapat dirumuskan dalam Persamaan \ref{eq:rmse}:
+
+\begin{equationfloat}
+\begin{equation}
+\text{RMSE} = 
+\sqrt{
+  \frac{1}{n}
+  \sum_{i=1}^{n} \bigl(y_i - \hat{y}_i\bigr)^2
+}
+\end{equation}
+\caption{\textit{Root Mean Squared Error}}
+\label{eq:rmse}
+\end{equationfloat}
+
+Semakin rendah nilai RMSE, semakin kecil selisih antara prediksi dan nilai aktual. RMSE \textbf{lebih sensitif} terhadap kesalahan yang besar (\textit{large errors}) karena adanya kuadrat pada selisih \((y_i - \hat{y}_i)\). RMSE membantu menilai seberapa akurat model memprediksi nilai harga saham dibandingkan dengan harga yang benar-benar terjadi.
+
+\subsection{Directional Accuracy (DA)}
+\label{subsec:directional-accuracy}
+
+\noindent
+Directional Accuracy (DA) berfokus pada arah pergerakan harga. DA dapat diformulasikan sebagai berikut:
+
+\begin{equationfloat}
+\begin{equation}
+\text{DA} =
+\frac{1}{n} \sum_{i=2}^{n}
+\mathbb{I}\Bigl(
+  \text{sign}\bigl(y_i - y_{i-1}\bigr) = 
+  \text{sign}\bigl(\hat{y}_i - \hat{y}_{i-1}\bigr)
+\Bigr),
+\end{equation}
+\caption{\textit{Directional Accuracy}}
+\label{eq:da}
+\end{equationfloat}
+
+\
+dengan \(\text{sign}(\cdot)\) menyatakan fungsi penanda tanda (positif, negatif), dan \(\mathbb{I}(\cdot)\) merupakan fungsi \textit{indicator} yang bernilai 1 jika arah prediksi sama dengan arah nilai aktual, atau 0 jika berbeda. Nilai DA berada dalam rentang \([0,1]\), di mana nilai 1 menandakan model selalu memprediksi arah pergerakan dengan benar, dan 0 berarti selalu salah. 
+
+\subsection{Mean Absolute Percentage Error (MAPE)}
+\label{subsec:mape}
+
+\noindent
+Mean Absolute Percentage Error (MAPE) mengukur kesalahan relatif dalam bentuk persentase, sehingga \textbf{skala} harga saham dapat lebih diperhitungkan. Persamaaan tersebut dapat dilihat pada ersamaan \ref{eq:mape}:
+
+\begin{equationfloat}
+\begin{equation}
+\text{MAPE} =
+\frac{1}{n}
+\sum_{i=1}^{n}
+\left\lvert
+  \frac{y_i - \hat{y}_i}{y_i}
+\right\rvert
+\times 100\%
+\end{equation}
+\caption{\textit{Mean Absolute Percentage Error}}
+\label{eq:mape}
+\end{equationfloat}
+
+\noindent
+
+Semakin kecil nilai MAPE, maka semakin baik kualitas prediksi model karena menunjukkan bahwa persentase kesalahan prediksi terhadap nilai aktual semakin kecil. MAPE berguna untuk membandingkan kinerja model pada saham-saham dengan \textit{level price} berbeda, sebab kesalahan relatif (\(\frac{\lvert y_i - \hat{y}_i\rvert}{\lvert y_i\rvert}\)) dapat menunjukkan seberapa \textit{proportional} kesalahan prediksi di tiap saham.
+
+
 \section{Penelitian Terkait}
+
+
 \blindtext

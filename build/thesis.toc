@@ -156,8 +156,10 @@
 \contentsline {subsubsection}{\numberline {II.5.2.2}Temporal Fusion Transformer}{31}{subsubsection.2.5.2.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {section}{\numberline {II.6}Evaluation Metrics}{31}{section.2.6}%
-\contentsline {section}{\numberline {II.7}Penelitian Terkait}{31}{section.2.7}%
+\contentsline {section}{\numberline {II.6}Evaluation Metrics}{33}{section.2.6}%
+\contentsline {subsection}{\numberline {II.6.1}Directional Accuracy (DA)}{33}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {II.6.2}Mean Absolute Percentage Error (MAPE)}{34}{subsection.2.6.2}%
+\contentsline {section}{\numberline {II.7}Penelitian Terkait}{34}{section.2.7}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -234,6 +236,6 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {part}{Lampiran}{36}{chapter*.5}%
-\contentsline {chapter}{\numberline {A}Instrumen Pengujian}{38}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Rincian Kasus Uji}{39}{appendix.B}%
+\contentsline {part}{Lampiran}{39}{chapter*.5}%
+\contentsline {chapter}{\numberline {A}Instrumen Pengujian}{41}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Rincian Kasus Uji}{42}{appendix.B}%
