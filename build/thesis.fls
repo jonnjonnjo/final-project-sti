@@ -286,12 +286,12 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7
 INPUT /home/jon/Coding/final-project-sti/build/thesis.toc
 INPUT /home/jon/Coding/final-project-sti/build/thesis.toc
 INPUT /home/jon/Coding/final-project-sti/build/thesis.toc
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
 OUTPUT /home/jon/Coding/final-project-sti/build/thesis.toc
 INPUT /home/jon/Coding/final-project-sti/build/thesis.lof
 INPUT /home/jon/Coding/final-project-sti/build/thesis.lof
 INPUT /home/jon/Coding/final-project-sti/build/thesis.lof
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
 OUTPUT /home/jon/Coding/final-project-sti/build/thesis.lof
 INPUT /home/jon/Coding/final-project-sti/build/thesis.lot
 INPUT /home/jon/Coding/final-project-sti/build/thesis.lot
@@ -381,6 +381,12 @@ INPUT ./resources/chapter-2-transformer.png
 INPUT ./resources/chapter-2-transformer.png
 INPUT ./resources/chapter-2-transformer.png
 INPUT ./resources/chapter-2-transformer.png
+INPUT ./chapters/chapter-3.tex
+INPUT ./chapters/chapter-3.tex
+INPUT ./chapters/chapter-3.tex
+INPUT ./chapters/chapter-3.tex
+INPUT chapters/chapter-3.tex
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbxi10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm

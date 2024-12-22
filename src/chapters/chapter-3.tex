@@ -1,10 +1,84 @@
 \chapter{Analisis dan Perancangan}
 
 \section{Analisis Masalah}
-\blindtext
+Pasar modal Indonesia yang semakin berkembang dan terdiversifikasi menuntut pendekatan analisis serta \textit{forecasting} yang lebih komprehensif. Seperti telah dipaparkan pada Latar Belakang, dinamika harga saham di pasar modal Indonesia dipengaruhi oleh berbagai faktor, mulai dari kebijakan pemerintah, indikator makroekonomi, hingga sentimen publik \parencite{FekrazadEtAl2022}. Selain itu, \textit{financial time series} biasanya bersifat nonstasioner dan mengandung pola-pola yang tidak selalu dapat diwakili dengan hubungan linear semata \parencite{Goodfellow-et-al-2016}. 
 
-\section{Solusi Umum}
-\blindtext
+\section{Identifikasi Alternatif Solusi}
+\subsection{\textit{Classical Quantitaive}}
+\textit{Classical quantitative} berfokus pada penggunaan model-model statistik tradisional yang berlandaskan pada asumsi-asumsi linearitas dan stasioneritas data.  Metode ini masih banyak digunakan di institusi finansial karena memiliki nilai interpretasi yang tinggi dan landasan teori ekonomi yang kuat.
 
-\section{Rancangan Solusi}
+\begin{enumerate}
+    \item \textbf{ARIMA (AutoRegressive Integrated Moving Average)} 
+    \\
+    ARIMA menjadi metode utama yang sering dipakai dalam \textit{time series forecasting}, terutama ketika data cenderung stasioner atau memiliki pola musiman yang dapat diakomodir dengan baik. Kelebihan ARIMA adalah Koefisien AR (\textit{autoregressive}) dan MA (\textit{moving average}) yang merupakan salah satu indikator dari ARIMA dapat dijelaskan secara statistik, sehingga memudahkan awan dapat memahami model. Namun, ARIMA kurang efektif dalam menangkap hubungan \textbf{nonlinier} antar variabel, dan memerlukan langkah diferensiasi (integrasi) agar data menjadi stasioner. Jika data finansial memiliki banyak variabel eksternal yang saling berkoerlasi, ARIMA menjadi cepat kurang akurat.
+
+    \item \textbf{Regresi Linear} 
+    \\
+    Regresi linear memprediksi sebuah variabel target (\textit{dependent variable}) dari satu atau beberapa variabel lainnya (\textit{independent variables}) dengan asumsi linearitas. Kelebihannya meliputi:
+    \begin{itemize}
+        \item \textbf{Sangat mudah diinterpretasi}: Koefisien regresi menunjukkan seberapa besar dampak setiap variabel input terhadap variabel target.
+        \item \textbf{Proses komputasi relatif ringan}: Tidak memerlukan sumber daya besar, sehingga dapat dijalankan dengan cepat.
+    \end{itemize}
+    
+    Kekurangannya adalah model ini \textbf{tidak dapat mempelajari relasi kompleks} atau nonlinier yang kerap muncul dalam data keuangan. 
+
+    \item \textbf{Regresi Logistik} 
+    \\
+    Regresi Logistik biasanya digunakan untuk prediksi probabilitas naik atau turunnya harga saham. Pada dasarnya, regresi logistik mengasumsikan linearitas pada \(\log\bigl(\frac{p}{1-p}\bigr)\) (logit). Model ini tidak dapat menangkap kenonlinieritasan data sehingga kerap kali \textit{over-simplifying} pola yang sesungguhnya rumit di pasar modal.
+\end{enumerate}
+
+\subsection{\textit{Sequence-based Modelling}}
+\textit{Sequence-based modelling} digunakan untuk mempelajari data sekuensial (\textit{time series}) yang berisikan interaksi jangka panjang dan pola kompleks. 
+
+\begin{enumerate}
+    \item \textit{Long Short-Term Memory (LSTM) based RNN} 
+    \\
+    LSTM dibuat untuk mengatasi keterbatasan RNN \textit{vanilla}, khususnya masalah \textit{vanishing gradient} \parencite{Hochreiter1997}. Model LSTM mampu “mengingat” informasi relevan lebih lama karena memiliki struktur \textit{cell state} dan \textit{gates}. 
+    \begin{itemize}
+        \item \textbf{Kelebihan}:  
+        Cocok untuk data dengan dependensi jangka panjang, seperti \textit{time series} finansial. Dapat menemukan \textit{hidden pattern} yang kompleks, bahkan ketika data memiliki faktor musiman dan tren yang berubah-ubah.
+        \item \textbf{Kekurangan}:  
+        Proses pelatihan lebih lambat jika dibandingkan model linear dan membutuhkan \textit{fine-tuning} hyperparameter yang ekstensif (jumlah \textit{hidden units}, \textit{learning rate}, dsb.). Keterbatasan paralelisasi RNN juga membuat waktu \textit{training} lebih lama pada dataset yang amat besar.
+    \end{itemize}
+
+    \item \textbf{Temporal Fusion Transformer (TFT)} 
+    \\
+    TFT \parencite{Lim2020} mengadopsi mekanisme \textit{attention} dari \textit{Transformer} \parencite{Vaswani2017}, tetapi dirancang khusus untuk \textit{multi-horizon time series forecasting}. 
+    \begin{itemize}
+        \item \textbf{Kelebihan}:  
+        Mampu mempelajari dependensi jangka panjang tanpa harus memproses data secara sekuensial serta mendukung \textbf{paralelisasi} yang lebih baik. TFT memiliki modul \textit{variable selection} yang dapat meningkatkan interpretasi model. Hal ini membuat TFT lebih fleksibel untuk menangani data multivariabel yang kompleks dan \textit{non-stationary}.
+        \item \textbf{Kekurangan}:  
+        Kompleksitas komputasi \(\mathcal{O}(T^2)\) dapat menjadi masalah ketika panjang sekuens \(T\) sangat besar, dan proses \textit{training} memerlukan sumber daya yang signifikan (misalnya GPU atau TPU).
+    \end{itemize}
+\end{enumerate}
+
+\subsection{\textit{Classical Machine Learning}}
+Kategori \textit{classical machine learning} terdiri atas \textit{machine learning algorithm} yang tidak secara khusus dirancang untuk data sekuensial, tetapi biasa digunakan untuk berbagai \textit{prediction task}, termasuk \textit{time series forecasting} dengan dilakukannya \textit{additional feature engineering} (misalnya membuat \textit{lag features, moving averages}, atau \textit{seasonly encoding}).
+
+\begin{enumerate}
+    \item \textbf{Random Forest} 
+    \\
+    Random Forest adalah metode \textit{ensemble} yang membentuk banyak pohon keputusan dengan \textit{bagging} \parencite{Breiman2001}. 
+    \begin{itemize}
+        \item \textbf{Kelebihan}:  
+        Memiliki \textbf{robustness} tinggi terhadap outlier dan \textit{noise}, serta cenderung memberikan performa stabil tanpa terlalu banyak \textit{tuning}. Dapat memanfaatkan \textbf{feature importance} untuk interpretasi peran tiap variabel.
+        \item \textbf{Kekurangan}:  
+        Kurang efektif dalam mengungkap \textit{long-term dependencies} bila data tak diolah menjadi format \textit{windowed features}. Selain itu, masih terbatas pada pendekatan \(\mathcal{O}(n \log n)\) untuk banyak pohon dan interpretasinya tidak sejelas model linear.
+    \end{itemize}
+
+    \item \textbf{XGBoost (Extreme Gradient Boosting)} 
+    \\
+    XGBoost merupakan metode \textit{boosting} yang menambahkan pohon-pohon secara iteratif untuk mengurangi \textit{residual error} .
+    \begin{itemize}
+        \item \textbf{Kelebihan}:  
+         Biasa menghasilkan prediksi akurat dengan waktu \textit{training} cukup rendah. Mampu menghadapi data berjumlah besar berkat optimasi level pohon.
+        \item \textbf{Kekurangan}:  
+        Tetap tidak secara implisit memodelkan sekuens waktu. Jika data sangat \textit{non-stationary} atau memiliki pola musiman, dibutuhkan \textbf{feature engineering} yang cermat.
+    \end{itemize}
+\end{enumerate}
+
+\section{Evaluasi dan Pemilihan Alternatif Solusi}
+
+\section{Perancangan Konsep Desain dan Solusi}
+
 \blindtext

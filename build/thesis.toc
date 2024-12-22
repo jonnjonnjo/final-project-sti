@@ -157,9 +157,28 @@
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \contentsline {section}{\numberline {II.6}Evaluation Metrics}{33}{section.2.6}%
-\contentsline {subsection}{\numberline {II.6.1}Directional Accuracy (DA)}{33}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {II.6.2}Mean Absolute Percentage Error (MAPE)}{34}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {II.6.1}Root Mean Squared Error (RMSE)}{33}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {II.6.2}Directional Accuracy (DA)}{33}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {II.6.3}Mean Absolute Percentage Error (MAPE)}{34}{subsection.2.6.3}%
 \contentsline {section}{\numberline {II.7}Penelitian Terkait}{34}{section.2.7}%
+\contentsline {chapter}{\numberline {III}Analisis dan Perancangan}{36}{chapter.3}%
+\contentsline {section}{\numberline {III.1}Analisis Masalah}{36}{section.3.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {III.2}Identifikasi Alternatif Solusi}{36}{section.3.2}%
+\contentsline {subsection}{\numberline {III.2.1}\textit {Classical Quantitaive}}{36}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {III.2.2}\textit {Sequence-based Modelling}}{37}{subsection.3.2.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {III.2.3}\textit {Classical Machine Learning}}{38}{subsection.3.2.3}%
+\contentsline {section}{\numberline {III.3}Evaluasi dan Pemilihan Alternatif Solusi}{39}{section.3.3}%
+\contentsline {section}{\numberline {III.4}Perancangan Konsep Desain dan Solusi}{39}{section.3.4}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -236,6 +255,6 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {part}{Lampiran}{39}{chapter*.5}%
-\contentsline {chapter}{\numberline {A}Instrumen Pengujian}{41}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Rincian Kasus Uji}{42}{appendix.B}%
+\contentsline {part}{Lampiran}{44}{chapter*.5}%
+\contentsline {chapter}{\numberline {A}Instrumen Pengujian}{46}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Rincian Kasus Uji}{47}{appendix.B}%

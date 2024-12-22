@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.20)  21 DEC 2024 19:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.20)  21 DEC 2024 20:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -834,6 +834,13 @@ Package biblatex Warning: The following entry could not be found
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
+(biblatex)                Breiman2001
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
 (biblatex)                He2016resnet
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
@@ -880,7 +887,7 @@ Package hyperref Info: Link coloring OFF on input line 23.
 Package newfloat Info: Trying Plan B...
 Package newfloat Info: `float' package detected.
  (./chapters/cover.tex
-<resources/cover-ganesha.jpg, id=88, 411.29268pt x 599.89975pt>
+<resources/cover-ganesha.jpg, id=124, 411.29268pt x 599.89975pt>
 File: resources/cover-ganesha.jpg Graphic file (type jpg)
 <use resources/cover-ganesha.jpg>
 Package pdftex.def Info: resources/cover-ganesha.jpg  used on input line 23.
@@ -942,22 +949,24 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 
-]) (/home/jon/Coding/final-project-sti/build/thesis.toc)
+]) (/home/jon/Coding/final-project-sti/build/thesis.toc
+
+[2
+
+
+])
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
 
 
-[2
-
-
-] (/home/jon/Coding/final-project-sti/build/thesis.lof)
+[3] (/home/jon/Coding/final-project-sti/build/thesis.lof)
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
 
 
-[3
+[4
 
 ] (/home/jon/Coding/final-project-sti/build/thesis.lot)
 \tf@lot=\write7
@@ -965,7 +974,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
-[4
+[5
 
 ] (/home/jon/Coding/final-project-sti/build/thesis.loe)
 \tf@loe=\write8
@@ -980,7 +989,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 BAB I.
 Package newfloat Info: Setting Plan B file extension to `lof'... on input line 
 1.
-<resources/chapter-1-1.1-capitalmarketinvestor.png, id=216, 770.88pt x 385.44pt
+<resources/chapter-1-1.1-capitalmarketinvestor.png, id=266, 770.88pt x 385.44pt
 >
 File: resources/chapter-1-1.1-capitalmarketinvestor.png Graphic file (type png)
 
@@ -993,7 +1002,7 @@ d on input line 16.
 [1
 
 ]
-<resources/chapter-1-1.1-numberofcompanies.png, id=226, 770.88pt x 385.44pt>
+<resources/chapter-1-1.1-numberofcompanies.png, id=275, 770.88pt x 385.44pt>
 File: resources/chapter-1-1.1-numberofcompanies.png Graphic file (type png)
 <use resources/chapter-1-1.1-numberofcompanies.png>
 Package pdftex.def Info: resources/chapter-1-1.1-numberofcompanies.png  used on
@@ -1019,7 +1028,7 @@ vi-ce \T1/lmr/m/n/12 Lap-top Le-no-vo Le-gion 5 15IMH05
 
 
 [5]
-<resources/chapter-1-1.5-crispdm.png, id=287, 480.79625pt x 481.8pt>
+<resources/chapter-1-1.5-crispdm.png, id=337, 480.79625pt x 481.8pt>
 File: resources/chapter-1-1.5-crispdm.png Graphic file (type png)
 <use resources/chapter-1-1.5-crispdm.png>
 Package pdftex.def Info: resources/chapter-1-1.5-crispdm.png  used on input lin
@@ -1053,7 +1062,7 @@ Package biblatex-chicago Warning: Empty Ibidem citation on input line 25.
 [12]
 
 [13]
-<resources/chapter-2-biological-neuron.png, id=367, 523.9575pt x 451.6875pt>
+<resources/chapter-2-biological-neuron.png, id=416, 523.9575pt x 451.6875pt>
 File: resources/chapter-2-biological-neuron.png Graphic file (type png)
 <use resources/chapter-2-biological-neuron.png>
 Package pdftex.def Info: resources/chapter-2-biological-neuron.png  used on inp
@@ -1062,7 +1071,7 @@ ut line 51.
 
 
 [14 <./resources/chapter-2-biological-neuron.png>]
-<resources/chapter-2-neural-network-graph.png, id=377, 853.1875pt x 499.8675pt>
+<resources/chapter-2-neural-network-graph.png, id=426, 853.1875pt x 499.8675pt>
 
 File: resources/chapter-2-neural-network-graph.png Graphic file (type png)
 <use resources/chapter-2-neural-network-graph.png>
@@ -1073,7 +1082,7 @@ input line 62.
 
 [15{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc} <./res
 ources/chapter-2-neural-network-graph.png>]
-<resources/chapter-2-nonlinear-neuron.png, id=388, 369.38pt x 248.93pt>
+<resources/chapter-2-nonlinear-neuron.png, id=437, 369.38pt x 248.93pt>
 File: resources/chapter-2-nonlinear-neuron.png Graphic file (type png)
 <use resources/chapter-2-nonlinear-neuron.png>
 Package pdftex.def Info: resources/chapter-2-nonlinear-neuron.png  used on inpu
@@ -1081,7 +1090,7 @@ t line 71.
 (pdftex.def)             Requested size: 330.05322pt x 222.4282pt.
 Package hyperref Info: bookmark level for unknown equationfloat defaults to 0 o
 n input line 80.
-<resources/chapter-2-non-linearity-data.png, id=393, 537.00626pt x 243.91125pt>
+<resources/chapter-2-non-linearity-data.png, id=442, 537.00626pt x 243.91125pt>
 
 File: resources/chapter-2-non-linearity-data.png Graphic file (type png)
 <use resources/chapter-2-non-linearity-data.png>
@@ -1096,7 +1105,7 @@ put line 103.
 ar-neuron.png>]
 
 [17 <./resources/chapter-2-non-linearity-data.png>]
-<resources/chapter-2-recurrentNN.png, id=415, 1405.25pt x 515.9275pt>
+<resources/chapter-2-recurrentNN.png, id=465, 1405.25pt x 515.9275pt>
 File: resources/chapter-2-recurrentNN.png Graphic file (type png)
 <use resources/chapter-2-recurrentNN.png>
 Package pdftex.def Info: resources/chapter-2-recurrentNN.png  used on input lin
@@ -1115,7 +1124,7 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 [19{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
 
 [20]
-<resources/chapter-2-lstm-cell.png, id=456, 806.89455pt x 303.17265pt>
+<resources/chapter-2-lstm-cell.png, id=505, 806.89455pt x 303.17265pt>
 File: resources/chapter-2-lstm-cell.png Graphic file (type png)
 <use resources/chapter-2-lstm-cell.png>
 Package pdftex.def Info: resources/chapter-2-lstm-cell.png  used on input line 
@@ -1136,7 +1145,7 @@ i-per-ke-nalk-an oleh [][][][][]Cho et al. ([]2014[])[]
 
 
 [24]
-<resources/chapter-2-architecture-GRU.png, id=491, 796.9775pt x 416.55624pt>
+<resources/chapter-2-architecture-GRU.png, id=541, 796.9775pt x 416.55624pt>
 File: resources/chapter-2-architecture-GRU.png Graphic file (type png)
 <use resources/chapter-2-architecture-GRU.png>
 Package pdftex.def Info: resources/chapter-2-architecture-GRU.png  used on inpu
@@ -1147,7 +1156,7 @@ t line 308.
 [25 <./resources/chapter-2-architecture-GRU.png>]
 
 [26]
-<resources/chapter-2-transformer.png, id=510, 853.1875pt x 1256.695pt>
+<resources/chapter-2-transformer.png, id=559, 853.1875pt x 1256.695pt>
 File: resources/chapter-2-transformer.png Graphic file (type png)
 <use resources/chapter-2-transformer.png>
 Package pdftex.def Info: resources/chapter-2-transformer.png  used on input lin
@@ -1199,11 +1208,13 @@ ai $\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 K; V\OT1/lmr/m/n/12 )$\T1/lmr/m/n/12 ,
 Package blindtext Warning: indonesian not defined, using English instead.
 (blindtext)                 on input line 73.
 
-
+(./chapters/chapter-3.tex
 
 [34]
 
 [35]
+BAB III.
+
 
 [36
 
@@ -1213,21 +1224,42 @@ Package blindtext Warning: indonesian not defined, using English instead.
 
 [38]
 
+LaTeX Warning: Citation 'Breiman2001' on page 39 undefined on input line 61.
+
+)
+
+Package blindtext Warning: indonesian not defined, using English instead.
+(blindtext)                 on input line 74.
+
+
+
 [39]
 
-[40
+[40]
+
+[41
+
+]
+
+[42]
+
+[43]
+
+[44]
+
+[45
 
 ] (./chapters/appendix-1.tex
 Lampiran A.
 ) (./chapters/appendix-2.tex
 
-[41
+[46
 
 ]
 Lampiran B.
 )
 
-[42
+[47
 
 ] (/home/jon/Coding/final-project-sti/build/thesis.aux)
  ***********
@@ -1242,7 +1274,7 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4A3C877A5468960A9F8FA0C23AF49149;2972.
+(rerunfilecheck)             Checksum: 0641BAA141A2D011C5B013076E1C7DA6;4788.
 
 Package biblatex Warning: Please rerun LaTeX.
 
@@ -1251,11 +1283,11 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23512 strings out of 473362
- 423868 string characters out of 5720989
- 1628336 words of memory out of 5000000
- 46102 multiletter control sequences out of 15000+600000
- 621922 words of font info for 71 fonts, out of 8000000 for 9000
+ 23557 strings out of 473362
+ 424494 string characters out of 5720989
+ 1628404 words of memory out of 5000000
+ 46122 multiletter control sequences out of 15000+600000
+ 626193 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,11n,98p,1549b,4401s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/lo
@@ -1273,11 +1305,11 @@ e1/public/lm/lmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/
 lm/lmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pf
 b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm1
 0.pfb>
-Output written on /home/jon/Coding/final-project-sti/build/thesis.pdf (48 pages
-, 1257492 bytes).
+Output written on /home/jon/Coding/final-project-sti/build/thesis.pdf (54 pages
+, 1270173 bytes).
 PDF statistics:
- 787 PDF objects out of 1000 (max. 8388607)
- 669 compressed objects within 7 object streams
- 204 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 877 PDF objects out of 1000 (max. 8388607)
+ 752 compressed objects within 8 object streams
+ 226 named destinations out of 1000 (max. 500000)
+ 301 words of extra memory for PDF output out of 10000 (max. 10000000)
 
