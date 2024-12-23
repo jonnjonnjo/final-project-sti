@@ -21,6 +21,10 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
 \contentsline {chapter}{\numberline {I}Pendahuluan}{1}{chapter.1}%
 \contentsline {section}{\numberline {I.1}Latar Belakang}{1}{section.1.1}%
 \babel@toc {english}{}\relax 
@@ -160,51 +164,45 @@
 \contentsline {subsection}{\numberline {II.6.1}Root Mean Squared Error (RMSE)}{33}{subsection.2.6.1}%
 \contentsline {subsection}{\numberline {II.6.2}Directional Accuracy (DA)}{33}{subsection.2.6.2}%
 \contentsline {subsection}{\numberline {II.6.3}Mean Absolute Percentage Error (MAPE)}{34}{subsection.2.6.3}%
-\contentsline {section}{\numberline {II.7}Penelitian Terkait}{34}{section.2.7}%
-\contentsline {chapter}{\numberline {III}Analisis dan Perancangan}{36}{chapter.3}%
-\contentsline {section}{\numberline {III.1}Analisis Masalah}{36}{section.3.1}%
+\contentsline {subsection}{\numberline {II.6.4}Coefficient of Determination ($R^2$)}{34}{subsection.2.6.4}%
+\contentsline {section}{\numberline {II.7}Penelitian Terkait}{35}{section.2.7}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.7.1}\textit {Artificial Neural Network for Predicting Indonesia Stock Exchange Composite Using Macroeconomic Variables} \blx@tocontentsinit {0}\parencite {8528774}}{35}{subsection.2.7.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.7.2}\textit {Indonesian Banking Stock Price Prediction with LSTM and Random Walk Method} \blx@tocontentsinit {0}\parencite {9609752}}{36}{subsection.2.7.2}%
+\contentsline {chapter}{\numberline {III}Analisis dan Perancangan}{38}{chapter.3}%
+\contentsline {section}{\numberline {III.1}Analisis Masalah}{38}{section.3.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {section}{\numberline {III.2}Identifikasi Alternatif Solusi}{36}{section.3.2}%
-\contentsline {subsection}{\numberline {III.2.1}\textit {Classical Quantitaive}}{36}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {III.2.2}\textit {Sequence-based Modelling}}{37}{subsection.3.2.2}%
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {III.2.3}\textit {Classical Machine Learning}}{38}{subsection.3.2.3}%
-\contentsline {section}{\numberline {III.3}Evaluasi dan Pemilihan Alternatif Solusi}{39}{section.3.3}%
-\contentsline {section}{\numberline {III.4}Perancangan Konsep Desain dan Solusi}{39}{section.3.4}%
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {III.2}Identifikasi Alternatif Solusi}{38}{section.3.2}%
+\contentsline {subsection}{\numberline {III.2.1}\textit {Classical Quantitaive}}{38}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {III.2.2}\textit {Sequence-based Modelling}}{39}{subsection.3.2.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {III.2.3}\textit {Classical Machine Learning}}{40}{subsection.3.2.3}%
+\contentsline {section}{\numberline {III.3}Evaluasi dan Pemilihan Alternatif Solusi}{41}{section.3.3}%
+\contentsline {section}{\numberline {III.4}Perancangan Konsep Desain dan Solusi}{43}{section.3.4}%
+\contentsline {subsection}{\numberline {III.4.1}Data Preparation}{43}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {III.4.2}Data Understanding}{45}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {III.4.3}Rancangan Konsep Solusi}{49}{subsection.3.4.3}%
+\contentsline {chapter}{\numberline {IV}Rencana Selanjutnya}{53}{chapter.4}%
+\contentsline {section}{\numberline {IV.1}Rencana Implementasi}{53}{section.4.1}%
+\contentsline {subsection}{\numberline {IV.1.1}Lini Masa Pengerjaan}{53}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {IV.1.2}Alat dan Bahan}{53}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {IV.1.3}Biaya}{53}{subsection.4.1.3}%
+\contentsline {section}{\numberline {IV.2}Desain Pengujian dan Evaluasi}{53}{section.4.2}%
+\contentsline {section}{\numberline {IV.3}Analisis Mitigasi dan Risiko}{53}{section.4.3}%
+\contentsline {subsection}{\numberline {IV.3.1}\textit {Timeline} yang Terlewat}{53}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {IV.3.2}Hasil Pemodelan yang Kurang Baik}{54}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {IV.3.3}Pemodelan Memakan Waktu yang Cukup Lama}{54}{subsection.4.3.3}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -255,6 +253,33 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {part}{Lampiran}{44}{chapter*.5}%
-\contentsline {chapter}{\numberline {A}Instrumen Pengujian}{46}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Rincian Kasus Uji}{47}{appendix.B}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 

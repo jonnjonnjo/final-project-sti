@@ -560,8 +560,61 @@ Mean Absolute Percentage Error (MAPE) mengukur kesalahan relatif dalam bentuk pe
 
 Semakin kecil nilai MAPE, maka semakin baik kualitas prediksi model karena menunjukkan bahwa persentase kesalahan prediksi terhadap nilai aktual semakin kecil. MAPE berguna untuk membandingkan kinerja model pada saham-saham dengan \textit{level price} berbeda, sebab kesalahan relatif (\(\frac{\lvert y_i - \hat{y}_i\rvert}{\lvert y_i\rvert}\)) dapat menunjukkan seberapa \textit{proportional} kesalahan prediksi di tiap saham.
 
+\subsection{Coefficient of Determination (\texorpdfstring{$R^2$}{R\^2})}
+\label{subsec:r2}
+
+\noindent
+\textit{Coefficient of Determination ($R^2$)} adalah metrik yang dapat mengukur seberapa baik model menjelaskan variasi dari data aktual. $R^2$ dapat diinterpretasikan sebagai persentase variansi data yang berhasil ditangkap oleh model. Nilai $R^2$ berada dalam rentang $(-\infty, 1]$, di mana:
+\begin{itemize}
+    \item $R^2 = 1$ menandakan model memiliki \textit{perfect fit} (prediksi sama persis dengan nilai sebenarnya).
+    \item $R^2 = 0$ berarti model tidak lebih baik daripada sekadar memprediksi nilai rata-rata.
+    \item $R^2 < 0$ dapat terjadi ketika performa model buruk dan tidak mampu menjelaskan variasi data dengan baik.
+\end{itemize}
+
+Persamaan \ref{eq:r2} mendefinisikan $R^2$ dengan membandingkan \textit{Residual Sum of Squares} (\(\text{RSS}\)) dan \textit{Total Sum of Squares} (\(\text{TSS}\)):
+
+\begin{equationfloat}
+\begin{equation}
+R^2 
+= 
+1
+-
+\frac{
+  \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
+}{
+  \sum_{i=1}^{n} (y_i - \bar{y})^2
+}
+\end{equation}
+\caption{\textit{Coefficient of Determination} ($R^2$)}
+\label{eq:r2}
+\end{equationfloat}
+
+\noindent
+dengan
+\begin{itemize}
+    \item $y_i$ adalah nilai aktual,
+    \item $\hat{y}_i$ adalah nilai prediksi,
+    \item $\bar{y}$ adalah rata-rata dari nilai aktual (\( \bar{y} = \frac{1}{n}\sum_{i=1}^n y_i \)).
+\end{itemize}
+
+Semakin tinggi nilai $R^2$ (mendekati 1), maka semakin besar proporsi variansi data aktual yang mampu diprediksi oleh model. Nilai $R^2$ negatif mengindikasikan bahwa model memprediksi lebih buruk daripada sekadar tebakan nilai rata-rata. Oleh karena itu, $R^2$ penting untuk menjadi metrik pelengkap, untuk memberikan gambaran seberapa baik keseluruhan variabilitas data dapat dijelaskan oleh model dibandingkan metrik error lain seperti RMSE atau MAPE.
+
 
 \section{Penelitian Terkait}
 
+\subsection{\textit{Artificial Neural Network for Predicting Indonesia Stock Exchange Composite Using Macroeconomic Variables} \parencite{8528774}}
 
-\blindtext
+
+Penelitian ini membahas penerapan \textit{Artificial Neural Network} (ANN) untuk memprediksi pergerakan Indeks Harga Saham Gabungan (IHSG) di Bursa Efek Indonesia (BEI) dengan memanfaatkan variabel makroekonomi---yakni nilai tukar, suku bunga, inflasi, dan jumlah uang beredar (M2). Data yang digunakan adalah data bulanan dari Desember 2005 hingga November 2017, lalu diolah dengan metode ANN \textit{Backpropagation}. Tujuan utamanya adalah membantu investor memahami pergerakan IHSG dan mengurangi ketidakpastian dalam pengambilan keputusan investasi.
+
+Hasil penelitian menunjukkan bahwa model ANN yang melalui tahap prapemrosesan data dan mempertimbangkan faktor \textit{time delay} tertentu (satu atau dua bulan) mampu memberikan tingkat akurasi prediksi IHSG yang tinggi, dengan nilai akurasi mencapai $96,38\%$ dan error sebesar $0,004$. Dengan temuan ini, ditemukan bahwa pentingnya pemilihan variabel makroekonomi yang tepat serta pengolahan data yang cermat untuk menghasilkan model prediksi yang andal. 
+
+\subsection{\textit{Indonesian Banking Stock Price Prediction with LSTM and Random Walk Method} \parencite{9609752}}
+
+Penelitian ini berfokus pada pemodelan dan prediksi harga saham beberapa bank di Indonesia, yaitu PT Bank Rakyat Indonesia Tbk (BBRI), PT Bank Central Asia Tbk (BBCA), dan PT Bank Pembangunan Daerah Jawa Barat dan Banten Tbk (BJBR), menggunakan \textit{metode Long Short-Term Memory} (LSTM) serta \textit{Random Walk} (RW) baik ordo pertama maupun kedua. Data harga historis diperoleh dari \textit{Yahoo Finance} (untuk LSTM) dan file \textit{csv} (untuk RW), lalu dibagi menjadi beberapa skenario panjang periode pelatihan (1--9 tahun). Kinerja model diukur dengan \textit{Root Mean Square Error} (RMSE) dan \textit{Root Mean Square Error of Prediction} (RMSEP).
+
+Hasil eksperimen menunjukkan bahwa LSTM secara konsisten memberikan hasil prediksi yang lebih baik ditunjukkan oleh penurunan nilai RMSE dan RMSEP. Metode RW juga mampu memprediksi pergerakan harga saham meskipun relatif lebih sederhana. Namun, penggunaan \textit{Time-Delay} yang lebih panjang pada LSTM secara umum menghasilkan performa yang unggul. Selain itu, semakin besar ukuran data historis yang digunakan, semakin kecil kesalahan prediksi yang dihasilkan. 
+
+
+
+

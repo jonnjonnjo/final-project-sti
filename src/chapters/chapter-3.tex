@@ -31,9 +31,9 @@ Pasar modal Indonesia yang semakin berkembang dan terdiversifikasi menuntut pend
 \textit{Sequence-based modelling} digunakan untuk mempelajari data sekuensial (\textit{time series}) yang berisikan interaksi jangka panjang dan pola kompleks. 
 
 \begin{enumerate}
-    \item \textit{Long Short-Term Memory (LSTM) based RNN} 
+    \item \textit{Gated RNN} 
     \\
-    LSTM dibuat untuk mengatasi keterbatasan RNN \textit{vanilla}, khususnya masalah \textit{vanishing gradient} \parencite{Hochreiter1997}. Model LSTM mampu “mengingat” informasi relevan lebih lama karena memiliki struktur \textit{cell state} dan \textit{gates}. 
+    LSTM dibuat untuk mengatasi keterbatasan RNN \textit{vanilla}, khususnya masalah \textit{vanishing gradient} \parencite{Hochreiter1997}. Model LSTM mampu “mengingat” informasi relevan lebih lama karena memiliki struktur \textit{cell state} dan \textit{gates}. Struktur dari \textit{gating} ini dimiliki juga oleh GRU. 
     \begin{itemize}
         \item \textbf{Kelebihan}:  
         Cocok untuk data dengan dependensi jangka panjang, seperti \textit{time series} finansial. Dapat menemukan \textit{hidden pattern} yang kompleks, bahkan ketika data memiliki faktor musiman dan tren yang berubah-ubah.
@@ -78,7 +78,267 @@ Kategori \textit{classical machine learning} terdiri atas \textit{machine learni
 \end{enumerate}
 
 \section{Evaluasi dan Pemilihan Alternatif Solusi}
+Analisis dilakukan terhadap tiga alternatif yang telah disebutkan untuk mengidentifikasi kelebihan dan kekurangan masing-masing. Setelah itu, akan dilakukan perhitungan menggunakan \textit{weighted scoring matrix} untuk menentukan solusi terbaik yang dapat diterapkan pada permasalahan tugas akhir. Akan dianalisis kelebihan serta kekurangan alternatif solusi pada tabel \ref{table:comparative}. 
+
+\begin{table}[H]
+\caption{Perbandingan Kelebihan dan Kekurangan Alternatif Solusi}
+\label{table:comparative}
+\begin{tabular}{|p{4cm}|p{5cm}|p{5cm}|}
+\hline
+\textbf{Alternatif Solusi} & \textbf{Kelebihan} & \textbf{Kekurangan} \\
+\hline
+\textbf{Classical Quantitative} \newline (ARIMA) & 
+\begin{itemize}
+    \item Koefisien AR dan MA mudah diinterpretasi secara statistik
+    \item Bagus untuk data stasioner dan \textit{seasonal pattern}
+    \item Proses komputasi lebih cepat
+\end{itemize} & 
+\begin{itemize}
+    \item Tidak efektif untuk mencari hubungan nonlinier antar variabel
+    \item Memerlukan diferensiasi untuk data non-stasioner
+    \item Akurasi menurun saat ada banyak variabel yang berkorelasi
+\end{itemize} \\
+\hline
+\textbf{Sequence-based Modelling} \newline (Gated RNN, TFT) & 
+\begin{itemize}
+    \item Bagus dalam menangkap pola jangka panjang
+    \item Mampu menangani data nonlinier dan \textit{seasonal pattern}
+    \item Dapat menemukan \textit{hidden pattern} yang kompleks
+\end{itemize} & 
+\begin{itemize}
+    \item Waktu \textit{training} lebih lama
+    \item Membutuhkan \textit{fine-tuning hyperparameter}
+    \item Perlu sumber daya komputasi besar
+\end{itemize} \\
+\hline
+\textbf{Classical ML} \newline (Random Forest, XGBoost) & 
+\begin{itemize}
+    \item \textit{Robust} terhadap \textit{outlier} dan \textit{noise}
+    \item Performa stabil tanpa memerlukan banyak \textit{tuning}
+    \item Dapat menunjukkan \textit{feature importance}
+\end{itemize} & 
+\begin{itemize}
+    \item Perlu feature engineering yang lebih ekstensif
+    \item Kurang efektif untuk \textit{long-term dependencies}
+    \item Interpretasi tidak sejelas model linear seperti ARIMA
+\end{itemize} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\caption{Weighted Scoring Matrix Alternatif Solusi}
+\label{table:weighted_matrix}
+\begin{tabular}{|p{4cm}|p{3cm}|p{3cm}|p{3cm}|}
+\hline
+\textbf{Kriteria (Bobot)} & \textbf{Classical Quantitative (ARIMA)} & \textbf{Sequence-based Modelling (RNN, TFT)} & \textbf{Classical ML (RF, XGBoost)} \\ \hline
+\textbf{Skalabilitas (20\%)} & 3 $\times$ 0.2 = 0.60 & 2 $\times$ 0.2 = 0.40 & 2 $\times$ 0.2 = 0.40 \\ \hline
+\textbf{Biaya (5\%)} & 2 $\times$ 0.05 = 0.10 & 3 $\times$ 0.05 = 0.15 & 2 $\times$ 0.05 = 0.10 \\ \hline
+\textbf{Kesederhanaan (35\%)} & 2 $\times$ 0.35 = 0.70 & 3 $\times$ 0.35 = 1.05 & 1 $\times$ 0.35 = 0.35 \\ \hline
+\textbf{Waktu Implementasi (25\%)} & 2 $\times$ 0.25 = 0.50 & 3 $\times$ 0.25 = 0.75 & 2 $\times$ 0.25 = 0.50 \\ \hline
+\textbf{Performa Model (15\%)} & 3 $\times$ 0.15 = 0.45 & 2 $\times$ 0.15 = 0.30 & 2 $\times$ 0.15 = 0.30 \\ \hline
+\textbf{Total Skor} & \textbf{2.35} & \textbf{2.65} & \textbf{1.65} \\ \hline
+\end{tabular}
+\end{table}
+
+Dari tabel \ref{table:weighted_matrix}, solusi yang akan dipilih adalah solusi \textit{Classical Quantitative} (ARIMA) serta \textit{Sequence based model}.
 
 \section{Perancangan Konsep Desain dan Solusi}
+\subsection{Data Preparation}
 
-\blindtext
+Data yang digunakan dalam penelitian ini berasal dari \textit{Yahoo! Finance API} dan mencakup data historis pasar modal Indonesia, termasuk saham-saham yang terdaftar di Bursa Efek Indonesia (BEI). Dataset ini memiliki cakupan data yang dimulai sejak tahun 2005. Dataset ini terdiri dari beberapa fitur utama, seperti ditampilkan pada Tabel \ref{table:stock_metadata}.
+
+\begin{table}[H]
+\caption{Metadata of Stock Market Time Series Dataset}
+\label{table:stock_metadata}
+\begin{tabular}{|p{4cm}|p{3cm}|p{8cm}|}
+\hline
+\textbf{Nama Attribut} & \textbf{Tipe Data} & \textbf{Deskripsi} \\ \hline
+\textbf{Date} & datetime64 & \textit{identifier} unik untuk tanggal perdagangan. \\ \hline
+\textbf{Ticker} & string & Simbol \textit{ticker} saham . \\ \hline
+\textbf{Stock Name} & string & Nama lengkap saham . \\ \hline
+\textbf{Open} & float64 & Harga pembukaan saham pada hari tersebut. \\ \hline
+\textbf{High} & float64 & Harga tertinggi saham pada hari tersebut. \\ \hline
+\textbf{Low} & float64 & Harga terendah saham pada hari tersebut. \\ \hline
+\textbf{Close} & float64 & Harga penutupan saham pada hari tersebut. \\ \hline
+\textbf{Adj Close} & float64 & Harga penutupan yang disesuaikan (apabila ada \textit{event} khusus seperti stock split ). \\ \hline
+\textbf{Volume} & int64 & Volume saham yang diperdagangkan pada hari tersebut. \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{itemize}
+    \item \textbf{Date}: 
+    Tanggal perdagangan yang digunakan sebagai penanda unik untuk setiap titik waktu dalam \textit{dataset}. 
+    Fitur ini merepresentasikan waktu terjadinya aktivitas perdagangan \textit{time series}. 
+    
+    \item \textbf{Ticker}: 
+    \textit{String} unik yang merepresentasikan saham tertentu, misalnya \texttt{BBCA.JK} untuk saham Bank BCA. \textit{Ticker} digunakan untuk mengidentifikasi perusahaan tertentu dalam pasar saham.
+    \item \textbf{Stock Name}: 
+    Nama lengkap saham untuk mempermudah interpretasi data. 
+    
+    \item \textbf{Open, High, Low, Close}: 
+    \begin{itemize}
+        \item \textbf{Open}: Harga pembukaan saham pada awal sesi perdagangan. 
+        Fitur ini memberikan informasi tentang harga pertama yang diperdagangkan pada hari tertentu.
+        \item \textbf{High}: Harga tertinggi saham yang tercapai selama sesi perdagangan. 
+        Fitur ini mencerminkan \textit{upperbound} harga saham pada hari tersebut.
+        \item \textbf{Low}: Harga terendah saham yang tercapai selama sesi perdagangan. 
+        Fitur ini menggambarkan \textit{lowerbound} harga saham pada hari tersebut.
+        \item \textbf{Close}: Harga penutupan saham pada akhir sesi perdagangan. 
+    \end{itemize}
+    
+    \item \textbf{Adj Close}: 
+    Harga penutupan yang telah disesuaikan untuk memperhitungkan aksi korporasi seperti \textit{stock split}. 
+    Fitur ini sangat berguna untuk analisis historis karena mencerminkan nilai saham yang sebenarnya tanpa bias akibat perubahan struktural dari harga saham sehingga memungkinkan perbandingan harga yang lebih akurat dari waktu ke waktu.
+    
+    \item \textbf{Volume}: 
+    Jumlah saham yang diperdagangkan selama hari tertentu. 
+    Fitur ini mencerminkan tingkat aktivitas perdagangan saham . Volume yang tinggi menunjukkan minat pasar yang besar, sedangkan volume rendah dapat mengindikasikan aktivitas perdagangan yang terbatas.
+\end{itemize}
+
+
+\subsection{Data Understanding}
+
+Pada bagian \textit{Data Understanding}, akan dilakukan \textit{EDA} terhadap data yang akan digunakan. Data yang digunakan adalah \textit{time series data} dari BBCA.JK. Tabel \ref{table:missing_value_analysis} dan tabel \ref{table:descriptive_statistics} membahas tentang karakteristik statistik dari data tersebut.
+
+\begin{table}[H]
+\caption{Missing Value Analysis for Stock Market Data}
+\label{table:missing_value_analysis}
+\begin{tabular}{|p{6cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Column} & \textbf{Missing Count} & \textbf{Missing Percentage} \\ \hline
+\textbf{Date (Date)} & 0 & 0.0\% \\ \hline
+\textbf{Adj Close (BBCA.JK)} & 0 & 0.0\% \\ \hline
+\textbf{Close (BBCA.JK)} & 0 & 0.0\% \\ \hline
+\textbf{High (BBCA.JK)} & 0 & 0.0\% \\ \hline
+\textbf{Low (BBCA.JK)} & 0 & 0.0\% \\ \hline
+\textbf{Open (BBCA.JK)} & 0 & 0.0\% \\ \hline
+\textbf{Volume (BBCA.JK)} & 0 & 0.0\% \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\caption{Descriptive Statistics for Stock Market Data}
+\label{table:descriptive_statistics}
+\begin{tabular}{|l|c|c|c|c|c|c|c|}
+\hline
+\textbf{Column} & \textbf{Count} & \textbf{Mean} & \textbf{Std} & \textbf{Min} & \textbf{5\%} & \textbf{10\%} & \textbf{25\%} \\ \hline
+Open & 655 & 346.39 & 90.90 & 175.00 & 182.50 & 188.50 & 295.00 \\ \hline
+High & 655 & 350.18 & 91.69 & 177.50 & 185.00 & 191.00 & 297.50 \\ \hline
+Low & 655 & 342.16 & 89.65 & 175.00 & 182.50 & 187.50 & 292.50 \\ \hline
+Close & 655 & 346.81 & 90.56 & 177.50 & 185.00 & 190.00 & 297.50 \\ \hline
+Adj Close & 655 & 239.12 & 69.12 & 102.76 & 120.06 & 125.00 & 199.41 \\ \hline
+Volume & 655 & 2.66e+08 & 2.62e+08 & 0.00 & 0.00 & 4.39e+07 & 1.13e+08 \\ \hline
+\end{tabular}
+
+\vspace{0.5cm}
+
+\begin{tabular}{|l|c|c|c|c|c|c|c|}
+\hline
+\textbf{Column} & \textbf{50\%} & \textbf{75\%} & \textbf{95\%} & \textbf{99\%} & \textbf{Max} & \textbf{Skew} & \textbf{Kurtosis} \\ \hline
+Open & 347.50 & 410.00 & 500.00 & 522.30 & 545.00 & -0.16 & -0.53 \\ \hline
+High & 352.50 & 417.50 & 503.25 & 535.00 & 555.00 & -0.15 & -0.50 \\ \hline
+Low & 342.50 & 405.00 & 486.50 & 517.30 & 535.00 & -0.15 & -0.52 \\ \hline
+Close & 347.50 & 410.00 & 500.00 & 527.30 & 545.00 & -0.15 & -0.51 \\ \hline
+Adj Close & 236.59 & 289.83 & 359.86 & 379.50 & 392.24 & -0.06 & -0.51 \\ \hline
+Volume & 1.91e+08 & 3.37e+08 & 7.49e+08 & 1.48e+09 & 1.95e+09 & 2.74 & 10.78 \\ \hline
+\end{tabular}
+\end{table}
+
+
+Gambar \ref{fig:distribution-adj-close} menggambarkan distribusi persebaran nilai \textit{adj. close}. Gambar \ref{fig:distribution-close} menggambarkan distribusi persebaran nilai \textit{closing price}.
+Gambar \ref{fig:distribution-high} menggambarkan distribusi persebaran nilai \textit{highest price}.
+Gambar \ref{fig:distribution-low} menggambarkan distribusi persebaran nilai \textit{lowest price}.
+Gambar \ref{fig:distribution-opening} menggambarkan distribusi persebaran nilai \textit{opening price}.
+Gambar \ref{fig:distribution-volume} menggambarkan distribusi persebaran volume penjualan.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{resources/chapter-3-adj-close.png}
+    \caption{Distribusi \textit{Adj. Close}}
+    \label{fig:distribution-adj-close}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{resources/chapter-3-distribution-close.png}
+    \caption{Distribusi \textit{Closing price}}
+    \label{fig:distribution-close}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{resources/chapter-3-distribution-high.png}
+    \caption{Distribusi \textit{High price}}
+    \label{fig:distribution-high}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{resources/chapter-3-distribution-low.png}
+    \caption{Distribusi \textit{low price}}
+    \label{fig:distribution-low}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{resources/chapter-3-distribution-open.png}
+    \caption{Distribusi \textit{opening price}}
+    \label{fig:distribution-opening}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{resources/chapter-3-volume.png}
+    \caption{Distribusi volume penjualan}
+    \label{fig:distribution-volume}
+\end{figure}
+
+
+\subsection{Rancangan Konsep Solusi}
+
+Berikut adalah uraian lebih detail mengenai Rancangan Konsep Solusi seperti tergambar pada Gambar \ref{fig:solution-concept}. Rancangan ini secara garis besar terdiri dari beberapa tahapan utama: \textit{fetching data}, \textit{exploratory data analysis}, \textit{data transformation}, \textit{modeling}, dan \textit{evaluation}. Tiap tahapan saling berkaitan untuk membentuk rangkaian proses \textit{directed graph}, dari pengumpulan data hingga evaluasi performa model.
+
+\begin{enumerate} 
+
+\item \textit{Data Fetching}  \\
+Pada tahap awal, data diambil (\textit{fetching}) dari \textit{Yahoo! Finance}—sering disebut \textit{YFinance API}. Data ini merupakan \textit{time series} historis berbagai saham di Bursa Efek Indonesia. 
+
+\item \textbf{\textit{Exploratory Data Analysis (EDA)}} \\
+EDA dilakukan untuk mendapatkan pemahaman mendasar tentang struktur dan karakteristik data. Langkah ini meliputi pengecekan \textit{missing values}, deteksi \textit{outliers}, serta analisis \textit{distribution} untuk setiap \textit{feature} (misalnya \textit{close}, \textit{open}, \textit{volume}). Selain itu, kita juga memvisualisasikan pola trend atau \textit{seasonality} pada harga saham. Pada tahap ini, \textit{visual analytics} dan teknik \textit{statistical summarization} berperan penting dalam mencari tahu \textit{possbile hidden patterns}.  
+
+\item \textbf{\textit{Data Transformation}} \\
+Data perlu ditransformasikan agar siap dimasukkan ke model. Transformasi dapat mencakup:
+\begin{itemize}
+    \item \textit{Feature Engineering} \\
+    Membuat kolom baru seperti \textit{lag features}, \textit{moving averages}, \textit{volatility}, bahkan indikator teknis (misalnya \textit{RSI}, \textit{MACD}, atau \textit{Bollinger Bands}).
+    
+    \item \textit{Normalization/Scaling} \\
+    Menangani perbedaan skala data antar kolom, misalnya menggunakan \textit{MinMaxScaler} atau \textit{StandardScaler} agar model dapat melakukan optimasi parameter dengan lebih stabil. 
+    \item \textit{Splitting Dataset} \\
+    Membagi data menjadi \textit{training set}, \textit{validation set}, dan \textit{test set} (atau \textit{out-of-sample}) untuk membuat evaluasi performa model yang lebih \textit{unbiased}.
+\end{itemize}
+
+\item \textbf{\textit{Modeling}} \\
+Pada tahap ini, kita memanfaatkan pendekatan \textit{Classical Quantitative} (ARIMA) serta \textit{Sequence-based Modeling} (LSTM, GRU, TFT) yang sudah dipilih pada alternatif solusi untuk membangun model \textit{forecasting}. Pada fase ini, dilakukan juga \textbf{\textit{hyperparameter tuning}} untuk memastikan model bekerja pada konfigurasi optimal (misalnya jumlah \textit{hidden units}, \textit{learning rate}, jumlah \textit{Transformer heads}, dan lain-lain). Proses \textit{training} umumnya dijalankan menggunakan \textit{mini-batch stochastic gradient descent} (\textit{SGD}) atau varian optimisasi populer (\textit{Adam, RMSProp}), disertai mekanisme \textit{early stopping} demi menghindari \textit{overfitting}.
+
+\item \textbf{\textit{Evaluation}} \\
+Setelah model dilatih, performanya dinilai menggunakan beberapa metrik, yaitu:
+\begin{itemize}
+    \item \textbf{RMSE (Root Mean Squared Error)}: Mengukur \textit{magnitude} kesalahan, sensitif terhadap \textit{outliers}.
+    \item \textbf{Directional Accuracy}: Menilai kemampuan model dalam memprediksi arah pergerakan harga (naik/turun).
+    \item \textbf{MAPE (Mean Absolute Percentage Error)}: Mengukur kesalahan relatif dalam bentuk persentase, cocok untuk membandingkan saham dengan skala harga berbeda.
+    \item \textbf{\(R^2\) (Coefficient of Determination)}: Mengecek seberapa besar variasi data dijelaskan oleh model.
+\end{itemize}
+Dari hasil pengukuran ini, kita dapat membandingkan performa ARIMA, LSTM, GRU, serta TFT untuk melihat mana yang memberikan akurasi maupun interpretabilitas terbaik. Jika model \textit{sequence-based} terbukti lebih unggul dalam mendeteksi \textit{nonlinearity}, sementara ARIMA unggul dalam kemudahan interpretasi, maka keduanya bisa dipadukan atau difokuskan sesuai kebutuhan bisnis.
+
+\end{enumerate}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{resources/chapter-3-diagram-flow.png}
+    \caption{Diagram Konsep Solusi}
+    \label{fig:solution-concept}
+\end{figure}
+

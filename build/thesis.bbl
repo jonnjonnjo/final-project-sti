@@ -19,6 +19,45 @@
 
 \refsection{0}
   \datalist[entry]{cms/global//global/global/global}
+    \entry{8528774}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0230d6b0244f7c9fe36936da25026745}{%
+           family={Alamsyah},
+           familyi={A\bibinitperiod},
+           given={Andry},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c38fe911b34ef50d7a41472b240422cf}{%
+           family={Zahir},
+           familyi={Z\bibinitperiod},
+           given={Asri\bibnamedelima Nurfathi},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4c734ab82497cc0f0f902ed6ad7daa21}
+      \strng{fullhash}{4c734ab82497cc0f0f902ed6ad7daa21}
+      \strng{fullhashraw}{4c734ab82497cc0f0f902ed6ad7daa21}
+      \strng{bibnamehash}{4c734ab82497cc0f0f902ed6ad7daa21}
+      \strng{authorbibnamehash}{4c734ab82497cc0f0f902ed6ad7daa21}
+      \strng{authornamehash}{4c734ab82497cc0f0f902ed6ad7daa21}
+      \strng{authorfullhash}{4c734ab82497cc0f0f902ed6ad7daa21}
+      \strng{authorfullhashraw}{4c734ab82497cc0f0f902ed6ad7daa21}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 6th International Conference on Information and Communication Technology (ICoICT)}
+      \field{title}{Artificial Neural Network for Predicting Indonesia Stock Exchange Composite Using Macroeconomic Variables}
+      \field{year}{2018}
+      \field{pages}{44\bibrangedash 48}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/ICoICT.2018.8528774
+      \endverb
+      \keyw{Macroeconomics;Artificial neural networks;Training;Delay effects;Indexes;Predictive models;Stock markets;Artificial Neural Network;Backpropagation;Macroeconomic Variable;Prediction;Composite Stock Price Index}
+    \endentry
     \entry{asiavesta2022}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=d93021f439c87b2ec674895ce8c4283e}{%
@@ -512,6 +551,52 @@
       \field{edition}{2nd}
       \field{title}{Neural Networks: A Comprehensive Foundation}
       \field{year}{1998}
+    \endentry
+    \entry{9609752}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=5b9d675a76292e209de874a98c5ebbd9}{%
+           family={Heru},
+           familyi={H\bibinitperiod},
+           given={Mike\bibnamedelima Christ},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=247eb698205aed8d595030c7884f9374}{%
+           family={Rachmawati},
+           familyi={R\bibinitperiod},
+           given={Ro'fah\bibnamedelima Nur},
+           giveni={R\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b446887cdd6baf5da3adef26956891c}{%
+           family={Suhartono},
+           familyi={S\bibinitperiod},
+           given={Derwin},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b91da8f3600e1cf0b20af41c93544c66}
+      \strng{fullhash}{b91da8f3600e1cf0b20af41c93544c66}
+      \strng{fullhashraw}{b91da8f3600e1cf0b20af41c93544c66}
+      \strng{bibnamehash}{b91da8f3600e1cf0b20af41c93544c66}
+      \strng{authorbibnamehash}{b91da8f3600e1cf0b20af41c93544c66}
+      \strng{authornamehash}{b91da8f3600e1cf0b20af41c93544c66}
+      \strng{authorfullhash}{b91da8f3600e1cf0b20af41c93544c66}
+      \strng{authorfullhashraw}{b91da8f3600e1cf0b20af41c93544c66}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2021 1st International Conference on Computer Science and Artificial Intelligence (ICCSAI)}
+      \field{title}{Indonesian Banking Stock Price Prediction with LSTM and Random Walk Method}
+      \field{volume}{1}
+      \field{year}{2021}
+      \field{pages}{385\bibrangedash 390}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICCSAI53272.2021.9609752
+      \endverb
+      \keyw{R language;Computer science;Computational modeling;Neural networks;Machine learning;Predictive models;Data models;stock market;machine learning;LSTM;INLA;random walk}
     \endentry
     \entry{Hochreiter1997}{article}{}{}
       \name{author}{2}{}{%

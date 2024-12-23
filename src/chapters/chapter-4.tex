@@ -1,13 +1,30 @@
-\chapter{Evaluasi dan Pembahasan}
+\chapter{Rencana Selanjutnya}
 
-\section{Tujuan Pengujian}
-\blindtext
+\section{Rencana Implementasi}
+\subsection{Lini Masa Pengerjaan}
+\subsection{Alat dan Bahan}
+\subsection{Biaya}
 
-\section{Skenario Pengujian}
-\blindtext
 
-\section{Hasil Pengujian}
-\blindtext
+\section{Desain Pengujian dan Evaluasi}
 
-\section{Pembahasan}
-\blindtext
+
+\section{Analisis Mitigasi dan Risiko}
+\subsection{\textit{Timeline} yang Terlewat}
+
+Ada risiko bahwa akan ada tahapan memakan waktu lebih lama dari yang direncanakan. Hal ini dapat menyebabkan keterlambatan dalam penyelesaian keseluruhan proyek, terutama jika waktu yang dialokasikan untuk setiap tahap tidak mencukupi. Untuk mengatasi risiko ini, diperlukan perencanaan jadwal yang fleksibel. Monitoring progres secara berkala juga harus dilakukan menggunakan alat seperti Gantt Chart atau aplikasi produktivitas lainnya. Waktu yang tersisa dari fase yang selesai lebih cepat dapat dialokasikan ke fase berikutnya untuk memastikan penyelesaian proyek tetap tepat waktu.
+
+\subsection{Hasil Pemodelan yang Kurang Baik}
+
+Risiko lainnya adalah model yang dihasilkan memiliki performa yang tidak memuaskan, baik karena \textit{overfitting}, \textit{underfitting}, atau kurangnya fitur-fitur data yang relevan. Oleh karena itu, seiring berjalannya penelitian, diperlukan juga \textit{research} lebih lanjut tentang data-data \textit{time-series} lainnnya seperti data nilai tukar rupiah relatif terhadap dollar AS yang dapat di-\textit{coupling} untuk digunakan untuk melakukan \textit{training} model lebih lanjut.
+
+
+
+\subsection{Pemodelan Memakan Waktu yang Cukup Lama}
+
+Pelatihan model dengan arsitektur kompleks seperti \textit{Gated Recurrent Neural Networks} (GRU dan LSTM) serta \textit{Temporal Fusion Transformer} (TFT) sering kali membutuhkan \textit{training time}. Untuk mengatasi tantangan ini, beberapa strategi optimasi akan dilakukan. Salah satunya adalah penggunaan metode \textit{random search} yang dapat melakukan eksplorasi lebih luas terhadap kombinasi \textit{hyperparameter} tanpa harus mencoba setiap konfigurasi seperti dalam \textit{grid search}. Metode ini sering kali lebih efisien untuk \textit{dataset} besar.
+
+Selain itu, pendekatan \textit{Bayesian optimization} juga dapat dikonsiderasi di mana proses \textit{tuning} dilakukan secara iteratif dengan memanfaatkan hasil sebelumnya untuk memperkirakan konfigurasi yang optimal. Hal ini lebih efektif dalam menemukan kombinasi \textit{hyperparameter} terbaik dengan jumlah iterasi yang lebih sedikit. 
+
+Untuk mempercepat proses pelatihan, layanan \textit{cloud computing} seperti Google Colab Pro akan digunakan guna memanfaatkan GPU atau TPU. Proses pelatihan juga akan dilengkapi dengan fitur \textit{checkpointing} sehingga progres model dapat disimpan dan dilanjutkan jika terjadi gangguan. Untuk TFT, fokus akan terdapat pada pemilihan parameter seperti \textit{learning rate}, jumlah \textit{attention heads}, dan ukuran \textit{hidden layers}, guna memastikan \textit{balance} antara efisiensi waktu dan performa model. Dengan pendekatan ini, waktu pelatihan dapat dioptimisasi secara lebih efektif tanpa mengorbankan kualitas model.
+
