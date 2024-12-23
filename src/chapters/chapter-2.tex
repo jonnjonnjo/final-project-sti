@@ -2,7 +2,7 @@
 
 
 \section{Pasar Saham Indonesia}
-Gagasan mengenai pasar saham dapat ditelusuri berabad-abad yang lalu, bermula dari bentuk-bentuk awal perdagangan komoditas dan obligasi pemerintah, hingga menjadi platform canggih yang saat ini memfasilitasi pertukaran ekuitas perusahaan. Salah satu contoh awal dari sistem pasar yang relatif terorganisasi muncul pada abad ke-17 di Amsterdam dengan Perusahaan Hindia Timur Belanda (VOC), yang dianggap sebagai perusahaan publik pertama di dunia \parencite{Petram2014,Neal1990}. Di sini, para investor dapat membeli dan menjual saham pada satu lokasi terpusat. Ini menjadi cikal bakal bursa saham modern  \parencite{Neal2005,Goetzmann2016}. Seiring waktu, gagasan ini menyebar ke seluruh Eropa, dengan munculnya pasar di London dan Paris. Pada akhir abad ke-18 dan awal abad ke-19, Bursa Efek New York (NYSE) muncul di Amerika Serikat dan menjadi fondasi bagi jaringan global pasar keuangan yang saling terhubung \parencite{Markham2002,Goetzmann2016}.
+Gagasan mengenai pasar saham dapat ditelusuri berabad-abad yang lalu, bermula dari bentuk-bentuk awal perdagangan komoditas dan obligasi pemerintah, hingga menjadi platform canggih yang saat ini memfasilitasi pertukaran ekuitas perusahaan. Salah satu contoh awal dari sistem pasar yang relatif terorganisasi muncul pada abad ke-17 di Amsterdam dengan Perusahaan Hindia Timur Belanda (VOC), yang dianggap sebagai perusahaan publik pertama di dunia \parencite{Petram2014,Neal1990}. Di sini, para investor dapat membeli dan menjual saham pada satu lokasi terpusat. Ini menjadi cikal bakal bursa saham modern  \parencite{Goetzmann2016}. Seiring waktu, gagasan ini menyebar ke seluruh Eropa, dengan munculnya pasar di London dan Paris. Pada akhir abad ke-18 dan awal abad ke-19, Bursa Efek New York (NYSE) muncul di Amerika Serikat dan menjadi fondasi bagi jaringan global pasar keuangan yang saling terhubung \parencite{Markham2002,Goetzmann2016}.
 
 Ketika industrialisasi dan globalisasi meningkat pada abad ke-20, pasar saham tumbuh semakin cepat dan komopleks. Peralihan dari platform bursa yang fisik menjadi berbasis elektronik yang dapat beroperasi lintas zona waktu dan lintas negara memungkinkan partisipasi oleh yang lebih luas, baik oleh investor institusional maupun ritel, serta meningkatkan likuiditas dan efisiensi pasar. Liberalisasi aliran modal pada paruh kedua abad tersebut, ditambah dengan kemajuan teknologi, memungkinkan negara-negara berkembang membangun pasar sahamnya sendiri. Hal ini menciptakan lanskap keuangan global yang lebih beragam dan saling terkait \parencite{OECD2018}.
 
@@ -257,6 +257,7 @@ Simbol \(\odot\) menyatakan perkalian \textit{element-wise} (perkalian \textit{o
     \]
 \end{enumerate}
 
+Berikut adalah penjelasan detail dari setiap \textit{cell} dan \textit{gate}. 
 \begin{enumerate}
     \item \textbf{\textit{Cell State} (\(\mathbf{C}_t\))}:  
     Aliran informasi jangka panjang yang mengalir di sepanjang urutan waktu. LSTM memungkinkan informasi mengalir tanpa banyak modifikasi dengan mekanisme gerbang.
@@ -300,7 +301,7 @@ Simbol \(\odot\) menyatakan perkalian \textit{element-wise} (perkalian \textit{o
     \]
 \end{enumerate}
 
-  
+\item GRU (\textit{Gated Recurrent Unit}) \\
 \textit{Gated Recurrent Unit (GRU)} pertama kali diperkenalkan oleh \textcite{cho2014learning} dan dapat dianggap sebagai variasi \textit{gating} yang lebih sederhanadari LSTM. GRU menggabungkan beberapa gerbang LSTM menjadi satu sehingga arsitekturnya lebih ringkas dan memiliki jumlah parameter yang lebih sedikit dibandingkan LSTM. Meskipun demikian, GRU tetap mampu mengatasi masalah \textit{vanishing gradient} dan \textit{exploding gradient} dengan lebih baik daripada \textit{Vanilla RNN}. Arsitektur dari GRU dapat dilihat pada gambar \ref{fig:diagram-gru}.
 
 \begin{figure}[H]
@@ -361,13 +362,13 @@ Menggunakan beberapa lapisan RNN sehingga model dapat mempelajari representasi y
 Transformer merupakan arsitektur pemrosesan sekuensial yang tidak mengandalkan koneksi berulang (\textit{recurrent connections}) seperti pada RNN. Arsitektur ini memanfaatkan mekanisme perhatian (\textit{attention}) sebagai komponen utama untuk memodelkan hubungan antar elemen tanpa harus memprosesnya secara serial sehingga dapat mempercepat pelatihan melalui paralelisasi. \parencite{Vaswani2017}.
 
     \subsubsection{Core Transformer Architecture}
-\textit{Core Transformer} terdiri dari dua komponen utama: \textit{encoder} dan \textit{decoder}. \textit{Encoder} bertugas mengekstraksi fitur-fitur dari \textit{input}, sementara \textit{decoder} memanfaatkan representasi yang dihasilkan \textit{encoder} untuk memprediksi \textit{output} secara \textit{autoregressive}. Kedua bagian ini menggunakan \textit{positional encoding} dan \textit{attention mechanism} sebagai fondasi pemrosesan data sekuensial. Arsitektur tersebut terlihat pada gambar \ref{fig:diagram-gru}.
+\textit{Core Transformer} terdiri dari dua komponen utama: \textit{encoder} dan \textit{decoder}. \textit{Encoder} bertugas mengekstraksi fitur-fitur dari \textit{input}, sementara \textit{decoder} memanfaatkan representasi yang dihasilkan \textit{encoder} untuk memprediksi \textit{output} secara \textit{autoregressive}. Kedua bagian ini menggunakan \textit{positional encoding} dan \textit{attention mechanism} sebagai fondasi pemrosesan data sekuensial. Arsitektur tersebut terlihat pada gambar \ref{fig:diagram-transformer}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{resources/chapter-2-transformer.png}
     \caption{Arsitektur \textit{Transformer} \parencite{Vaswani2017}}
-    \label{fig:diagram-gru}
+    \label{fig:diagram-transformer}
 \end{figure}
 
 \begin{enumerate}
@@ -417,7 +418,7 @@ dengan:
     Sebuah \textit{multi-layer perceptron} (MLP) yang diterapkan secara independen pada setiap posisi token, disebut \textit{position-wise feed-forward network}.
 \end{enumerate}
 
-Pada setiap sub-lapisan (\textit{attention} dan \textit{feed-forward}), ditambahkan \textit{residual connection} \parencite{He2016resnet} dan \textit{layer normalization} \parencite{Ba2016layernorm}, sehingga lapisan ke-\(l\) dapat direpresentasikan sebagai:
+Pada setiap sub-lapisan (\textit{attention} dan \textit{feed-forward}), akan ditambahkan \textit{residual connection} \parencite{He2016resnet} dan \textit{layer normalization} \parencite{Ba2016layernorm}, sehingga lapisan ke-\(l\) dapat direpresentasikan sebagai:
 
 \begin{equationfloat}
 \begin{equation}

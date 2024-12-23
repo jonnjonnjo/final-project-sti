@@ -120,7 +120,6 @@ Analisis dilakukan terhadap tiga alternatif yang telah disebutkan untuk mengiden
 \begin{itemize}
     \item Perlu feature engineering yang lebih ekstensif
     \item Kurang efektif untuk \textit{long-term dependencies}
-    \item Interpretasi tidak sejelas model linear seperti ARIMA
 \end{itemize} \\
 \hline
 \end{tabular}
@@ -331,7 +330,6 @@ Setelah model dilatih, performanya dinilai menggunakan beberapa metrik, yaitu:
     \item \textbf{MAPE (Mean Absolute Percentage Error)}: Mengukur kesalahan relatif dalam bentuk persentase, cocok untuk membandingkan saham dengan skala harga berbeda.
     \item \textbf{\(R^2\) (Coefficient of Determination)}: Mengecek seberapa besar variasi data dijelaskan oleh model.
 \end{itemize}
-Dari hasil pengukuran ini, kita dapat membandingkan performa ARIMA, LSTM, GRU, serta TFT untuk melihat mana yang memberikan akurasi maupun interpretabilitas terbaik. Jika model \textit{sequence-based} terbukti lebih unggul dalam mendeteksi \textit{nonlinearity}, sementara ARIMA unggul dalam kemudahan interpretasi, maka keduanya bisa dipadukan atau difokuskan sesuai kebutuhan bisnis.
 
 \end{enumerate}
 
