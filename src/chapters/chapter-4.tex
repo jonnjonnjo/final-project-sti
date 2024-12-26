@@ -50,9 +50,52 @@ Google Colab Pro & \$10/bulan \\
 
 
 \subsection{Rencana Implementasi}
+Rencana implementasi terdiri dari 2 tahap yang mencakup \textit{EDA,modelling}, evaluasi, dan finalisasi laporan tugas akhir. Rencana implementasi dapat dilihat pada tabel \ref{table:linimasa_1} dan tabel \ref{table:linimasa_2}. 
 
+\begin{table}[H]
+\centering
+\caption{Linimasa pengerjaaan tahap 1}
+\label{table:linimasa_1}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Kegiatan} & \multicolumn{4}{c|}{\textbf{Januari}} & \multicolumn{4}{c|}{\textbf{Februari}} & \multicolumn{4}{c|}{\textbf{Maret}} & \multicolumn{4}{c|}{\textbf{April}} \\
+\cline{2-17} 
+\rowcolor[HTML]{C0C0C0} 
+ & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} \\
+\hline
+\textit{EDA} & & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & & & & & & & & \\
+\hline
+\textit{Modeling} & & & & & & & & & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} \\
+\hline
+Evaluasi & & & & & & & & & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} \\
 
+\hline
+\end{tabular}
+\end{table}
 
+\begin{table}[H]
+\centering
+\caption{Linimasa pengerjaan tahap 2}
+\label{table:linimasa_2}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Kegiatan} & \multicolumn{4}{c|}{\textbf{Mei}} & \multicolumn{4}{c|}{\textbf{Juni}} \\
+\cline{2-9} 
+\rowcolor[HTML]{C0C0C0} 
+ & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} \\
+\hline
+Finalisasi laporan akhir & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} & \cellcolor[HTML]{0000FF} \\
+\hline
+Sidang laporan tugas akhir & & & & & & & & \cellcolor[HTML]{0000FF} \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Desain Pengujian dan Evaluasi}
+
+\textit{Training} dari model akan dilakukan untuk semua \textit{timepoint} kecuali dalam rentang 1 bulan terbaru. Semua data dalam 1 bulan terakhir akan digunakan untuk menjadi \textit{validation data}. Setiap model akan di-\textit{training} menggunakan data \textit{training} yang sama. Metrik metrik yang digunakan adalah RMSE, DA, MAPE, dan $R^2$. Setelah itu, setiap model akan di-\textit{sort} performanya berdasarkan keempat metrik tersebut.  
 
 \section{Analisis Mitigasi dan Risiko}
 \subsection{\textit{Timeline} yang Terlewat}

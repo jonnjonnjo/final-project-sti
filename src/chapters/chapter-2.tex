@@ -189,13 +189,13 @@ Vanilla RNN tidak efektif dalam hal komputasi karena prosesnya tidak dapat berja
 
 \subsubsection{Gated RNN}
 
-Salah satu solusi untuk mengatasi permasalahan \textit{vanishing} dan \textit{exploding gradient} pada \textit{Vanilla RNN} adalah dengan menambahkan mekanisme \textbf{\textit{gating}} ke dalam arsitektur RNN. Arsitektur RNN dengan mekanisme \textit{gating} ini sering disebut sebagai \textit{Gated RNN}. Dua jenis Gated RNN yang paling populer adalah \textit{Long Short-Term Memory (LSTM)} dan \textit{Gated Recurrent Unit (GRU)}.
+Salah satu solusi untuk mengatasi permasalahan \textit{vanishing} dan \textit{exploding gradient} pada \textit{Vanilla RNN} adalah dengan menambahkan mekanisme \textit{gating} ke dalam arsitektur RNN. Arsitektur RNN dengan mekanisme \textit{gating} ini sering disebut sebagai \textit{Gated RNN}. Dua jenis Gated RNN yang paling populer adalah \textit{Long Short-Term Memory (LSTM)} dan \textit{Gated Recurrent Unit (GRU)}.
 
 Ide utama dari Gated RNN adalah menambahkan “gerbang-gerbang” (\textit{gates}) yang secara eksplisit mengatur aliran informasi di dalam \textit{hidden state} sehingga model dapat melakukan \textit{retaining} informasi penting lebih pada \textit{timepoint} yang lebih lawas dan membuang informasi yang dianggap tidak relevan. Pada LSTM, terdapat 3 jenis gerbang yaitu \textit{forget gate, input gate} dan \textit{output gate}. Pada GRU, beberapa gerbang di LSTM digabungkan sehingga memiliki arsitektur yang lebih simpel.
 
 \begin{enumerate}
 \item LSTM (\textit{Long Short-Term Memory}) \\
-LSTM dikemukakan pertama kali oleh \parencite{Hochreiter1997} \textit{long-term dependencies} yang dialami oleh \textit{Vanilla RNN}. LSTM menambahkan beberapa komponen \textbf{\textit{gates}} dan sebuah \textbf{\textit{cell state}} (\(\mathbf{C}_t\)) yang berfungsi sebagai “jalur informasi” jangka panjang. Tujuannya adalah untuk mencegah informasi penting mengalami \textit{vanishing gradient} ketika dilatih dengan \textit{Backpropagation Through Time (BPTT)} pada sekuens yang panjang. Arsitektur tersebut dapat terlihat pada gambar \ref{fig:diagram-lstm}.
+LSTM dikemukakan pertama kali oleh \parencite{Hochreiter1997} \textit{long-term dependencies} yang dialami oleh \textit{Vanilla RNN}. LSTM menambahkan beberapa komponen \textit{gates} dan sebuah \textit{cell state} (\(\mathbf{C}_t\)) yang berfungsi sebagai “jalur informasi” jangka panjang. Tujuannya adalah untuk mencegah informasi penting mengalami \textit{vanishing gradient} ketika dilatih dengan \textit{Backpropagation Through Time (BPTT)} pada sekuens yang panjang. Arsitektur tersebut dapat terlihat pada gambar \ref{fig:diagram-lstm}.
 
     \begin{figure}[H]
         \centering
@@ -444,7 +444,7 @@ Pada setiap sub-lapisan (\textit{attention} dan \textit{feed-forward}), akan dit
 \end{itemize}
 
 \item \textbf{Computation Complexity} \\
-Salah satu kelemahan Transformer adalah kompleksitas komputasi \textbf{kuadratik} \(\bigl(O(T^2)\bigr)\) dengan panjang sekuens sebagai \(T\). Setiap token harus menghitung \textit{attention} terhadap semua token lain dalam sekuens sehingga pada sekuens yang sangat panjang, hal ini bisa menjadi \textit{bottleneck}. Meskipun demikian,\textbf{paralelisasi} tetap membuat Transformer efisien.
+Salah satu kelemahan Transformer adalah kompleksitas komputasi kuadratik \(\bigl(O(T^2)\bigr)\) dengan panjang sekuens sebagai \(T\). Setiap token harus menghitung \textit{attention} terhadap semua token lain dalam sekuens sehingga pada sekuens yang sangat panjang, hal ini bisa menjadi \textit{bottleneck}. Meskipun demikian, paralelisasi tetap membuat Transformer efisien.
 
 \end{enumerate}
 
@@ -470,7 +470,7 @@ Data deret waktu umumnya bersifat heterogen, mencakup variabel kategorikal, kont
     Kombinasi GRN dan VSN membuat TFT bagus dalam menangani ragam variabel yang kompleks.
 
     \item \textbf{Multi-Head Attention} \\
-    Setelah tahap \textbf{VSN} dan \textbf{GRN}, TFT menerapkan mekanisme \textit{attention} (\textit{self-attention} ataupun \textit{cross-attention}) pada representasi tersebut. Dengan demikian, interaksi antar token (waktu) dapat ditangkap secara eksplisit:
+    Setelah tahap VSN dan GRN, TFT menerapkan mekanisme \textit{attention} (\textit{self-attention} ataupun \textit{cross-attention}) pada representasi tersebut. Dengan demikian, interaksi antar token (waktu) dapat ditangkap secara eksplisit:
     \[
     \mathbf{H}_{att} = \text{MultiHeadAttention}\Bigl(
         Q = \mathbf{h}^{\text{processed}},\,
@@ -499,7 +499,7 @@ Dalam penelitian ini, pemodelan \textit{time series} pasar saham Indonesia mengg
 \label{subsec:rmse}
 
 \noindent
-\textbf{Root Mean Squared Error (RMSE)} mengukur seberapa besar perbedaan antara nilai prediksi (\(\hat{y}_i\)) dan nilai sebenarnya (\(y_i\)) pada data \textit{time series}. RMSE dapat dirumuskan dalam Persamaan \ref{eq:rmse}:
+Root Mean Squared Error (RMSE) mengukur seberapa besar perbedaan antara nilai prediksi (\(\hat{y}_i\)) dan nilai sebenarnya (\(y_i\)) pada data \textit{time series}. RMSE dapat dirumuskan dalam Persamaan \ref{eq:rmse}:
 
 \begin{equationfloat}
 \begin{equation}
@@ -513,7 +513,7 @@ Dalam penelitian ini, pemodelan \textit{time series} pasar saham Indonesia mengg
 \label{eq:rmse}
 \end{equationfloat}
 
-Semakin rendah nilai RMSE, semakin kecil selisih antara prediksi dan nilai aktual. RMSE \textbf{lebih sensitif} terhadap kesalahan yang besar (\textit{large errors}) karena adanya kuadrat pada selisih \((y_i - \hat{y}_i)\). RMSE membantu menilai seberapa akurat model memprediksi nilai harga saham dibandingkan dengan harga yang benar-benar terjadi.
+Semakin rendah nilai RMSE, semakin kecil selisih antara prediksi dan nilai aktual. RMSE lebih sensitif terhadap kesalahan yang besar (\textit{large errors}) karena adanya kuadrat pada selisih \((y_i - \hat{y}_i)\). RMSE membantu menilai seberapa akurat model memprediksi nilai harga saham dibandingkan dengan harga yang benar-benar terjadi.
 
 \subsection{Directional Accuracy (DA)}
 \label{subsec:directional-accuracy}
@@ -541,7 +541,7 @@ dengan \(\text{sign}(\cdot)\) menyatakan fungsi penanda tanda (positif, negatif)
 \label{subsec:mape}
 
 \noindent
-Mean Absolute Percentage Error (MAPE) mengukur kesalahan relatif dalam bentuk persentase, sehingga \textbf{skala} harga saham dapat lebih diperhitungkan. Persamaaan tersebut dapat dilihat pada ersamaan \ref{eq:mape}:
+Mean Absolute Percentage Error (MAPE) mengukur kesalahan relatif dalam bentuk persentase, sehingga skala harga saham dapat lebih diperhitungkan. Persamaaan tersebut dapat dilihat pada ersamaan \ref{eq:mape}:
 
 \begin{equationfloat}
 \begin{equation}

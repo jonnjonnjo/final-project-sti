@@ -1,19 +1,19 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is '/home/jon/Coding/final-project-sti/build/thesis.blg'
-[55] biber:340> INFO - === Mon Dec 23, 2024, 09:12:54
-[69] Biber.pm:420> INFO - Reading '/home/jon/Coding/final-project-sti/build/thesis.bcf'
-[172] Biber.pm:994> INFO - Found 43 citekeys in bib section 0
-[182] Biber.pm:4463> INFO - Processing section 0
-[189] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
-[191] bibtex.pm:1713> INFO - LaTeX decoding ...
-[222] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[500] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[500] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'level = 4' with 'level = 2'
-[500] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'variable = shifted' with 'variable = non-ignorable'
-[500] Biber.pm:4283> INFO - Sorting list 'cms/global//global/global/global' of type 'entry' with template 'cms' and locale 'indonesian'
-[500] Biber.pm:4289> INFO - No sort tailoring available for locale 'indonesian'
-[533] bbl.pm:676> INFO - Writing '/home/jon/Coding/final-project-sti/build/thesis.bbl' with encoding 'UTF-8'
-[548] bbl.pm:779> INFO - Output to /home/jon/Coding/final-project-sti/build/thesis.bbl
-[549] Biber.pm:131> WARN - Duplicate entry key: 'BloomEtAl2019' in file 'references.bib', skipping ...
-[549] Biber.pm:131> WARN - legacy month field 'Nov' in entry 'ishwarya2024rnn' is not an integer - this will probably not sort properly.
-[549] Biber.pm:133> INFO - WARNINGS: 2
+[61] biber:340> INFO - === Mon Dec 23, 2024, 09:40:46
+[76] Biber.pm:420> INFO - Reading '/home/jon/Coding/final-project-sti/build/thesis.bcf'
+[198] Biber.pm:994> INFO - Found 43 citekeys in bib section 0
+[210] Biber.pm:4463> INFO - Processing section 0
+[219] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
+[221] bibtex.pm:1713> INFO - LaTeX decoding ...
+[259] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[559] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'level = 4' with 'level = 2'
+[559] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'variable = shifted' with 'variable = non-ignorable'
+[559] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[559] Biber.pm:4283> INFO - Sorting list 'cms/global//global/global/global' of type 'entry' with template 'cms' and locale 'indonesian'
+[560] Biber.pm:4289> INFO - No sort tailoring available for locale 'indonesian'
+[597] bbl.pm:676> INFO - Writing '/home/jon/Coding/final-project-sti/build/thesis.bbl' with encoding 'UTF-8'
+[614] bbl.pm:779> INFO - Output to /home/jon/Coding/final-project-sti/build/thesis.bbl
+[615] Biber.pm:131> WARN - Duplicate entry key: 'BloomEtAl2019' in file 'references.bib', skipping ...
+[615] Biber.pm:131> WARN - legacy month field 'Nov' in entry 'ishwarya2024rnn' is not an integer - this will probably not sort properly.
+[615] Biber.pm:133> INFO - WARNINGS: 2

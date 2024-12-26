@@ -10,7 +10,7 @@ Pasar modal Indonesia yang semakin berkembang dan terdiversifikasi menuntut pend
 \begin{enumerate}
     \item \textbf{ARIMA (AutoRegressive Integrated Moving Average)} 
     \\
-    ARIMA menjadi metode utama yang sering dipakai dalam \textit{time series forecasting}, terutama ketika data cenderung stasioner atau memiliki pola musiman yang dapat diakomodir dengan baik. Kelebihan ARIMA adalah Koefisien AR (\textit{autoregressive}) dan MA (\textit{moving average}) yang merupakan salah satu indikator dari ARIMA dapat dijelaskan secara statistik, sehingga memudahkan awan dapat memahami model. Namun, ARIMA kurang efektif dalam menangkap hubungan \textbf{nonlinier} antar variabel, dan memerlukan langkah diferensiasi (integrasi) agar data menjadi stasioner. Jika data finansial memiliki banyak variabel eksternal yang saling berkoerlasi, ARIMA menjadi cepat kurang akurat.
+    ARIMA menjadi metode utama yang sering dipakai dalam \textit{time series forecasting}, terutama ketika data cenderung stasioner atau memiliki pola musiman yang dapat diakomodir dengan baik. Kelebihan ARIMA adalah Koefisien AR (\textit{autoregressive}) dan MA (\textit{moving average}) yang merupakan salah satu indikator dari ARIMA dapat dijelaskan secara statistik, sehingga memudahkan awan dapat memahami model. Namun, ARIMA kurang efektif dalam menangkap hubungan nonlinier antar variabel, dan memerlukan langkah diferensiasi (integrasi) agar data menjadi stasioner. Jika data finansial memiliki banyak variabel eksternal yang saling berkoerlasi, ARIMA menjadi cepat kurang akurat.
 
     \item \textbf{Regresi Linear} 
     \\
@@ -20,7 +20,7 @@ Pasar modal Indonesia yang semakin berkembang dan terdiversifikasi menuntut pend
         \item \textbf{Proses komputasi relatif ringan}: Tidak memerlukan sumber daya besar, sehingga dapat dijalankan dengan cepat.
     \end{itemize}
     
-    Kekurangannya adalah model ini \textbf{tidak dapat mempelajari relasi kompleks} atau nonlinier yang kerap muncul dalam data keuangan. 
+    Kekurangannya adalah model ini tidak dapat mempelajari relasi kompleks atau nonlinier yang kerap muncul dalam data keuangan. 
 
     \item \textbf{Regresi Logistik} 
     \\
@@ -46,7 +46,7 @@ Pasar modal Indonesia yang semakin berkembang dan terdiversifikasi menuntut pend
     TFT \parencite{Lim2020} mengadopsi mekanisme \textit{attention} dari \textit{Transformer} \parencite{Vaswani2017}, tetapi dirancang khusus untuk \textit{multi-horizon time series forecasting}. 
     \begin{itemize}
         \item \textbf{Kelebihan}:  
-        Mampu mempelajari dependensi jangka panjang tanpa harus memproses data secara sekuensial serta mendukung \textbf{paralelisasi} yang lebih baik. TFT memiliki modul \textit{variable selection} yang dapat meningkatkan interpretasi model. Hal ini membuat TFT lebih fleksibel untuk menangani data multivariabel yang kompleks dan \textit{non-stationary}.
+        Mampu mempelajari dependensi jangka panjang tanpa harus memproses data secara sekuensial serta mendukung paralelisasi yang lebih baik. TFT memiliki modul \textit{variable selection} yang dapat meningkatkan interpretasi model. Hal ini membuat TFT lebih fleksibel untuk menangani data multivariabel yang kompleks dan \textit{non-stationary}.
         \item \textbf{Kekurangan}:  
         Kompleksitas komputasi \(\mathcal{O}(T^2)\) dapat menjadi masalah ketika panjang sekuens \(T\) sangat besar, dan proses \textit{training} memerlukan sumber daya yang signifikan (misalnya GPU atau TPU).
     \end{itemize}
@@ -61,7 +61,7 @@ Kategori \textit{classical machine learning} terdiri atas \textit{machine learni
     Random Forest adalah metode \textit{ensemble} yang membentuk banyak pohon keputusan dengan \textit{bagging} \parencite{Breiman2001}. 
     \begin{itemize}
         \item \textbf{Kelebihan}:  
-        Memiliki \textbf{robustness} tinggi terhadap outlier dan \textit{noise}, serta cenderung memberikan performa stabil tanpa terlalu banyak \textit{tuning}. Dapat memanfaatkan \textbf{feature importance} untuk interpretasi peran tiap variabel.
+        Memiliki \textit{robustness} tinggi terhadap outlier dan \textit{noise}, serta cenderung memberikan performa stabil tanpa terlalu banyak \textit{tuning}. Dapat memanfaatkan \textit{feature importance} untuk interpretasi peran tiap variabel.
         \item \textbf{Kekurangan}:  
         Kurang efektif dalam mengungkap \textit{long-term dependencies} bila data tak diolah menjadi format \textit{windowed features}. Selain itu, masih terbatas pada pendekatan \(\mathcal{O}(n \log n)\) untuk banyak pohon dan interpretasinya tidak sejelas model linear.
     \end{itemize}
@@ -73,7 +73,7 @@ Kategori \textit{classical machine learning} terdiri atas \textit{machine learni
         \item \textbf{Kelebihan}:  
          Biasa menghasilkan prediksi akurat dengan waktu \textit{training} cukup rendah. Mampu menghadapi data berjumlah besar berkat optimasi level pohon.
         \item \textbf{Kekurangan}:  
-        Tetap tidak secara implisit memodelkan sekuens waktu. Jika data sangat \textit{non-stationary} atau memiliki pola musiman, dibutuhkan \textbf{feature engineering} yang cermat.
+        Tetap tidak secara implisit memodelkan sekuens waktu. Jika data sangat \textit{non-stationary} atau memiliki pola musiman, dibutuhkan \textit{feature engineering} yang cermat.  
     \end{itemize}
 \end{enumerate}
 
@@ -301,7 +301,7 @@ Berikut adalah uraian lebih detail mengenai Rancangan Konsep Solusi seperti terg
 
 \begin{enumerate} 
 
-\item \textit{Data Fetching}  \\
+\item \textit{\textbf{Data Fetching}}  \\
 Pada tahap awal, data diambil (\textit{fetching}) dari \textit{Yahoo! Finance}—sering disebut \textit{YFinance API}. Data ini merupakan \textit{time series} historis berbagai saham di Bursa Efek Indonesia. 
 
 \item \textbf{\textit{Exploratory Data Analysis (EDA)}} \\
@@ -320,7 +320,7 @@ Data perlu ditransformasikan agar siap dimasukkan ke model. Transformasi dapat m
 \end{itemize}
 
 \item \textbf{\textit{Modeling}} \\
-Pada tahap ini, kita memanfaatkan pendekatan \textit{Classical Quantitative} (ARIMA) serta \textit{Sequence-based Modeling} (LSTM, GRU, TFT) yang sudah dipilih pada alternatif solusi untuk membangun model \textit{forecasting}. Pada fase ini, dilakukan juga \textbf{\textit{hyperparameter tuning}} untuk memastikan model bekerja pada konfigurasi optimal (misalnya jumlah \textit{hidden units}, \textit{learning rate}, jumlah \textit{Transformer heads}, dan lain-lain). Proses \textit{training} umumnya dijalankan menggunakan \textit{mini-batch stochastic gradient descent} (\textit{SGD}) atau varian optimisasi populer (\textit{Adam, RMSProp}), disertai mekanisme \textit{early stopping} demi menghindari \textit{overfitting}.
+Pada tahap ini, kita memanfaatkan pendekatan \textit{Classical Quantitative} (ARIMA) serta \textit{Sequence-based Modeling} (LSTM, GRU, TFT) yang sudah dipilih pada alternatif solusi untuk membangun model \textit{forecasting}. Pada fase ini, dilakukan juga \textit{hyperparameter tuning} untuk memastikan model bekerja pada konfigurasi optimal (misalnya jumlah \textit{hidden units}, \textit{learning rate}, jumlah \textit{Transformer heads}, dan lain-lain). Proses \textit{training} umumnya dijalankan menggunakan \textit{mini-batch stochastic gradient descent} (\textit{SGD}) atau varian optimisasi populer (\textit{Adam, RMSProp}), disertai mekanisme \textit{early stopping} demi menghindari \textit{overfitting}.
 
 \item \textbf{\textit{Evaluation}} \\
 Setelah model dilatih, performanya dinilai menggunakan beberapa metrik, yaitu:

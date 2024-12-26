@@ -1,20 +1,20 @@
 # Fdb version 4
-["biber /home/jon/Coding/final-project-sti/build/thesis"] 1734919973.42918 "/home/jon/Coding/final-project-sti/build/thesis.bcf" "/home/jon/Coding/final-project-sti/build/thesis.bbl" "/home/jon/Coding/final-project-sti/build/thesis" 1734919982.14784 0
-  "/home/jon/Coding/final-project-sti/build/thesis.bcf" 1734919981.9996 208762 7c8e4f57dc88da7b73f7f647e2b70116 "pdflatex"
-  "references.bib" 1734917040.59731 15318 d9a38f3a28076dd3e6d94cd4ce3136c6 ""
+["biber /home/jon/Coding/final-project-sti/build/thesis"] 1734921645.90464 "/home/jon/Coding/final-project-sti/build/thesis.bcf" "/home/jon/Coding/final-project-sti/build/thesis.bbl" "/home/jon/Coding/final-project-sti/build/thesis" 1734921656.23427 0
+  "/home/jon/Coding/final-project-sti/build/thesis.bcf" 1734921656.03522 208762 7c8e4f57dc88da7b73f7f647e2b70116 "pdflatex"
+  "references.bib" 1734921637.38924 14864 5f5ca1e6a7304629f055912bdfe2ac89 ""
   (generated)
   "/home/jon/Coding/final-project-sti/build/thesis.bbl"
   "/home/jon/Coding/final-project-sti/build/thesis.blg"
   (rewritten before read)
-["pdflatex"] 1734919978.56153 "thesis.tex" "/home/jon/Coding/final-project-sti/build/thesis.pdf" "thesis" 1734919982.14823 0
-  "/home/jon/Coding/final-project-sti/build/thesis.aux" 1734919981.8716 34925 00ec1d90373785735770df3b755f46cb "pdflatex"
-  "/home/jon/Coding/final-project-sti/build/thesis.bbl" 1734919974.72355 70678 b18ac91951449487446674eb73706592 "biber /home/jon/Coding/final-project-sti/build/thesis"
-  "/home/jon/Coding/final-project-sti/build/thesis.loe" 1734919982.0006 1801 2bbfc8defab3a3952a245e8366e25d5b "pdflatex"
-  "/home/jon/Coding/final-project-sti/build/thesis.lof" 1734919982.0006 10300 56b22b881bbaacac3f68de855845c9f8 "pdflatex"
-  "/home/jon/Coding/final-project-sti/build/thesis.lot" 1734919982.0006 8717 f8345213db275ca6a7d934d8d3ed2d5a "pdflatex"
-  "/home/jon/Coding/final-project-sti/build/thesis.out" 1734919981.9986 7846 6d275b6eb7db83c38da3b46660e45e8a "pdflatex"
-  "/home/jon/Coding/final-project-sti/build/thesis.run.xml" 1734919982.0006 2353 d22a7aaf0e5cfccd4c36799d5bcf5f4e "pdflatex"
-  "/home/jon/Coding/final-project-sti/build/thesis.toc" 1734919982.0006 12594 2d4901f104024ee6661089191f82a453 "pdflatex"
+["pdflatex"] 1734921651.64296 "thesis.tex" "/home/jon/Coding/final-project-sti/build/thesis.pdf" "thesis" 1734921656.23477 0
+  "/home/jon/Coding/final-project-sti/build/thesis.aux" 1734921655.89622 35293 899d76bfa0ac98848790cbf39f47c1d0 "pdflatex"
+  "/home/jon/Coding/final-project-sti/build/thesis.bbl" 1734921647.38423 69632 e7cd9e03d83aa1940c575c801e57bf39 "biber /home/jon/Coding/final-project-sti/build/thesis"
+  "/home/jon/Coding/final-project-sti/build/thesis.loe" 1734921656.03622 1801 2bbfc8defab3a3952a245e8366e25d5b "pdflatex"
+  "/home/jon/Coding/final-project-sti/build/thesis.lof" 1734921656.03622 10300 56b22b881bbaacac3f68de855845c9f8 "pdflatex"
+  "/home/jon/Coding/final-project-sti/build/thesis.lot" 1734921656.03622 8823 4e608b5522f90bde5ba1f2c9b2ce8f82 "pdflatex"
+  "/home/jon/Coding/final-project-sti/build/thesis.out" 1734921656.03422 8055 d454ab019b3e61d90de924302fd27b47 "pdflatex"
+  "/home/jon/Coding/final-project-sti/build/thesis.run.xml" 1734921656.03622 2353 d22a7aaf0e5cfccd4c36799d5bcf5f4e "pdflatex"
+  "/home/jon/Coding/final-project-sti/build/thesis.toc" 1734921656.03622 12685 8b62cbf8cf923f1abb51f113d9fc09ec "pdflatex"
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1202520719 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -189,9 +189,9 @@
   "/usr/local/texlive/2024/texmf.cnf" 1732108089.13587 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
   "chapters/approval.tex" 1734908434.09824 732 92d03d236a9ac508fdb232b043118c18 ""
   "chapters/chapter-1.tex" 1734783964.04841 10258 d3f63bf43fac084e72015ef144790c8d ""
-  "chapters/chapter-2.tex" 1734916560.82426 57265 ca22dedc13aa6ce372e8a4cfd591e603 ""
-  "chapters/chapter-3.tex" 1734918674.72593 21978 d6c1c2a7e6ab799d01fd61666901796c ""
-  "chapters/chapter-4.tex" 1734919964.47849 5577 c0063a3d73dc4a17401b1b175755013b ""
+  "chapters/chapter-2.tex" 1734920770.73083 57176 7281d0f843c7c45062d3877abcfb9a84 ""
+  "chapters/chapter-3.tex" 1734920966.81332 21953 eb1978fa4d291c08f4dc56be8bd7b856 ""
+  "chapters/chapter-4.tex" 1734921207.22885 6830 ea4d2b490297abe2881324979910beb9 ""
   "chapters/cover.tex" 1734915898.35864 577 2b7a7c96d963933ea9428ffd30100d35 ""
   "config/if-itb-thesis.sty" 1734919820.12142 2436 5923f4c2fa1f04f64faea25fb50bb667 ""
   "resources/chapter-1-1.1-capitalmarketinvestor.png" 1733836435.29056 27191 c8bb9d130ff4327e238a0fa560da1f9c ""

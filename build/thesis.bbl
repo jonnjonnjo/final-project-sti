@@ -207,9 +207,6 @@
       \field{year}{2022}
       \field{pages}{51\bibrangedash 60}
       \range{pages}{10}
-      \verb{doi}
-      \verb 10.34818/INDOJC.2022.7.1.612
-      \endverb
       \verb{urlraw}
       \verb https://doi.org/10.34818/INDOJC.2022.7.1.612
       \endverb
@@ -514,12 +511,6 @@
       \field{year}{2022}
       \verb{doi}
       \verb 10.1007/s12197-022-09575-x
-      \endverb
-      \verb{urlraw}
-      \verb https://link.springer.com/article/10.1007/s12197-022-09575-x
-      \endverb
-      \verb{url}
-      \verb https://link.springer.com/article/10.1007/s12197-022-09575-x
       \endverb
     \endentry
     \entry{Goetzmann2016}{book}{}{}
@@ -940,12 +931,6 @@
       \verb{doi}
       \verb 10.48550/arXiv.1912.09363
       \endverb
-      \verb{urlraw}
-      \verb https://arxiv.org/abs/1912.09363
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/abs/1912.09363
-      \endverb
     \endentry
     \entry{Luong2015}{inproceedings}{}{}
       \name{author}{3}{}{%
@@ -1218,7 +1203,7 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.oecd.org/daf/inv/investment-policy/}}
       \field{title}{OECD Investment Policy Reviews: Indonesia 2020}
-      \field{year}{2019}
+      \field{year}{2020}
     \endentry
     \entry{OJK2007}{misc}{}{}
       \name{author}{1}{}{%
@@ -1464,9 +1449,6 @@
       \field{isbn}{978-0-8213-6544-1}
       \field{title}{Emerging Capital Markets and Globalization: The Latin American Experience}
       \field{year}{2007}
-      \verb{doi}
-      \verb 10.1596/978-0-8213-6544-1
-      \endverb
     \endentry
     \entry{Vaswani2017}{article}{}{}
       \name{author}{8}{}{%
@@ -1663,12 +1645,6 @@
       \field{year}{2017}
       \verb{doi}
       \verb 10.21511/imfi.14(2-2).2017.06
-      \endverb
-      \verb{urlraw}
-      \verb https://www.businessperspectives.org/index.php/journals/investment-management-and-financial-innovations/issue-2-cont-12/risk-perception-and-psychological-behavior-of-investors-in-emerging-market-indonesian-stock-exchange
-      \endverb
-      \verb{url}
-      \verb https://www.businessperspectives.org/index.php/journals/investment-management-and-financial-innovations/issue-2-cont-12/risk-perception-and-psychological-behavior-of-investors-in-emerging-market-indonesian-stock-exchange
       \endverb
     \endentry
   \enddatalist
